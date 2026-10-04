@@ -5,69 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Offnets</title>
 <meta name="description" content="Offnets: uma rede de cérebros fora da internet. Cada cérebro mora com o seu dono e só troca o que ele liberar, por protocolo.">
+<link rel="canonical" href="https://offnets.org/">
+<link rel="alternate" hreflang="pt-BR" href="https://offnets.org/">
+<link rel="alternate" hreflang="en" href="https://offnets.org/en/">
+<link rel="alternate" hreflang="es" href="https://offnets.org/es/">
+<link rel="alternate" hreflang="fr" href="https://offnets.org/fr/">
+<link rel="alternate" hreflang="zh-Hans" href="https://offnets.org/zh/">
+<link rel="alternate" hreflang="x-default" href="https://offnets.org/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<style>
-/* Layout: uma coluna de leitura, como um documento fundador; o único elemento gráfico é a constelação de nós (herança do logo "moving networks") */
-:root{
-  --paper:#f4f5f2; --ink:#16201e; --muted:#5c6966; --line:#d7ddd8; --signal:#0b7a66; --soft:#e5ece8;
-  --f-serif:"Newsreader", Georgia, "Times New Roman", serif;
-  --f-sans:"IBM Plex Sans", system-ui, -apple-system, sans-serif;
-  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
-  color-scheme:light;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#0e1413;--ink:#e3e9e6;--muted:#93a29d;--line:#26322f;--signal:#45c2a6;--soft:#17231f;color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#0e1413;--ink:#e3e9e6;--muted:#93a29d;--line:#26322f;--signal:#45c2a6;--soft:#17231f;color-scheme:dark}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 var(--f-serif);padding-inline:20px;padding-block:0 80px}
-.col{max-width:680px;margin:0 auto}
-header{max-width:680px;margin:0 auto;padding-block:28px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.marca{display:flex;align-items:center;gap:10px;font:600 18px var(--f-sans);letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
-nav{display:flex;gap:18px;flex-wrap:wrap;font:500 13.5px var(--f-sans)}
-nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--ink)}
-.abre{padding-block:72px 40px;border-bottom:1px solid var(--line)}
-.abre svg{display:block;width:100%;max-width:680px;height:auto;margin-bottom:28px}
-.abre svg .no{fill:var(--ink)} .abre svg .no.s{fill:var(--signal)} .abre svg .fio{stroke:var(--line);stroke-width:1.2}
-h1{font:500 clamp(38px,7vw,58px)/1.05 var(--f-serif);letter-spacing:-.02em;margin:0 0 18px;text-wrap:balance}
-h1 em{font-style:italic;color:var(--signal)}
-.lede{font-size:20px;line-height:1.55;color:var(--ink);margin:0}
-.k{font:500 11.5px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-section{padding-block:44px 8px}
-h2{font:500 30px/1.15 var(--f-serif);letter-spacing:-.01em;margin:6px 0 18px;text-wrap:balance}
-h3{font:600 16px/1.3 var(--f-sans);margin:28px 0 6px}
-p{margin:0 0 16px}
-strong{font-weight:700}
-.nota{font:14px/1.55 var(--f-sans);color:var(--muted)}
-.camadas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-block:8px 18px}
-.camadas div{padding:14px 14px 10px 0;font:14px/1.5 var(--f-sans);min-width:0}
-.camadas div+div{padding-left:14px;border-left:1px solid var(--line)}
-.camadas b{display:block;font:500 15px var(--f-mono);color:var(--signal);margin-bottom:4px}
-.linha{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);font:15px/1.55 var(--f-sans)}
-.linha .a{font:500 15px var(--f-mono);color:var(--signal)}
-.art{padding:14px 0;border-bottom:1px solid var(--line)}
-.art .n{font:500 12px var(--f-mono);color:var(--muted);letter-spacing:.08em}
-.art p{margin:4px 0 0}
-.camada{font:600 12px var(--f-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--signal);margin:30px 0 4px}
-blockquote{margin:22px 0;padding:4px 0 4px 18px;border-left:2px solid var(--signal);font-size:20px;line-height:1.5}
-footer{max-width:680px;margin:56px auto 0;padding-top:18px;border-top:1px solid var(--line);font:13px/1.6 var(--f-sans);color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-a{color:var(--signal)}
-:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
-@media (max-width:600px){
-  body{font-size:16.5px}
-  .camadas{grid-template-columns:1fr}
-  .camadas div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}
-}
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-
 <header>
   <a class="marca" href="#">
     <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><g fill="currentColor"><circle cx="4" cy="15" r="2.2"/><circle cx="11" cy="5" r="2.2"/><circle cx="18" cy="13" r="2.2"/></g><path d="M4 15 11 5 18 13" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".45"/></svg>
     offnets
   </a>
-  <nav aria-label="Seções"><a href="#manifesto">Manifesto</a><a href="#como">Como funciona</a><a href="#origem">Origem</a><a href="#constituicao">Constituição</a></nav>
+  <div class="topo-dir">
+    <nav aria-label="Seções"><a href="#manifesto">Manifesto</a><a href="#como">Como funciona</a><a href="#origem">Origem</a><a href="#constituicao">Constituição</a></nav>
+    <nav class="idiomas" aria-label="Idioma / Language"><a href="" hreflang="pt-BR" lang="pt-BR" aria-current="true" data-lingua="pt"><span class="bandeira" aria-hidden="true">🇧🇷</span>PT</a><a href="en/" hreflang="en" lang="en" data-lingua="en"><span class="bandeira" aria-hidden="true">🇺🇸</span>EN</a><a href="es/" hreflang="es" lang="es" data-lingua="es"><span class="bandeira" aria-hidden="true">🇪🇸</span>ES</a><a href="fr/" hreflang="fr" lang="fr" data-lingua="fr"><span class="bandeira" aria-hidden="true">🇫🇷</span>FR</a><a href="zh/" hreflang="zh-Hans" lang="zh-Hans" data-lingua="zh"><span class="bandeira" aria-hidden="true">🇨🇳</span>中文</a></nav>
+  </div>
 </header>
 
 <main class="col">
@@ -153,15 +112,7 @@ a{color:var(--signal)}
   <span>Rede fechada, só por convite.</span>
 </footer>
 
-<script>
-// constelação: nós ligados, desenhados uma vez (sem animação contínua)
-(function(){
-  var s=document.getElementById('constelacao'), NS='http://www.w3.org/2000/svg';
-  var n=[[30,80],[95,38],[150,92],[215,52],[280,96],[340,30],[400,74],[460,40],[520,92],[585,56],[650,84]];
-  var e=[[0,1],[1,2],[1,3],[2,4],[3,5],[4,6],[5,6],[6,7],[7,8],[7,9],[8,10],[9,10],[3,4]];
-  e.forEach(function(p){var l=document.createElementNS(NS,'line');l.setAttribute('class','fio');l.setAttribute('x1',n[p[0]][0]);l.setAttribute('y1',n[p[0]][1]);l.setAttribute('x2',n[p[1]][0]);l.setAttribute('y2',n[p[1]][1]);s.appendChild(l);});
-  n.forEach(function(p,i){var c=document.createElementNS(NS,'circle');c.setAttribute('class','no'+(i===5?' s':''));c.setAttribute('cx',p[0]);c.setAttribute('cy',p[1]);c.setAttribute('r',i===5?6:4);s.appendChild(c);});
-})();
-</script>
+<script src="assets/constelacao.js"></script>
+<script src="assets/idioma.js"></script>
 </body>
 </html>
