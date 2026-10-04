@@ -3,8 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Offnets</title>
-<meta name="description" content="Offnets：一个在互联网之外的大脑网络。每个大脑都留在主人身边，只通过协议交换主人放行的内容。">
+<title>Offnets · 连接大脑的协议</title>
+<meta name="description" content="一个让个人、企业和社群与他人及人工智能代理分享智慧的协议，而无需交出自己知识的所有权。">
+<meta property="og:title" content="Offnets · 连接大脑的协议">
+<meta property="og:description" content="一个让个人、企业和社群与他人及人工智能代理分享智慧的协议，而无需交出自己知识的所有权。">
+<meta property="og:url" content="https://offnets.org/zh/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f5f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080c0c" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://offnets.org/zh/">
 <link rel="alternate" hreflang="pt-BR" href="https://offnets.org/">
 <link rel="alternate" hreflang="en" href="https://offnets.org/en/">
@@ -14,105 +20,262 @@
 <link rel="alternate" hreflang="hi" href="https://offnets.org/hi/">
 <link rel="alternate" hreflang="ar" href="https://offnets.org/ar/">
 <link rel="alternate" hreflang="x-default" href="https://offnets.org/en/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cg fill='%230b7a66'%3E%3Ccircle cx='4' cy='15' r='2.6'/%3E%3Ccircle cx='11' cy='5' r='2.6'/%3E%3Ccircle cx='18' cy='13' r='2.6'/%3E%3C/g%3E%3Cpath d='M4 15 11 5 18 13' fill='none' stroke='%230b7a66' stroke-width='1.3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<header>
-  <a class="marca" href="#">
+<a class="pular" href="#conteudo">跳至正文</a>
+<header class="topo">
+  <a class="marca" href="./" aria-label="offnets，首页">
     <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><g fill="currentColor"><circle cx="4" cy="15" r="2.2"/><circle cx="11" cy="5" r="2.2"/><circle cx="18" cy="13" r="2.2"/></g><path d="M4 15 11 5 18 13" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".45"/></svg>
     offnets
   </a>
   <div class="topo-dir">
-    <nav aria-label="章节"><a href="#xuanyan">宣言</a><a href="#yunzuo">如何运作</a><a href="#qiyuan">起源</a><a href="#xianzhang">宪章</a></nav>
-    <nav class="idiomas" aria-label="Idioma / Language"><a href="../" hreflang="pt-BR" lang="pt-BR" data-lingua="pt"><span class="bandeira" aria-hidden="true">🇧🇷</span>PT</a><a href="../en/" hreflang="en" lang="en" data-lingua="en"><span class="bandeira" aria-hidden="true">🇺🇸</span>EN</a><a href="../es/" hreflang="es" lang="es" data-lingua="es"><span class="bandeira" aria-hidden="true">🇪🇸</span>ES</a><a href="../fr/" hreflang="fr" lang="fr" data-lingua="fr"><span class="bandeira" aria-hidden="true">🇫🇷</span>FR</a><a href="../zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true" data-lingua="zh"><span class="bandeira" aria-hidden="true">🇨🇳</span>中文</a><a href="../hi/" hreflang="hi" lang="hi" data-lingua="hi"><span class="bandeira" aria-hidden="true">🇮🇳</span>हिन्दी</a><a href="../ar/" hreflang="ar" lang="ar" data-lingua="ar"><span class="bandeira" aria-hidden="true">🇸🇦</span>العربية</a></nav>
+    <nav class="secoes" aria-label="章节"><a href="./#mudanca">理解</a><a href="./#confianca">信任</a><a href="./#arquitetura">架构</a><a href="manifesto/">宣言</a><a href="constitution/">宪章</a></nav>
+    <nav class="idiomas" aria-label="Idioma / Language"><a href="../" hreflang="pt-BR" lang="pt-BR" data-lingua="pt"><span class="bandeira" aria-hidden="true">🇧🇷</span>PT</a><a href="../en/" hreflang="en" lang="en" data-lingua="en"><span class="bandeira" aria-hidden="true">🇺🇸</span>EN</a><a href="../es/" hreflang="es" lang="es" data-lingua="es"><span class="bandeira" aria-hidden="true">🇪🇸</span>ES</a><a href="../fr/" hreflang="fr" lang="fr" data-lingua="fr"><span class="bandeira" aria-hidden="true">🇫🇷</span>FR</a><a href="./" hreflang="zh-Hans" lang="zh-Hans" aria-current="true" data-lingua="zh"><span class="bandeira" aria-hidden="true">🇨🇳</span>中文</a><a href="../hi/" hreflang="hi" lang="hi" data-lingua="hi"><span class="bandeira" aria-hidden="true">🇮🇳</span>हिन्दी</a><a href="../ar/" hreflang="ar" lang="ar" data-lingua="ar"><span class="bandeira" aria-hidden="true">🇸🇦</span>العربية</a></nav>
   </div>
 </header>
 
-<main class="col">
-  <div class="abre">
-    <svg viewBox="0 0 680 120" aria-hidden="true" id="constelacao"></svg>
-    <h1>智慧<em>不在</em>互联网上。</h1>
-    <p class="lede">人工智能已经读完了整个互联网。它没有读到的，是谈判桌上、董事会里、两个彼此信任的人之间说出的话。这种知识无法被抓取，只能被赠予。Offnets 就是为它而建的网络。</p>
+
+<main id="conteudo">
+
+<!-- 01 · HERO -->
+<section class="wrap hero" aria-labelledby="t-hero">
+  <div class="k">Offnets · 协议 · <b>v0.1 测试版</b></div>
+  <h1 id="t-hero">智慧不在互联网上。</h1>
+  <p class="sub">它在人身上。</p>
+  <p class="comp">人工智能已经从公开发表的内容中学习过了。真正重要的知识依然是私密的：在对话里，在决定里，在经历里，在彼此信任的关系里。</p>
+  <p class="proto">Offnets 是一个协议，用来连接这些大脑，而不把它们从主人身边带走。</p>
+  <div class="ctas">
+    <a class="btn" href="#mudanca">了解 Offnets <span class="seta" aria-hidden="true">→</span></a>
+    <a class="btn alt" href="manifesto/">阅读宣言</a>
   </div>
+  <div class="hero-vis" aria-hidden="true">
+    <svg viewBox="0 0 1000 230" id="constelacao"></svg>
+    <div class="legenda"><span>个人</span><span>企业</span><span>社群</span></div>
+  </div>
+</section>
 
-  <section id="xuanyan">
-    <div class="k">宣言 · 未完成的作品</div>
-    <h2>许多离线的大脑，连成一张网</h2>
-    <p>人的大脑一直是离线的。从来没有人能直接和它对话：一切都要经过一层过滤，由它决定说什么、对谁说、何时说。Offnets 并没有发明新的想法，它沿用的是信任一直以来的结构。</p>
-
-    <h3>一种方法，而不是一个大脑</h3>
-    <p>Offnets 是一套方法和协议的名字，它把口头的生活（对话、会议、演讲）变成有条理的知识：经验、规律、决定，每一条都附有来源和传授者。没有哪个大脑凌驾于其他大脑之上。每个人都有自己的大脑，共享的是方法。</p>
-
-    <h3>三种大脑</h3>
-    <p><strong>个人</strong>的大脑。<strong>企业</strong>的大脑，由构成它的人的大脑组成。<strong>社群</strong>的大脑。一个人可以连接多家企业和社群，而属于其中一方的内容不会流入另一方。</p>
-
-    <h3>由主人决定</h3>
-    <p>每个大脑都留在主人身边，在互联网之外，未经主人逐条放行，什么都不会流出。交换的可以是知识、意义、公益事业或金钱，但绝不是出售某人所知道的东西：被授权的是工具，而不是任何大脑的内容。</p>
-
-    <h3>是网络，不是仓库</h3>
-    <p>没有一个集中所有大脑的中央云端。每个大脑都留在自己家里，它们通过协议对话，并有回执。今天我们人与人之间做的事，明天每个人的人工智能代理会彼此去做，各自带着主人的大脑，而且只带主人放行的内容。</p>
-
-    <h3>仅限邀请</h3>
-    <p>没有人能独自加入。已经在网络中的人发出邀请、签署准入并为之负责。网络在一份份信任之间成长，正如真正的知识那样成长。</p>
-
-    <blockquote>真正有价值的知识无法被抓取。它只能被赠予，而且只赠予值得信任的人。</blockquote>
-  </section>
-
-  <section id="yunzuo">
-    <div class="k">如何运作</div>
-    <h2>留下的、流动的、接触人工智能的</h2>
-    <div class="camadas">
-      <div><b>大脑</b>留在主人的电脑上，存放在本地保险库中。读取它的应用没有任何联网权限：阻止连接的是操作系统本身。</div>
-      <div><b>offnets.io</b>信使。它在大脑之间传递签名的数据包，只传每位主人放行的内容。数据包以封闭状态传送。</div>
-      <div><b>offnets.ai</b>与人工智能模型的边界。发往模型的内容会先遮蔽证件号码和联系方式，每一次外发都会报告哪些内容被隐去。</div>
+<!-- 02 · A GRANDE MUDANÇA -->
+<section class="sec" id="mudanca" aria-labelledby="t-mudanca">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">02 · 巨变</div><h2 id="t-mudanca">三次连接。<em>第三次属于我们。</em></h2></div>
+    <div class="corpo rev">
+      <ol class="eras">
+        <li class="era"><span class="n">01</span><div class="par"><span class="g pc"></span>计算机<i></i>计算机<span class="g pc"></span></div><h3>互联网连接了计算机。</h3></li>
+        <li class="era"><span class="n">02</span><div class="par"><span class="g ia"></span>人工智能<i></i>互联网<span class="g web"></span></div><h3>人工智能把机器与知识连接起来。</h3></li>
+        <li class="era agora"><span class="n">03</span><div class="par"><span class="g cer"></span>大脑<i></i>大脑<span class="g cer"></span></div><h3>Offnets 连接大脑。</h3></li>
+        <li class="era futuro"><span class="n">04</span><div class="par"><span class="g ag"></span>代理<i></i>代理<span class="g ag"></span><span class="tag futuro">明天</span></div><h3>之后，每个人的代理将彼此对话。</h3></li>
+      </ol>
     </div>
-    <div class="linha"><span class="a">内部</span><span>一切完整：档案、姓名、数字。主人可以不经过滤地访问自己的大脑。</span></div>
-    <div class="linha"><span class="a">外部</span><span>只有主人放行的内容，每一条都带有来源和许可：仅限你本人、回馈传授者，或可自由传播。</span></div>
-    <div class="linha"><span class="a">人工智能</span><span>为了提炼一段对话，它会在遮蔽之后，按照服务商的使用条款和数据保护条款，经过一个签约模型一次。为了回答问题，只发送能回答该问题的少数几条经验，绝不发送整个档案。</span></div>
-    <p class="nota" style="margin-top:14px">发出去的，就已经发出去了。撤销可以把某人移出网络，但无法删除他已经收到的内容。因此每一次放行都是一个决定，而不是默认设置。</p>
-  </section>
+  </div>
+</section>
 
-  <section id="qiyuan">
-    <div class="k">起源</div>
-    <h2>2002 年的 off-portal，2026 年的 off-net。</h2>
-    <p>2001 年，Yavox 诞生在一艘帆船上，它的口号是 <em>moving networks</em>：网络随人移动，每一部手机都是一根天线。2002 年，我们把服务带出了运营商的门户（当时称为 <em>off-portal</em>），每个创作者使用自己的品牌，没有用户同意（opt-in）就什么都不会送达。到 2007 年，这张网络在巴西覆盖了 2100 万人。</p>
-    <p>二十四年后，同样的动作，只是高了一层。人工智能拿走了整个互联网，而真正重要的智慧依然在它之外，在人们的头脑里。<strong>Offnets</strong> 就是留在外面的网络：每个懂得一些东西的人各有一张，彼此相连，再一次逐条地由本人同意。</p>
-  </section>
+<!-- 03 · O PROBLEMA -->
+<section class="sec" id="problema" aria-labelledby="t-problema">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">03 · 问题</div><h2 id="t-problema">互联网捕获了一层。<em>还有另一层。</em></h2></div>
+    <div class="corpo rev">
+      <div class="camadas-c">
+        <div><div class="k">已经发表的</div><p class="raspado">文字、网页、书籍、论坛、代码：凡是有人写下并公开的一切。这正是人工智能已经读过的，而且读得一字不漏。</p></div>
+        <div><div class="k">从未发表的</div>
+          <ul class="privado"><li>决定。</li><li>经验。</li><li>背景。</li><li>关系。</li><li>信任。</li><li>隐性知识。</li><li>直觉。</li><li>私密知识。</li><li>一个人只讲给自己信任的人听的话。</li></ul>
+        </div>
+      </div>
+      <p class="destaque">有价值的知识<em>无法被抓取。</em>只能被分享。</p>
+    </div>
+  </div>
+</section>
 
-  <section id="xianzhang">
-    <div class="k">网络宪章 · 第 1 版</div>
-    <h2>先于一切便利的规则</h2>
-    <p>人工智能已经抓取了整个互联网。大部分知识并不在那里，而是在人们的头脑里。这种知识无法被抓取，只能被赠予，而且只会到达值得信任的人手中。因此，在这个网络中，公正不是刹车，而是知识得以到来的机制。就像血库一样，自愿、经过筛查并可追溯的捐献，比任何强制或购买来的采集都更有价值。</p>
-    <p class="nota">各条款分层生效。上层永远不会为了服务下层而被违反，任何效用上的收益都换不来对一项权利的例外。</p>
+<!-- 04 · O NOVO PARADIGMA -->
+<section class="sec" id="paradigma" aria-labelledby="t-paradigma">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">04 · 新范式</div><h2 id="t-paradigma">Offnets <em>不是</em>人工智能。</h2></div>
+    <div class="corpo rev">
+      <p class="lead">它是一张网络，让人工智能与主人选择分享的知识对话。</p>
+      <div class="pilha" role="img" aria-label="上方是人工智能模型和代理；中间是 Offnets 协议；下方是个人、企业和社群的大脑；最后只有获得授权的知识。">
+        <div class="rot">人工智能模型和代理</div>
+        <div class="modelos"><span class="modelo hoje">Claude<small>今天</small></span><span class="modelo">ChatGPT</span><span class="modelo">Gemini</span><span class="modelo">Grok</span><span class="modelo">其他</span></div>
+        <div class="desce"></div>
+        <div class="faixa"><b>Offnets</b><span>信任协议</span></div>
+        <div class="desce"></div>
+        <div class="rot">大脑</div>
+        <div class="tres"><span>个人</span><span>企业</span><span>社群</span></div>
+        <div class="desce"></div>
+        <div class="autorizado">只有获得授权的知识</div>
+      </div>
+      <p class="nota">面向多种模型开放。今天，唯一接入网络的是 Claude；其余模型是方向，而不是现成的集成。</p>
+    </div>
+  </div>
+</section>
 
-    <div class="art"><span class="n">第 1 条 · 宗旨</span><p>网络的存在是为了<strong>产生智慧并尊重传授者</strong>，而不是为了积累数据。它奖励的是多年以后依然成立的经验。</p></div>
+<!-- 05 · COMO FUNCIONA -->
+<section class="sec" id="como" aria-labelledby="t-como">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">05 · 如何运作</div><h2 id="t-como">三种大脑。<em>各有其主。</em></h2></div>
+    <div class="corpo rev">
+      <p class="lead">对话、会议和演讲变成有条理的知识：经验、规律和决定，每一条都附有来源和传授者。这些知识构成一个大脑，而大脑留在主人身边。</p>
+      <div class="cerebros">
+        <div class="cerebro"><svg viewBox="0 0 220 150" aria-hidden="true" focusable="false"><circle class="borda" cx="104" cy="75" r="62"/><line class="fio" x1="78" y1="56" x2="104" y2="42"/><line class="fio" x1="104" y1="42" x2="126" y2="66"/><line class="fio" x1="126" y1="66" x2="98" y2="80"/><line class="fio" x1="98" y1="80" x2="78" y2="56"/><line class="fio" x1="98" y1="80" x2="72" y2="92"/><line class="fio" x1="98" y1="80" x2="112" y2="104"/><line class="fio" x1="126" y1="66" x2="112" y2="104"/><line class="fio" x1="78" y1="56" x2="72" y2="92"/><line class="fio" x1="126" y1="66" x2="152" y2="75"/><line x1="158" y1="75" x2="216" y2="75" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><circle class="no" cx="78" cy="56" r="3.4"/><circle class="no" cx="104" cy="42" r="3.4"/><circle class="no" cx="126" cy="66" r="3.4"/><circle class="no" cx="98" cy="80" r="3.4"/><circle class="no" cx="72" cy="92" r="3.4"/><circle class="no" cx="112" cy="104" r="3.4"/><circle class="no s" cx="152" cy="75" r="5"/></svg><h3>个人</h3><p>属于一个人。它留在这个人的电脑上，存放在本地保险库中，未经本人逐条放行，什么都不会流出。</p></div>
+        <div class="cerebro"><svg viewBox="0 0 220 150" aria-hidden="true" focusable="false"><ellipse class="borda" cx="112" cy="78" rx="92" ry="64"/><line class="fio" x1="44" y1="58" x2="62" y2="46"/><line class="fio" x1="62" y1="46" x2="60" y2="72"/><line class="fio" x1="44" y1="58" x2="60" y2="72"/><line class="fio" x1="92" y1="104" x2="112" y2="112"/><line class="fio" x1="112" y1="112" x2="110" y2="88"/><line class="fio" x1="92" y1="104" x2="110" y2="88"/><line class="fio" x1="138" y1="44" x2="158" y2="52"/><line class="fio" x1="158" y1="52" x2="148" y2="72"/><line class="fio" x1="138" y1="44" x2="148" y2="72"/><line class="fio" x1="60" y1="72" x2="110" y2="88"/><line class="fio" x1="110" y1="88" x2="148" y2="72"/><line class="fio" x1="62" y1="46" x2="138" y2="44"/><line class="fio" x1="148" y1="72" x2="184" y2="90"/><line x1="190" y1="92" x2="218" y2="104" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><circle class="no" cx="44" cy="58" r="3.4"/><circle class="no" cx="62" cy="46" r="3.4"/><circle class="no" cx="60" cy="72" r="3.4"/><circle class="no" cx="92" cy="104" r="3.4"/><circle class="no" cx="112" cy="112" r="3.4"/><circle class="no" cx="110" cy="88" r="3.4"/><circle class="no" cx="138" cy="44" r="3.4"/><circle class="no" cx="158" cy="52" r="3.4"/><circle class="no" cx="148" cy="72" r="3.4"/><circle class="no s" cx="184" cy="90" r="5"/></svg><h3>企业</h3><p>属于一家企业，由构成它的人的大脑组成。没有哪个大脑凌驾于其他大脑之上。</p></div>
+        <div class="cerebro"><svg viewBox="0 0 220 150" aria-hidden="true" focusable="false"><circle class="borda" cx="104" cy="78" r="70"/><line class="fio" x1="40" y1="76" x2="96" y2="62"/><line class="fio" x1="96" y1="62" x2="138" y2="52"/><line class="fio" x1="60" y1="42" x2="108" y2="26"/><line class="fio" x1="108" y1="26" x2="138" y2="52"/><line class="fio" x1="70" y1="104" x2="118" y2="96"/><line class="fio" x1="118" y1="96" x2="168" y2="112"/><line class="fio" x1="86" y1="128" x2="122" y2="128"/><line class="fio" x1="70" y1="104" x2="86" y2="128"/><line class="fio" x1="138" y1="52" x2="160" y2="80"/><line class="fio" x1="160" y1="80" x2="168" y2="112"/><line class="fio" x1="138" y1="52" x2="176" y2="40"/><line class="fio" x1="40" y1="76" x2="30" y2="52"/><line class="fio" x1="60" y1="42" x2="96" y2="62"/><line class="fio" x1="118" y1="96" x2="122" y2="128"/><line x1="166" y1="80" x2="218" y2="80" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><line x1="24" y1="52" x2="2" y2="40" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><circle class="no" cx="40" cy="76" r="3.4"/><circle class="no" cx="60" cy="42" r="3.4"/><circle class="no" cx="70" cy="104" r="3.4"/><circle class="no" cx="96" cy="62" r="3.4"/><circle class="no" cx="108" cy="26" r="3.4"/><circle class="no" cx="118" cy="96" r="3.4"/><circle class="no" cx="138" cy="52" r="3.4"/><circle class="no s" cx="160" cy="80" r="5"/><circle class="no" cx="168" cy="112" r="3.4"/><circle class="no" cx="86" cy="128" r="3.4"/><circle class="no" cx="176" cy="40" r="3.4"/><circle class="no" cx="122" cy="128" r="3.4"/><circle class="no s" cx="30" cy="52" r="5"/></svg><h3>社群</h3><p>属于一个社群。一个人可以连接多家企业和社群，而属于其中一方的内容不会流入另一方。</p></div>
+      </div>
+      <div class="linhas">
+        <div class="linha"><span class="a">内部</span><span>一切完整：档案、姓名、数字。主人可以不经过滤地访问自己的大脑。</span></div>
+        <div class="linha"><span class="a">外部</span><span>只有主人放行的内容，每一条都带有来源和许可：<span class="licencas"><span class="tag">仅限你本人</span><span class="tag">回馈传授者</span><span class="tag">可自由传播</span></span></span></div>
+        <div class="linha"><span class="a">人工智能</span><span>为了提炼一段对话，它会在遮蔽之后，按照服务商的使用条款和数据保护条款，经过一个签约模型一次。为了回答问题，只发送能回答该问题的少数几条经验，绝不发送整个档案。今天，这个模型是 Claude。</span></div>
+      </div>
+      <p class="nota">发出去的，就已经发出去了。撤销可以把某人移出网络，但无法删除他已经收到的内容。因此每一次放行都是一个决定，而不是默认设置。</p>
+    </div>
+  </div>
+</section>
 
-    <div class="camada">权利 · 没有人只是手段</div>
-    <div class="art"><span class="n">第 2 条 · 同意与退出</span><p>只有主人接受的内容才能进入。主人可以随时离开，不会失去已经属于自己的东西，也没有任何途径可以删除一个节点的大脑。</p></div>
-    <div class="art"><span class="n">第 3 条 · 被引述的第三方</span><p>未表示同意者的话语（群组成员、会议参与者）<strong>只能教给主人自己的大脑</strong>。如果要从那里流出，只能以匿名规律的形式流出，否则不流出。</p></div>
-    <div class="art"><span class="n">第 4 条 · 托付的秘密</span><p>被托付的内容不能为了效用而交易。它只能经由保密许可、由人作出决定、一次只给一个人，且无权转传。</p></div>
+<!-- 06 · CONFIANÇA -->
+<section class="sec" id="confianca" aria-labelledby="t-confianca">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">06 · 信任</div><h2 id="t-confianca">信任<em>就是</em>协议。</h2></div>
+    <div class="corpo rev">
+      <p class="lead">信任不是网络的一条规则。信任就是网络本身的架构。</p>
+      <div class="principios">
+        <div class="principio"><span class="n">01</span><h3>同意</h3><p>只有主人接受的内容才能进入。未表示同意者的话语只能教给主人自己的大脑，被托付的秘密不能为了效用而交易。</p><a class="art-ref" href="constitution/#art-2">第 2 · 3 · 4 条</a></div>
+        <div class="principio"><span class="n">02</span><h3>来源</h3><p>每一条内容都记载着它是如何获得的、经过何种同意、由谁传授。没有链条，就不流通。</p><a class="art-ref" href="constitution/#art-5">第 5 条</a></div>
+        <div class="principio"><span class="n">03</span><h3>许可</h3><p>每一条内容都带着自己的许可流动：仅限你本人、回馈传授者，或可自由传播。被托付的内容只能经由保密许可流出，一次只给一个人。</p><a class="art-ref" href="constitution/#art-4">第 4 · 5 条</a></div>
+        <div class="principio"><span class="n">04</span><h3>互惠</h3><p>每个节点都会收到基础赠礼，即使尚未有任何回报。回报是荣誉，而非价格：署名可见，没有人能购买优先权。</p><a class="art-ref" href="constitution/#art-6">第 6 · 7 条</a></div>
+        <div class="principio"><span class="n">05</span><h3>退出权</h3><p>主人可以随时离开，不会失去属于自己的东西，也没有任何途径可以删除一个节点的大脑。但已经发出的内容，不会收回。</p><a class="art-ref" href="constitution/#art-2">第 2 条</a></div>
+        <div class="principio"><span class="n">06</span><h3>治理</h3><p>结构只能通过新版本的协议来改变，并附有公开理由和书面判例。新的案例交由人来决定，网络比创始人更长久。</p><a class="art-ref" href="constitution/#art-8">第 8 – 11 条</a></div>
+      </div>
+      <p class="nota" style="margin-top:20px">每一项原则都是宪章条款的简写。以宪章原文为准。</p>
+    </div>
+  </div>
+</section>
 
-    <div class="camada">分配 · 什么流通、流向谁、以何种名义</div>
-    <div class="art"><span class="n">第 5 条 · 谱系</span><p>每一条内容都记载着它是如何获得的（来源与同意），以及经由哪种许可在手与手之间传递。<strong>没有链条，就不流通。</strong></p></div>
-    <div class="art"><span class="n">第 6 条 · 赠礼底线</span><p>每个节点都会收到基础赠礼，即使它尚未有任何回报。互惠只会增加，绝不会拿走底线。先来者的优势，只有在惠及最后到来者时才是正当的。</p></div>
-    <div class="art"><span class="n">第 7 条 · 荣誉，而非价格</span><p>互惠是一种认可：署名可见，谁教了什么。它从来不是货币，没有人能购买优先权，计分板展示贡献而不给人排名。商业许可出售的是工具和协议，绝不是任何大脑的知识。</p></div>
+<!-- 07 · A INTERNET AGÊNTICA -->
+<section class="sec" id="agentes" aria-labelledby="t-agentes">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">07 · 智能体互联网</div><h2 id="t-agentes">人与人之间。<em>代理与代理之间。</em></h2></div>
+    <div class="corpo rev">
+      <ol class="trilha">
+        <li><span class="par">人<span class="x">↔</span>人</span><span class="tag">一直</span><p class="d">信任谁，就讲给谁听。重要的知识一直是这样流传的。</p></li>
+        <!-- VALIDAR: a troca cérebro↔cérebro pelo offnets.io já roda na v0.1 alfa (rede fechada) ou ainda é só desenho? Mantido sem selo de "hoje". -->
+        <li><span class="par">大脑<span class="x">↔</span>大脑</span><span class="tag hoje">协议</span><p class="d">每个大脑都留在自己家里，它们通过协议对话，并有回执：签名的数据包，只包含每位主人放行的内容。</p></li>
+        <li class="futuro"><span class="par">代理<span class="x">↔</span>代理</span><span class="tag futuro">明天</span><p class="d">今天我们人与人之间做的事，明天每个人的人工智能代理会彼此去做，各自带着主人的大脑，而且只带主人放行的内容。</p></li>
+      </ol>
+      <svg class="agentes" viewBox="0 0 860 220" aria-hidden="true" focusable="false"><circle class="borda" cx="150" cy="110" r="96"/><line class="fio" x1="90" y1="80" x2="116" y2="58"/><line class="fio" x1="116" y1="58" x2="140" y2="90"/><line class="fio" x1="90" y1="80" x2="102" y2="120"/><line class="fio" x1="102" y1="120" x2="140" y2="90"/><line class="fio" x1="102" y1="120" x2="130" y2="140"/><line class="fio" x1="130" y1="140" x2="160" y2="118"/><line class="fio" x1="140" y1="90" x2="160" y2="118"/><line class="fio" x1="130" y1="140" x2="120" y2="170"/><line class="fio" x1="120" y1="170" x2="154" y2="158"/><line class="fio" x1="160" y1="118" x2="154" y2="158"/><line class="fio" x1="140" y1="90" x2="178" y2="80"/><line class="fio" x1="160" y1="118" x2="188" y2="134"/><line class="fio" x1="116" y1="58" x2="178" y2="80"/><line class="liga" x1="178" y1="80" x2="290" y2="110"/><line class="liga" x1="188" y1="134" x2="290" y2="110"/><circle class="no" cx="90" cy="80" r="3.4"/><circle class="no" cx="116" cy="58" r="3.4"/><circle class="no" cx="140" cy="90" r="3.4"/><circle class="no" cx="102" cy="120" r="3.4"/><circle class="no" cx="130" cy="140" r="3.4"/><circle class="no" cx="160" cy="118" r="3.4"/><circle class="no" cx="120" cy="170" r="3.4"/><circle class="no" cx="154" cy="158" r="3.4"/><circle class="no s" cx="178" cy="80" r="5"/><circle class="no s" cx="188" cy="134" r="5"/><circle class="borda" cx="710" cy="110" r="96"/><line class="fio" x1="770" y1="80" x2="744" y2="58"/><line class="fio" x1="744" y1="58" x2="720" y2="90"/><line class="fio" x1="770" y1="80" x2="758" y2="120"/><line class="fio" x1="758" y1="120" x2="720" y2="90"/><line class="fio" x1="758" y1="120" x2="730" y2="140"/><line class="fio" x1="730" y1="140" x2="700" y2="118"/><line class="fio" x1="720" y1="90" x2="700" y2="118"/><line class="fio" x1="730" y1="140" x2="740" y2="170"/><line class="fio" x1="740" y1="170" x2="706" y2="158"/><line class="fio" x1="700" y1="118" x2="706" y2="158"/><line class="fio" x1="720" y1="90" x2="682" y2="80"/><line class="fio" x1="700" y1="118" x2="672" y2="134"/><line class="fio" x1="744" y1="58" x2="682" y2="80"/><line class="liga" x1="682" y1="80" x2="570" y2="110"/><line class="liga" x1="672" y1="134" x2="570" y2="110"/><circle class="no" cx="770" cy="80" r="3.4"/><circle class="no" cx="744" cy="58" r="3.4"/><circle class="no" cx="720" cy="90" r="3.4"/><circle class="no" cx="758" cy="120" r="3.4"/><circle class="no" cx="730" cy="140" r="3.4"/><circle class="no" cx="700" cy="118" r="3.4"/><circle class="no" cx="740" cy="170" r="3.4"/><circle class="no" cx="706" cy="158" r="3.4"/><circle class="no s" cx="682" cy="80" r="5"/><circle class="no s" cx="672" cy="134" r="5"/><path class="canal" d="M306 110 L554 110"/><circle class="ag" cx="290" cy="110" r="15"/><circle class="ag-in" cx="290" cy="110" r="4.5"/><circle class="ag" cx="570" cy="110" r="15"/><circle class="ag-in" cx="570" cy="110" r="4.5"/><rect class="porta" x="420" y="100" width="20" height="20" transform="rotate(45 430 110)"/></svg>
+      <div class="agentes-leg"><span>你的代理只看到你放行的内容</span><span>协议</span><span>对方的代理，受同样的限制</span></div>
+      <p class="nota" style="margin-top:22px">没有任何代理可以不受限制地访问任何人的整个大脑。代理之间的交换是网络的方向，还不是现成的功能。</p>
+      <p class="tagline">智能体互联网的<em>信任层。</em></p>
+    </div>
+  </div>
+</section>
 
-    <div class="camada">治理 · 规则如何改变</div>
-    <div class="art"><span class="n">第 8 条 · 单一结构，版本化协议</span><p>在节点上，一切都是自动的，没有人可以临时发明提取、保存或交换的方式。大脑之间对话的结构，只能通过新版本的协议来改变。</p></div>
-    <div class="art"><span class="n">第 9 条 · 附有公开理由的提议</span><p>任何节点都可以提出修改。提议要经过“四把椅子”的检验：“如果我不知道自己会是创始人、老节点、新节点还是被引述的第三方，我会接受吗？”。决定必须公开理由；没有书面理由的决定无效。</p></div>
-    <div class="art"><span class="n">第 10 条 · 判例</span><p>每一个已裁决的两难问题都成为判例（事实、决定、理由、适用条款）。新的案例，或触及个人权利的案例，交由人来决定。机器只在权利留出的空间内进行优化。</p></div>
-    <div class="art"><span class="n">第 11 条 · 网络比创始人更长久</span><p>技术遗嘱和共享密钥保证了网络的延续。随着网络成长，创始人不再撰写每一条规则，而是以守护权利的否决权来治理。</p></div>
-    <p class="nota" style="margin-top:16px">本宪章的灵感来自迈克尔·桑德尔的《公正》。宪章和协议是我们自己的。和宣言一样，它是黏土：按版本修改，并始终注明日期。</p>
-  </section>
+<!-- 08 · ARQUITETURA -->
+<section class="sec" id="arquitetura" aria-labelledby="t-arq">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">08 · 架构</div><h2 id="t-arq">留下的、流动的、<em>接触人工智能的。</em></h2></div>
+    <div class="corpo rev">
+      <p class="lead">一个让个人、企业和社群与他人及人工智能代理分享智慧的协议，而无需交出自己知识的所有权。</p>
+      <div class="dominios">
+        <div class="dominio"><b>大脑</b><span class="papel">留在主人身边</span><p>在主人的电脑上，存放在本地保险库中。读取它的应用没有任何联网权限：阻止连接的是操作系统本身。</p></div>
+        <div class="dominio"><b>offnets.io</b><span class="papel">信使</span><p>在大脑之间传递签名的数据包，只传每位主人放行的内容。数据包以封闭状态传送。</p></div>
+        <div class="dominio"><b>offnets.ai</b><span class="papel">与人工智能的边界</span><p>对话的提炼和对模型的查询都经过这里。发往模型的内容会先遮蔽证件号码和联系方式，每一次外发都会报告哪些内容被隐去。</p></div>
+        <div class="dominio"><b>offnets.org</b><span class="papel">机构</span><p>本站：网络的宣言与宪章，每个版本都注明日期。</p></div>
+      </div>
+      <div class="arvore" role="img" aria-label="Offnets 分支为个人、企业、社群、大脑、协议、代理和治理。">
+        <span>OFFNETS</span>
+        <ul>
+          <li>个人<small>每人各有自己的大脑</small></li>
+          <li>企业<small>由构成它的人的大脑组成</small></li>
+          <li>社群<small>属于一方的内容不会流入另一方</small></li>
+          <li>大脑<small>在本地保险库中，留在主人身边</small></li>
+          <li>协议<small>签名的数据包，附有回执</small></li>
+          <li>代理<small>明天</small></li>
+          <li>治理<small>宪章，第 1 版</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · MANIFESTO -->
+<section class="sec" id="manifesto" aria-labelledby="t-manif">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">09 · 宣言</div><span></span></div>
+    <div class="corpo rev">
+      <div class="manif">
+        <h2 class="abre-m" id="t-manif">人的大脑一直是<em>离线的。</em></h2>
+        <p>从来没有人能直接和它对话：一切都要经过一层过滤，由它决定说什么、对谁说、何时说。Offnets 并没有发明新的想法，它沿用的是信任一直以来的结构。</p>
+        <p>人工智能拿走了整个互联网，而真正重要的智慧依然在它之外，在人们的头脑里。Offnets 就是留在外面的网络：每个懂得一些东西的人各有一张，彼此相连，经本人同意（opt-in），逐条放行。</p>
+        <ol class="linhagem">
+          <li><b>2001</b><span>Yavox 诞生在一艘帆船上，口号是 <em>moving networks</em>：网络随人移动，每一部手机都是一根天线。</span></li>
+          <li><b>2002</b><span><em>Off-portal</em>：服务走出运营商的门户，每个创作者使用自己的品牌，没有用户同意（opt-in）就什么都不会送达。</span></li>
+          <li><b>2007</b><span>这张网络在巴西覆盖了 2100 万人。</span></li>
+          <li><b>2026</b><span>Offnets：同样的动作，只是高了一层。</span></li>
+        </ol>
+        <a class="mais" href="manifesto/">阅读完整宣言 <span class="seta" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · CONSTITUIÇÃO -->
+<section class="sec" id="constituicao" aria-labelledby="t-const">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">10 · 宪章与治理</div><h2 id="t-const">这里有一部<em>宪章。</em></h2></div>
+    <div class="corpo rev">
+      <p class="lead">十一条条款，分为三层，先于一切便利生效。上层永远不会为了服务下层而被违反，任何效用上的收益都换不来对一项权利的例外。</p>
+      <div class="mapa-c">
+        <div><div class="k">宗旨</div><ol><li><a href="constitution/#art-1"><span>1</span>产生智慧并尊重传授者</a></li></ol></div>
+        <div><div class="k">权利</div><ol><li><a href="constitution/#art-2"><span>2</span>同意与退出</a></li><li><a href="constitution/#art-3"><span>3</span>被引述的第三方</a></li><li><a href="constitution/#art-4"><span>4</span>托付的秘密</a></li></ol></div>
+        <div><div class="k">分配</div><ol><li><a href="constitution/#art-5"><span>5</span>谱系</a></li><li><a href="constitution/#art-6"><span>6</span>赠礼底线</a></li><li><a href="constitution/#art-7"><span>7</span>荣誉，而非价格</a></li></ol></div>
+        <div><div class="k">治理</div><ol><li><a href="constitution/#art-8"><span>8</span>单一结构，版本化协议</a></li><li><a href="constitution/#art-9"><span>9</span>附有公开理由的提议</a></li><li><a href="constitution/#art-10"><span>10</span>判例</a></li><li><a href="constitution/#art-11"><span>11</span>网络比创始人更长久</a></li></ol></div>
+      </div>
+      <div class="entender-estudar">
+        <div><b>理解</b>本页：Offnets 是什么，以及它为何与众不同。</div>
+        <div><b>研读</b>完整的宪章，逐条阅读，以及宣言。</div>
+      </div>
+      <a class="mais" href="constitution/">阅读宪章 <span class="seta" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · ECOSSISTEMA -->
+<section class="sec" id="ecossistema" aria-labelledby="t-eco">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">11 · 生态</div><h2 id="t-eco">是网络，<em>不是仓库。</em></h2></div>
+    <div class="corpo rev">
+      <div class="eco">
+        <div><h3>没有中央云端</h3><p>不存在一个集中所有大脑的地方。每个大脑都留在自己家里，它们通过协议对话，并有回执。</p></div>
+        <div><h3>一种方法，而不是一个大脑</h3><p>Offnets 是一套方法和协议的名字。没有哪个大脑凌驾于其他大脑之上：每个人都有自己的大脑，共享的是方法。</p></div>
+        <div><h3>交换，绝不出售</h3><p>交换的可以是知识、意义、公益事业或金钱，但绝不是出售某人所知道的东西：被授权的是工具和协议，而不是任何大脑的内容。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · ENTRAR NA REDE -->
+<section class="sec entrar" id="entrar" aria-labelledby="t-entrar">
+  <div class="wrap rev">
+    <div class="k">12 · 加入网络</div>
+    <h2 id="t-entrar">仅限<em>邀请。</em></h2>
+    <p class="lead">没有人能独自加入。已经在网络中的人发出邀请、签署准入并为之负责。网络在一份份信任之间成长，正如真正的知识那样成长。</p>
+    <div class="status"><span class="tag hoje">0.1 测试版</span><span class="tag">封闭网络</span><span class="tag">今天，接入 Claude</span></div>
+    <div class="ctas">
+      <a class="btn" href="manifesto/">阅读宣言 <span class="seta" aria-hidden="true">→</span></a>
+      <a class="btn alt" href="constitution/">阅读宪章</a>
+    </div>
+  </div>
+</section>
+
 </main>
-
-<footer>
-  <span>Offnets · 2026 年 10 月 · Andreas Blazoudakis</span>
-  <span>封闭网络，仅限邀请。</span>
+<footer class="rodape">
+  <span>Offnets · 协议，0.1 测试版 · 2026 年 10 月 · Andreas Blazoudakis</span>
+  <nav aria-label="页脚"><a href="./">理解</a><a href="manifesto/">宣言</a><a href="constitution/">宪章</a><span>封闭网络，仅限邀请。</span></nav>
 </footer>
+
 
 <script src="../assets/constelacao.js"></script>
 <script src="../assets/idioma.js"></script>

@@ -3,8 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Offnets</title>
-<meta name="description" content="Offnets: a network of brains outside the internet. Each brain lives with its owner and shares only what the owner releases, by protocol.">
+<title>Offnets · the protocol that connects brains</title>
+<meta name="description" content="A protocol for people, companies and communities to share intelligence with other people and with AI agents, without giving up ownership of their own knowledge.">
+<meta property="og:title" content="Offnets · the protocol that connects brains">
+<meta property="og:description" content="A protocol for people, companies and communities to share intelligence with other people and with AI agents, without giving up ownership of their own knowledge.">
+<meta property="og:url" content="https://offnets.org/en/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f5f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080c0c" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://offnets.org/en/">
 <link rel="alternate" hreflang="pt-BR" href="https://offnets.org/">
 <link rel="alternate" hreflang="en" href="https://offnets.org/en/">
@@ -14,105 +20,262 @@
 <link rel="alternate" hreflang="hi" href="https://offnets.org/hi/">
 <link rel="alternate" hreflang="ar" href="https://offnets.org/ar/">
 <link rel="alternate" hreflang="x-default" href="https://offnets.org/en/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cg fill='%230b7a66'%3E%3Ccircle cx='4' cy='15' r='2.6'/%3E%3Ccircle cx='11' cy='5' r='2.6'/%3E%3Ccircle cx='18' cy='13' r='2.6'/%3E%3C/g%3E%3Cpath d='M4 15 11 5 18 13' fill='none' stroke='%230b7a66' stroke-width='1.3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<header>
-  <a class="marca" href="#">
+<a class="pular" href="#conteudo">Skip to content</a>
+<header class="topo">
+  <a class="marca" href="./" aria-label="offnets, home">
     <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><g fill="currentColor"><circle cx="4" cy="15" r="2.2"/><circle cx="11" cy="5" r="2.2"/><circle cx="18" cy="13" r="2.2"/></g><path d="M4 15 11 5 18 13" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".45"/></svg>
     offnets
   </a>
   <div class="topo-dir">
-    <nav aria-label="Sections"><a href="#manifesto">Manifesto</a><a href="#how">How it works</a><a href="#origin">Origin</a><a href="#constitution">Constitution</a></nav>
-    <nav class="idiomas" aria-label="Idioma / Language"><a href="../" hreflang="pt-BR" lang="pt-BR" data-lingua="pt"><span class="bandeira" aria-hidden="true">🇧🇷</span>PT</a><a href="../en/" hreflang="en" lang="en" aria-current="true" data-lingua="en"><span class="bandeira" aria-hidden="true">🇺🇸</span>EN</a><a href="../es/" hreflang="es" lang="es" data-lingua="es"><span class="bandeira" aria-hidden="true">🇪🇸</span>ES</a><a href="../fr/" hreflang="fr" lang="fr" data-lingua="fr"><span class="bandeira" aria-hidden="true">🇫🇷</span>FR</a><a href="../zh/" hreflang="zh-Hans" lang="zh-Hans" data-lingua="zh"><span class="bandeira" aria-hidden="true">🇨🇳</span>中文</a><a href="../hi/" hreflang="hi" lang="hi" data-lingua="hi"><span class="bandeira" aria-hidden="true">🇮🇳</span>हिन्दी</a><a href="../ar/" hreflang="ar" lang="ar" data-lingua="ar"><span class="bandeira" aria-hidden="true">🇸🇦</span>العربية</a></nav>
+    <nav class="secoes" aria-label="Sections"><a href="./#mudanca">Understand</a><a href="./#confianca">Trust</a><a href="./#arquitetura">Architecture</a><a href="manifesto/">Manifesto</a><a href="constitution/">Constitution</a></nav>
+    <nav class="idiomas" aria-label="Idioma / Language"><a href="../" hreflang="pt-BR" lang="pt-BR" data-lingua="pt"><span class="bandeira" aria-hidden="true">🇧🇷</span>PT</a><a href="./" hreflang="en" lang="en" aria-current="true" data-lingua="en"><span class="bandeira" aria-hidden="true">🇺🇸</span>EN</a><a href="../es/" hreflang="es" lang="es" data-lingua="es"><span class="bandeira" aria-hidden="true">🇪🇸</span>ES</a><a href="../fr/" hreflang="fr" lang="fr" data-lingua="fr"><span class="bandeira" aria-hidden="true">🇫🇷</span>FR</a><a href="../zh/" hreflang="zh-Hans" lang="zh-Hans" data-lingua="zh"><span class="bandeira" aria-hidden="true">🇨🇳</span>中文</a><a href="../hi/" hreflang="hi" lang="hi" data-lingua="hi"><span class="bandeira" aria-hidden="true">🇮🇳</span>हिन्दी</a><a href="../ar/" hreflang="ar" lang="ar" data-lingua="ar"><span class="bandeira" aria-hidden="true">🇸🇦</span>العربية</a></nav>
   </div>
 </header>
 
-<main class="col">
-  <div class="abre">
-    <svg viewBox="0 0 680 120" aria-hidden="true" id="constelacao"></svg>
-    <h1>Intelligence <em>is not</em> on the internet.</h1>
-    <p class="lede">AI has already read the whole internet. What it has not read is what gets said at a negotiating table, in a board meeting, between two people who trust each other. That knowledge cannot be scraped. It can only be given. Offnets is a network for it.</p>
+
+<main id="conteudo">
+
+<!-- 01 · HERO -->
+<section class="wrap hero" aria-labelledby="t-hero">
+  <div class="k">Offnets · protocol · <b>v0.1 alpha</b></div>
+  <h1 id="t-hero">Intelligence is not on the internet.</h1>
+  <p class="sub">It is in people.</p>
+  <p class="comp">AI has already learned from what is published. The knowledge that really matters is still private: in conversations, in decisions, in experience and in relationships of trust.</p>
+  <p class="proto">Offnets is the protocol for connecting these brains without taking them from their owners.</p>
+  <div class="ctas">
+    <a class="btn" href="#mudanca">Understand Offnets <span class="seta" aria-hidden="true">→</span></a>
+    <a class="btn alt" href="manifesto/">Read the Manifesto</a>
   </div>
+  <div class="hero-vis" aria-hidden="true">
+    <svg viewBox="0 0 1000 230" id="constelacao"></svg>
+    <div class="legenda"><span>person</span><span>company</span><span>community</span></div>
+  </div>
+</section>
 
-  <section id="manifesto">
-    <div class="k">Manifesto · a work in progress</div>
-    <h2>Many brains offline, connected as a network</h2>
-    <p>The human brain has always been offline. No one has ever spoken to it directly: everything passes through a filter that decides what is said, to whom and when. Offnets does not invent a new idea. It copies the architecture that trust has always had.</p>
-
-    <h3>A method, not a brain</h3>
-    <p>Offnets is the name of the method and the protocol that turn spoken life (conversations, meetings, talks) into organized knowledge: lessons, patterns, decisions, always with the source and with who taught it. No brain rules the others. Each person has their own, and what is shared is the method.</p>
-
-    <h3>Three kinds of brain</h3>
-    <p>A <strong>person's</strong>. A <strong>company's</strong>, made of the brains that make it. A <strong>community's</strong>. A person can link to companies and communities, and what belongs to one never crosses into another.</p>
-
-    <h3>Each owner decides</h3>
-    <p>Each brain lives with its owner, outside the internet, and nothing leaves unless the owner releases it, item by item. The exchange can be knowledge, purpose, a cause or money. It is never the sale of what someone knows: what is licensed is the tool, never the contents of a brain.</p>
-
-    <h3>A network, not a warehouse</h3>
-    <p>There is no central cloud holding every brain. Each one stays at home, and they talk by protocol, with receipts. What we do today person to person, tomorrow each person's AI agents will do among themselves, each with its owner's brain, and only with what the owner released.</p>
-
-    <h3>By invitation only</h3>
-    <p>No one joins alone. Whoever is already in invites, signs the entry and answers for it. The network grows from trust to trust, the way real knowledge grows.</p>
-
-    <blockquote>The knowledge that matters cannot be scraped. It can only be given, and only to those who deserve trust.</blockquote>
-  </section>
-
-  <section id="how">
-    <div class="k">How it works</div>
-    <h2>What stays, what travels, what touches AI</h2>
-    <div class="camadas">
-      <div><b>the brain</b>Stays on the owner's computer, in a local vault. The app that reads it has no network permission: the operating system itself blocks any connection.</div>
-      <div><b>offnets.io</b>The courier. It carries signed packages between brains, only what each owner released. The packages travel sealed.</div>
-      <div><b>offnets.ai</b>The border with AI models. Whatever goes to a model leaves with documents and contacts masked, and every outflow reports what was suppressed.</div>
+<!-- 02 · A GRANDE MUDANÇA -->
+<section class="sec" id="mudanca" aria-labelledby="t-mudanca">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">02 · The great shift</div><h2 id="t-mudanca">Three connections. <em>The third is ours.</em></h2></div>
+    <div class="corpo rev">
+      <ol class="eras">
+        <li class="era"><span class="n">01</span><div class="par"><span class="g pc"></span>computer<i></i>computer<span class="g pc"></span></div><h3>The internet connected computers.</h3></li>
+        <li class="era"><span class="n">02</span><div class="par"><span class="g ia"></span>AI<i></i>internet<span class="g web"></span></div><h3>AI connected machines to knowledge.</h3></li>
+        <li class="era agora"><span class="n">03</span><div class="par"><span class="g cer"></span>brain<i></i>brain<span class="g cer"></span></div><h3>Offnets connects brains.</h3></li>
+        <li class="era futuro"><span class="n">04</span><div class="par"><span class="g ag"></span>agent<i></i>agent<span class="g ag"></span><span class="tag futuro">tomorrow</span></div><h3>Then each person's agents talk to one another.</h3></li>
+      </ol>
     </div>
-    <div class="linha"><span class="a">inside</span><span>Everything whole: the archive, the names, the numbers. The owner reads their own brain unfiltered.</span></div>
-    <div class="linha"><span class="a">outside</span><span>Only what the owner released, each item with its source and license: just for you, back to whoever taught it, or free to spread.</span></div>
-    <div class="linha"><span class="a">in AI</span><span>To distill a conversation, it passes once through a contracted model, under the provider's terms of use and data protection, already masked. To answer a question, only the few lessons that answer it are sent, never the archive.</span></div>
-    <p class="nota" style="margin-top:14px">What leaves, has left. Revoking removes someone from the network, but does not erase what they already received. That is why each release is a decision, not a default.</p>
-  </section>
+  </div>
+</section>
 
-  <section id="origin">
-    <div class="k">Origin</div>
-    <h2>Off-portal in 2002. Off-net in 2026.</h2>
-    <p>In 2001, Yavox was born on a sailboat and signed itself <em>moving networks</em>: the idea that the network moves with people, and that every mobile phone is an antenna. In 2002, we took services outside the carriers' portals (what was called <em>off-portal</em>), each creator under their own brand, and nothing reached anyone without opt-in. By 2007 that network reached 21 million people in Brazil.</p>
-    <p>Twenty-four years later, the move is the same, one layer up. AI took the whole internet. The intelligence that matters is still outside it, in people's heads. <strong>Offnets</strong> are the networks that stay outside: one for each person who knows something, connected to each other, with opt-in again, item by item.</p>
-  </section>
+<!-- 03 · O PROBLEMA -->
+<section class="sec" id="problema" aria-labelledby="t-problema">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">03 · The problem</div><h2 id="t-problema">The internet captured one layer. <em>There is another.</em></h2></div>
+    <div class="corpo rev">
+      <div class="camadas-c">
+        <div><div class="k">What was published</div><p class="raspado">Texts, pages, books, forums, code: everything someone wrote and left open. That is what AI has already read, and read in full.</p></div>
+        <div><div class="k">What was never published</div>
+          <ul class="privado"><li>Decisions.</li><li>Experience.</li><li>Context.</li><li>Relationships.</li><li>Trust.</li><li>Tacit knowledge.</li><li>Intuition.</li><li>Private knowledge.</li><li>What someone only tells those they trust.</li></ul>
+        </div>
+      </div>
+      <p class="destaque">The knowledge that matters <em>cannot be scraped.</em> It can only be shared.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="constitution">
-    <div class="k">Constitution of the network · version 1</div>
-    <h2>The rules that come before any convenience</h2>
-    <p>AI has already scraped the internet. Most knowledge is not there: it is in people's heads. That knowledge cannot be scraped, only given, and it only reaches those who deserve trust. That is why, in this network, justice is not a brake: it is the mechanism by which knowledge arrives. As with a blood bank, a voluntary, screened and traced donation is worth more than any forced or purchased collection.</p>
-    <p class="nota">The articles hold in layers. A higher layer is never violated to serve a lower one, and no gain in usefulness buys an exception to a right.</p>
+<!-- 04 · O NOVO PARADIGMA -->
+<section class="sec" id="paradigma" aria-labelledby="t-paradigma">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">04 · The new paradigm</div><h2 id="t-paradigma">Offnets <em>is not</em> an AI.</h2></div>
+    <div class="corpo rev">
+      <p class="lead">It is a network for AI to talk with the knowledge its owners chose to share.</p>
+      <div class="pilha" role="img" aria-label="AI models and agents, at the top; the Offnets protocol, in the middle; personal, company and community brains, below; and only authorized knowledge at the end.">
+        <div class="rot">AI models and agents</div>
+        <div class="modelos"><span class="modelo hoje">Claude<small>today</small></span><span class="modelo">ChatGPT</span><span class="modelo">Gemini</span><span class="modelo">Grok</span><span class="modelo">others</span></div>
+        <div class="desce"></div>
+        <div class="faixa"><b>Offnets</b><span>the trust protocol</span></div>
+        <div class="desce"></div>
+        <div class="rot">brains</div>
+        <div class="tres"><span>personal</span><span>company</span><span>community</span></div>
+        <div class="desce"></div>
+        <div class="autorizado">only authorized knowledge</div>
+      </div>
+      <p class="nota">Open to several models. Today, the only one connected to the network is Claude; the others are the direction, not a finished integration.</p>
+    </div>
+  </div>
+</section>
 
-    <div class="art"><span class="n">ART. 1 · PURPOSE</span><p>The network exists to <strong>create wisdom and honor those who teach</strong>, not to accumulate data. What it rewards is the lesson that still holds years from now.</p></div>
+<!-- 05 · COMO FUNCIONA -->
+<section class="sec" id="como" aria-labelledby="t-como">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">05 · How it works</div><h2 id="t-como">Three brains. <em>Each with its own owner.</em></h2></div>
+    <div class="corpo rev">
+      <p class="lead">Conversations, meetings and talks become organized knowledge: lessons, patterns and decisions, always with the source and with who taught it. That knowledge forms a brain, and the brain lives with its owner.</p>
+      <div class="cerebros">
+        <div class="cerebro"><svg viewBox="0 0 220 150" aria-hidden="true" focusable="false"><circle class="borda" cx="104" cy="75" r="62"/><line class="fio" x1="78" y1="56" x2="104" y2="42"/><line class="fio" x1="104" y1="42" x2="126" y2="66"/><line class="fio" x1="126" y1="66" x2="98" y2="80"/><line class="fio" x1="98" y1="80" x2="78" y2="56"/><line class="fio" x1="98" y1="80" x2="72" y2="92"/><line class="fio" x1="98" y1="80" x2="112" y2="104"/><line class="fio" x1="126" y1="66" x2="112" y2="104"/><line class="fio" x1="78" y1="56" x2="72" y2="92"/><line class="fio" x1="126" y1="66" x2="152" y2="75"/><line x1="158" y1="75" x2="216" y2="75" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><circle class="no" cx="78" cy="56" r="3.4"/><circle class="no" cx="104" cy="42" r="3.4"/><circle class="no" cx="126" cy="66" r="3.4"/><circle class="no" cx="98" cy="80" r="3.4"/><circle class="no" cx="72" cy="92" r="3.4"/><circle class="no" cx="112" cy="104" r="3.4"/><circle class="no s" cx="152" cy="75" r="5"/></svg><h3>Personal</h3><p>A person's. It stays on their computer, in a local vault, and nothing leaves unless they release it, item by item.</p></div>
+        <div class="cerebro"><svg viewBox="0 0 220 150" aria-hidden="true" focusable="false"><ellipse class="borda" cx="112" cy="78" rx="92" ry="64"/><line class="fio" x1="44" y1="58" x2="62" y2="46"/><line class="fio" x1="62" y1="46" x2="60" y2="72"/><line class="fio" x1="44" y1="58" x2="60" y2="72"/><line class="fio" x1="92" y1="104" x2="112" y2="112"/><line class="fio" x1="112" y1="112" x2="110" y2="88"/><line class="fio" x1="92" y1="104" x2="110" y2="88"/><line class="fio" x1="138" y1="44" x2="158" y2="52"/><line class="fio" x1="158" y1="52" x2="148" y2="72"/><line class="fio" x1="138" y1="44" x2="148" y2="72"/><line class="fio" x1="60" y1="72" x2="110" y2="88"/><line class="fio" x1="110" y1="88" x2="148" y2="72"/><line class="fio" x1="62" y1="46" x2="138" y2="44"/><line class="fio" x1="148" y1="72" x2="184" y2="90"/><line x1="190" y1="92" x2="218" y2="104" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><circle class="no" cx="44" cy="58" r="3.4"/><circle class="no" cx="62" cy="46" r="3.4"/><circle class="no" cx="60" cy="72" r="3.4"/><circle class="no" cx="92" cy="104" r="3.4"/><circle class="no" cx="112" cy="112" r="3.4"/><circle class="no" cx="110" cy="88" r="3.4"/><circle class="no" cx="138" cy="44" r="3.4"/><circle class="no" cx="158" cy="52" r="3.4"/><circle class="no" cx="148" cy="72" r="3.4"/><circle class="no s" cx="184" cy="90" r="5"/></svg><h3>Company</h3><p>A company's, made of the brains that make it. No brain rules the others.</p></div>
+        <div class="cerebro"><svg viewBox="0 0 220 150" aria-hidden="true" focusable="false"><circle class="borda" cx="104" cy="78" r="70"/><line class="fio" x1="40" y1="76" x2="96" y2="62"/><line class="fio" x1="96" y1="62" x2="138" y2="52"/><line class="fio" x1="60" y1="42" x2="108" y2="26"/><line class="fio" x1="108" y1="26" x2="138" y2="52"/><line class="fio" x1="70" y1="104" x2="118" y2="96"/><line class="fio" x1="118" y1="96" x2="168" y2="112"/><line class="fio" x1="86" y1="128" x2="122" y2="128"/><line class="fio" x1="70" y1="104" x2="86" y2="128"/><line class="fio" x1="138" y1="52" x2="160" y2="80"/><line class="fio" x1="160" y1="80" x2="168" y2="112"/><line class="fio" x1="138" y1="52" x2="176" y2="40"/><line class="fio" x1="40" y1="76" x2="30" y2="52"/><line class="fio" x1="60" y1="42" x2="96" y2="62"/><line class="fio" x1="118" y1="96" x2="122" y2="128"/><line x1="166" y1="80" x2="218" y2="80" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><line x1="24" y1="52" x2="2" y2="40" stroke="var(--signal)" stroke-width="1.2" stroke-dasharray="3 4"/><circle class="no" cx="40" cy="76" r="3.4"/><circle class="no" cx="60" cy="42" r="3.4"/><circle class="no" cx="70" cy="104" r="3.4"/><circle class="no" cx="96" cy="62" r="3.4"/><circle class="no" cx="108" cy="26" r="3.4"/><circle class="no" cx="118" cy="96" r="3.4"/><circle class="no" cx="138" cy="52" r="3.4"/><circle class="no s" cx="160" cy="80" r="5"/><circle class="no" cx="168" cy="112" r="3.4"/><circle class="no" cx="86" cy="128" r="3.4"/><circle class="no" cx="176" cy="40" r="3.4"/><circle class="no" cx="122" cy="128" r="3.4"/><circle class="no s" cx="30" cy="52" r="5"/></svg><h3>Community</h3><p>A community's. A person can link to companies and communities, and what belongs to one never crosses into another.</p></div>
+      </div>
+      <div class="linhas">
+        <div class="linha"><span class="a">inside</span><span>Everything whole: the archive, the names, the numbers. The owner reads their own brain unfiltered.</span></div>
+        <div class="linha"><span class="a">outside</span><span>Only what the owner released, each item with its source and license:<span class="licencas"><span class="tag">just for you</span><span class="tag">back to whoever taught it</span><span class="tag">free to spread</span></span></span></div>
+        <div class="linha"><span class="a">in AI</span><span>To distill a conversation, it passes once through a contracted model, under the provider's terms of use and data protection, already masked. To answer a question, only the few lessons that answer it are sent, never the archive. Today, that model is Claude.</span></div>
+      </div>
+      <p class="nota">What leaves, has left. Revoking removes someone from the network, but does not erase what they already received. That is why each release is a decision, not a default.</p>
+    </div>
+  </div>
+</section>
 
-    <div class="camada">Rights · no one is merely a means</div>
-    <div class="art"><span class="n">ART. 2 · CONSENT AND EXIT</span><p>Only what the owner accepted gets in. They can leave whenever they want without losing what is already theirs, and no route erases a node's brain.</p></div>
-    <div class="art"><span class="n">ART. 3 · THE PERSON QUOTED</span><p>The words of someone who did not consent (a group member, a meeting participant) teach <strong>only the owner's brain</strong>. If they leave it, they leave as an anonymous pattern, or not at all.</p></div>
-    <div class="art"><span class="n">ART. 4 · THE TRUSTED SECRET</span><p>What was confided is not traded for usefulness. It only leaves under a confidential license, by human decision, to one person at a time, with no right to pass it on.</p></div>
+<!-- 06 · CONFIANÇA -->
+<section class="sec" id="confianca" aria-labelledby="t-confianca">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">06 · Trust</div><h2 id="t-confianca">Trust <em>is</em> the protocol.</h2></div>
+    <div class="corpo rev">
+      <p class="lead">Trust is not a rule of the network. Trust is the network's architecture itself.</p>
+      <div class="principios">
+        <div class="principio"><span class="n">01</span><h3>Consent</h3><p>Only what the owner accepted gets in. The words of someone who did not consent teach only the owner's brain, and a trusted secret is not traded for usefulness.</p><a class="art-ref" href="constitution/#art-2">ART. 2 · 3 · 4</a></div>
+        <div class="principio"><span class="n">02</span><h3>Provenance</h3><p>Every item carries how it was acquired, with what consent and who taught it. No chain, no circulation.</p><a class="art-ref" href="constitution/#art-5">ART. 5</a></div>
+        <div class="principio"><span class="n">03</span><h3>License</h3><p>Each item travels with its own: just for you, back to whoever taught it, or free to spread. What was confided only leaves under a confidential license, to one person at a time.</p><a class="art-ref" href="constitution/#art-4">ART. 4 · 5</a></div>
+        <div class="principio"><span class="n">04</span><h3>Reciprocity</h3><p>Every node receives the base gift, even before giving back. Giving back is honor, not price: visible authorship, and no one buys priority.</p><a class="art-ref" href="constitution/#art-6">ART. 6 · 7</a></div>
+        <div class="principio"><span class="n">05</span><h3>Right of exit</h3><p>The owner leaves whenever they want, without losing what is theirs, and no route erases a node's brain. What has already been sent, however, does not come back.</p><a class="art-ref" href="constitution/#art-2">ART. 2</a></div>
+        <div class="principio"><span class="n">06</span><h3>Governance</h3><p>The structure only changes through a new version of the protocol, with a public reason and a written precedent. A new case goes to a human, and the network outlives its founder.</p><a class="art-ref" href="constitution/#art-8">ART. 8 – 11</a></div>
+      </div>
+      <p class="nota" style="margin-top:20px">Each principle is the short form of articles of the Constitution. The text that holds is the Constitution's own.</p>
+    </div>
+  </div>
+</section>
 
-    <div class="camada">Distribution · what circulates, to whom and under what title</div>
-    <div class="art"><span class="n">ART. 5 · LINEAGE</span><p>Every item carries how it was acquired (source and consent) and through which license it passed from hand to hand. <strong>No chain, no circulation.</strong></p></div>
-    <div class="art"><span class="n">ART. 6 · THE GIFT FLOOR</span><p>Every node receives the base gift, even before giving anything back. Reciprocity adds; it never takes away the floor. The advantage of those who started first is only justified if it benefits those who arrive last.</p></div>
-    <div class="art"><span class="n">ART. 7 · HONOR, NOT PRICE</span><p>Reciprocity is recognition: visible authorship, who taught what. It is never currency, no one buys priority, and the scoreboard shows contribution without ranking people. The commercial license sells the tool and the protocol, never the knowledge of a brain.</p></div>
+<!-- 07 · A INTERNET AGÊNTICA -->
+<section class="sec" id="agentes" aria-labelledby="t-agentes">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">07 · The agentic internet</div><h2 id="t-agentes">Person to person. <em>Agent to agent.</em></h2></div>
+    <div class="corpo rev">
+      <ol class="trilha">
+        <li><span class="par">Person<span class="x">↔</span>Person</span><span class="tag">always</span><p class="d">Those who trust, tell. The knowledge that matters has always moved this way.</p></li>
+        <!-- VALIDAR: a troca cérebro↔cérebro pelo offnets.io já roda na v0.1 alfa (rede fechada) ou ainda é só desenho? Mantido sem selo de "hoje". -->
+        <li><span class="par">Brain<span class="x">↔</span>Brain</span><span class="tag hoje">the protocol</span><p class="d">Each brain stays at home, and they talk by protocol, with receipts: signed packages, only with what each owner released.</p></li>
+        <li class="futuro"><span class="par">Agent<span class="x">↔</span>Agent</span><span class="tag futuro">tomorrow</span><p class="d">What we do today person to person, tomorrow each person's AI agents will do among themselves, each with its owner's brain, and only with what the owner released.</p></li>
+      </ol>
+      <svg class="agentes" viewBox="0 0 860 220" aria-hidden="true" focusable="false"><circle class="borda" cx="150" cy="110" r="96"/><line class="fio" x1="90" y1="80" x2="116" y2="58"/><line class="fio" x1="116" y1="58" x2="140" y2="90"/><line class="fio" x1="90" y1="80" x2="102" y2="120"/><line class="fio" x1="102" y1="120" x2="140" y2="90"/><line class="fio" x1="102" y1="120" x2="130" y2="140"/><line class="fio" x1="130" y1="140" x2="160" y2="118"/><line class="fio" x1="140" y1="90" x2="160" y2="118"/><line class="fio" x1="130" y1="140" x2="120" y2="170"/><line class="fio" x1="120" y1="170" x2="154" y2="158"/><line class="fio" x1="160" y1="118" x2="154" y2="158"/><line class="fio" x1="140" y1="90" x2="178" y2="80"/><line class="fio" x1="160" y1="118" x2="188" y2="134"/><line class="fio" x1="116" y1="58" x2="178" y2="80"/><line class="liga" x1="178" y1="80" x2="290" y2="110"/><line class="liga" x1="188" y1="134" x2="290" y2="110"/><circle class="no" cx="90" cy="80" r="3.4"/><circle class="no" cx="116" cy="58" r="3.4"/><circle class="no" cx="140" cy="90" r="3.4"/><circle class="no" cx="102" cy="120" r="3.4"/><circle class="no" cx="130" cy="140" r="3.4"/><circle class="no" cx="160" cy="118" r="3.4"/><circle class="no" cx="120" cy="170" r="3.4"/><circle class="no" cx="154" cy="158" r="3.4"/><circle class="no s" cx="178" cy="80" r="5"/><circle class="no s" cx="188" cy="134" r="5"/><circle class="borda" cx="710" cy="110" r="96"/><line class="fio" x1="770" y1="80" x2="744" y2="58"/><line class="fio" x1="744" y1="58" x2="720" y2="90"/><line class="fio" x1="770" y1="80" x2="758" y2="120"/><line class="fio" x1="758" y1="120" x2="720" y2="90"/><line class="fio" x1="758" y1="120" x2="730" y2="140"/><line class="fio" x1="730" y1="140" x2="700" y2="118"/><line class="fio" x1="720" y1="90" x2="700" y2="118"/><line class="fio" x1="730" y1="140" x2="740" y2="170"/><line class="fio" x1="740" y1="170" x2="706" y2="158"/><line class="fio" x1="700" y1="118" x2="706" y2="158"/><line class="fio" x1="720" y1="90" x2="682" y2="80"/><line class="fio" x1="700" y1="118" x2="672" y2="134"/><line class="fio" x1="744" y1="58" x2="682" y2="80"/><line class="liga" x1="682" y1="80" x2="570" y2="110"/><line class="liga" x1="672" y1="134" x2="570" y2="110"/><circle class="no" cx="770" cy="80" r="3.4"/><circle class="no" cx="744" cy="58" r="3.4"/><circle class="no" cx="720" cy="90" r="3.4"/><circle class="no" cx="758" cy="120" r="3.4"/><circle class="no" cx="730" cy="140" r="3.4"/><circle class="no" cx="700" cy="118" r="3.4"/><circle class="no" cx="740" cy="170" r="3.4"/><circle class="no" cx="706" cy="158" r="3.4"/><circle class="no s" cx="682" cy="80" r="5"/><circle class="no s" cx="672" cy="134" r="5"/><path class="canal" d="M306 110 L554 110"/><circle class="ag" cx="290" cy="110" r="15"/><circle class="ag-in" cx="290" cy="110" r="4.5"/><circle class="ag" cx="570" cy="110" r="15"/><circle class="ag-in" cx="570" cy="110" r="4.5"/><rect class="porta" x="420" y="100" width="20" height="20" transform="rotate(45 430 110)"/></svg>
+      <div class="agentes-leg"><span>your agent sees what you released</span><span>the protocol</span><span>the other person's agent, with the same limit</span></div>
+      <p class="nota" style="margin-top:22px">No agent has unrestricted access to anyone's whole brain. Exchange between agents is the network's direction, not yet a finished feature.</p>
+      <p class="tagline">The trust layer for the <em>agentic internet.</em></p>
+    </div>
+  </div>
+</section>
 
-    <div class="camada">Governance · how the law changes</div>
-    <div class="art"><span class="n">ART. 8 · ONE STRUCTURE, A VERSIONED PROTOCOL</span><p>On the node, everything is automatic and no one improvises a way to extract, store or exchange. The structure in which brains talk only changes through a new version of the protocol.</p></div>
-    <div class="art"><span class="n">ART. 9 · PROPOSALS WITH PUBLIC REASONS</span><p>Any node may propose a change. The proposal goes through the four-chairs test: "would I accept this if I did not know whether I would be the founder, an old node, a new node or the person quoted?". The decision publishes its reason; a decision without a written reason does not stand.</p></div>
-    <div class="art"><span class="n">ART. 10 · CASE LAW</span><p>Every dilemma decided becomes a precedent (facts, decision, reason, article applied). A new case, or one that touches a person's rights, goes to a human. The machine optimizes only within the space the rights leave open.</p></div>
-    <div class="art"><span class="n">ART. 11 · THE NETWORK OUTLIVES ITS FOUNDER</span><p>Continuity is secured by a technical will and by shared keys. As the network grows, its founder stops writing every rule and governs by vetoes that guard the rights.</p></div>
-    <p class="nota" style="margin-top:16px">The Constitution is inspired by Michael Sandel's <em>Justice</em>. The constitution and the protocol are our own. Like the manifesto, it is clay: it changes by version, always dated.</p>
-  </section>
+<!-- 08 · ARQUITETURA -->
+<section class="sec" id="arquitetura" aria-labelledby="t-arq">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">08 · Architecture</div><h2 id="t-arq">What stays, what travels, <em>what touches AI.</em></h2></div>
+    <div class="corpo rev">
+      <p class="lead">A protocol for people, companies and communities to share intelligence with other people and with AI agents, without giving up ownership of their own knowledge.</p>
+      <div class="dominios">
+        <div class="dominio"><b>the brain</b><span class="papel">stays with the owner</span><p>On the owner's computer, in a local vault. The app that reads it has no network permission: the operating system itself blocks any connection.</p></div>
+        <div class="dominio"><b>offnets.io</b><span class="papel">the courier</span><p>It carries signed packages between brains, only what each owner released. The packages travel sealed.</p></div>
+        <div class="dominio"><b>offnets.ai</b><span class="papel">the border with AI</span><p>The distillation of conversations and the queries to models pass through it. Whatever goes to a model leaves with documents and contacts masked, and every outflow reports what was suppressed.</p></div>
+        <div class="dominio"><b>offnets.org</b><span class="papel">the institution</span><p>This page: the manifesto and the Constitution of the network, each version dated.</p></div>
+      </div>
+      <div class="arvore" role="img" aria-label="Offnets branches into people, companies, communities, brains, protocol, agents and governance.">
+        <span>OFFNETS</span>
+        <ul>
+          <li>People<small>each with their own brain</small></li>
+          <li>Companies<small>made of the brains that make them</small></li>
+          <li>Communities<small>what belongs to one never crosses into another</small></li>
+          <li>Brains<small>in a local vault, with the owner</small></li>
+          <li>Protocol<small>signed packages, with receipts</small></li>
+          <li>Agents<small>tomorrow</small></li>
+          <li>Governance<small>the Constitution, version 1</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · MANIFESTO -->
+<section class="sec" id="manifesto" aria-labelledby="t-manif">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">09 · Manifesto</div><span></span></div>
+    <div class="corpo rev">
+      <div class="manif">
+        <h2 class="abre-m" id="t-manif">The human brain has always been <em>offline.</em></h2>
+        <p>No one has ever spoken to it directly: everything passes through a filter that decides what is said, to whom and when. Offnets does not invent a new idea. It copies the architecture that trust has always had.</p>
+        <p>AI took the whole internet. The intelligence that matters is still outside it, in people's heads. Offnets are the networks that stay outside: one for each person who knows something, connected to each other, with opt-in, item by item.</p>
+        <ol class="linhagem">
+          <li><b>2001</b><span>Yavox is born on a sailboat and signs itself <em>moving networks</em>: the network moves with people, and every mobile phone is an antenna.</span></li>
+          <li><b>2002</b><span><em>Off-portal</em>: services outside the carriers' portals, each creator under their own brand, and nothing reaches anyone without opt-in.</span></li>
+          <li><b>2007</b><span>That network reaches 21 million people in Brazil.</span></li>
+          <li><b>2026</b><span>Offnets: the same move, one layer up.</span></li>
+        </ol>
+        <a class="mais" href="manifesto/">Read the full manifesto <span class="seta" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · CONSTITUIÇÃO -->
+<section class="sec" id="constituicao" aria-labelledby="t-const">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">10 · Constitution and governance</div><h2 id="t-const">There is a <em>Constitution.</em></h2></div>
+    <div class="corpo rev">
+      <p class="lead">Eleven articles, in three layers, that come before any convenience. A higher layer is never violated to serve a lower one, and no gain in usefulness buys an exception to a right.</p>
+      <div class="mapa-c">
+        <div><div class="k">Purpose</div><ol><li><a href="constitution/#art-1"><span>1</span>Create wisdom and honor those who teach</a></li></ol></div>
+        <div><div class="k">Rights</div><ol><li><a href="constitution/#art-2"><span>2</span>Consent and exit</a></li><li><a href="constitution/#art-3"><span>3</span>The person quoted</a></li><li><a href="constitution/#art-4"><span>4</span>The trusted secret</a></li></ol></div>
+        <div><div class="k">Distribution</div><ol><li><a href="constitution/#art-5"><span>5</span>Lineage</a></li><li><a href="constitution/#art-6"><span>6</span>The gift floor</a></li><li><a href="constitution/#art-7"><span>7</span>Honor, not price</a></li></ol></div>
+        <div><div class="k">Governance</div><ol><li><a href="constitution/#art-8"><span>8</span>One structure, a versioned protocol</a></li><li><a href="constitution/#art-9"><span>9</span>Proposals with public reasons</a></li><li><a href="constitution/#art-10"><span>10</span>Case law</a></li><li><a href="constitution/#art-11"><span>11</span>The network outlives its founder</a></li></ol></div>
+      </div>
+      <div class="entender-estudar">
+        <div><b>Understand</b>This page: what Offnets is and why it is different.</div>
+        <div><b>Study</b>The full Constitution, article by article, and the manifesto.</div>
+      </div>
+      <a class="mais" href="constitution/">Read the Constitution <span class="seta" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · ECOSSISTEMA -->
+<section class="sec" id="ecossistema" aria-labelledby="t-eco">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">11 · Ecosystem</div><h2 id="t-eco">A network, <em>not a warehouse.</em></h2></div>
+    <div class="corpo rev">
+      <div class="eco">
+        <div><h3>No central cloud</h3><p>There is no single place holding every brain. Each one stays at home, and they talk by protocol, with receipts.</p></div>
+        <div><h3>A method, not a brain</h3><p>Offnets is the name of the method and the protocol. No brain rules the others: each person has their own, and what is shared is the method.</p></div>
+        <div><h3>Exchange, never sell</h3><p>The exchange can be knowledge, purpose, a cause or money. It is never the sale of what someone knows: what is licensed is the tool and the protocol, never the contents of a brain.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · ENTRAR NA REDE -->
+<section class="sec entrar" id="entrar" aria-labelledby="t-entrar">
+  <div class="wrap rev">
+    <div class="k">12 · Joining the network</div>
+    <h2 id="t-entrar">By <em>invitation</em> only.</h2>
+    <p class="lead">No one joins alone. Whoever is already in invites, signs the entry and answers for it. The network grows from trust to trust, the way real knowledge grows.</p>
+    <div class="status"><span class="tag hoje">version 0.1 alpha</span><span class="tag">closed network</span><span class="tag">today, with Claude</span></div>
+    <div class="ctas">
+      <a class="btn" href="manifesto/">Read the Manifesto <span class="seta" aria-hidden="true">→</span></a>
+      <a class="btn alt" href="constitution/">Read the Constitution</a>
+    </div>
+  </div>
+</section>
+
 </main>
-
-<footer>
-  <span>Offnets · October 2026 · Andreas Blazoudakis</span>
-  <span>A closed network, by invitation only.</span>
+<footer class="rodape">
+  <span>Offnets · protocol, version 0.1 alpha · October 2026 · Andreas Blazoudakis</span>
+  <nav aria-label="Footer"><a href="./">Understand</a><a href="manifesto/">Manifesto</a><a href="constitution/">Constitution</a><span>A closed network, by invitation only.</span></nav>
 </footer>
+
 
 <script src="../assets/constelacao.js"></script>
 <script src="../assets/idioma.js"></script>
