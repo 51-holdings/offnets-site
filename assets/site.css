@@ -29,8 +29,8 @@ p{margin:0 0 16px}
 strong{font-weight:700}
 .nota{font:14px/1.55 var(--f-sans);color:var(--muted)}
 .camadas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-block:8px 18px}
-.camadas div{padding:14px 14px 10px 0;font:14px/1.5 var(--f-sans);min-width:0}
-.camadas div+div{padding-left:14px;border-left:1px solid var(--line)}
+.camadas div{padding-block:14px 10px;padding-inline:0 14px;font:14px/1.5 var(--f-sans);min-width:0}
+.camadas div+div{padding-inline-start:14px;border-inline-start:1px solid var(--line)}
 .camadas b{display:block;font:500 15px var(--f-mono);color:var(--signal);margin-bottom:4px}
 .linha{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);font:15px/1.55 var(--f-sans)}
 .linha .a{font:500 15px var(--f-mono);color:var(--signal)}
@@ -38,14 +38,14 @@ strong{font-weight:700}
 .art .n{font:500 12px var(--f-mono);color:var(--muted);letter-spacing:.08em}
 .art p{margin:4px 0 0}
 .camada{font:600 12px var(--f-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--signal);margin:30px 0 4px}
-blockquote{margin:22px 0;padding:4px 0 4px 18px;border-left:2px solid var(--signal);font-size:20px;line-height:1.5}
+blockquote{margin:22px 0;padding-block:4px;padding-inline:18px 0;border-inline-start:2px solid var(--signal);font-size:20px;line-height:1.5}
 footer{max-width:680px;margin:56px auto 0;padding-top:18px;border-top:1px solid var(--line);font:13px/1.6 var(--f-sans);color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 a{color:var(--signal)}
 :focus-visible{outline:2px solid var(--signal);outline-offset:3px}
 @media (max-width:600px){
   body{font-size:16.5px}
   .camadas{grid-template-columns:1fr}
-  .camadas div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .camadas div+div{padding-inline-start:0;border-inline-start:0;border-top:1px solid var(--line)}
 }
 /* seletor de idioma: bandeira + código, sempre legível mesmo onde a bandeira emoji não aparece (Windows) */
 .idiomas{display:flex;gap:4px;font:500 12.5px var(--f-sans)}
@@ -59,3 +59,10 @@ a{color:var(--signal)}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) blockquote{font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",serif;letter-spacing:0}
 :lang(zh) h3,:lang(zh) .camadas div,:lang(zh) .linha,:lang(zh) .nota,:lang(zh) nav,:lang(zh) footer{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif}
 :lang(zh) em{font-style:normal}
+/* hindi (devanágari) e árabe: fontes próprias; o árabe espelha o layout pelo dir="rtl" e pelas propriedades lógicas acima */
+:lang(hi) body,:lang(hi) h1,:lang(hi) h2,:lang(hi) blockquote{font-family:"Noto Serif Devanagari","Kohinoor Devanagari",serif;letter-spacing:0}
+:lang(hi) h3,:lang(hi) .camadas div,:lang(hi) .linha,:lang(hi) .nota,:lang(hi) nav,:lang(hi) footer{font-family:"Noto Sans Devanagari","Kohinoor Devanagari",sans-serif}
+:lang(ar) body,:lang(ar) h1,:lang(ar) h2,:lang(ar) blockquote{font-family:"Noto Naskh Arabic","Geeza Pro",serif;letter-spacing:0}
+:lang(ar) h3,:lang(ar) .camadas div,:lang(ar) .linha,:lang(ar) .nota,:lang(ar) nav,:lang(ar) footer{font-family:"Noto Sans Arabic","Geeza Pro",sans-serif}
+:lang(ar) em,:lang(hi) em{font-style:normal}
+:lang(ar) .k,:lang(ar) .art .n,:lang(ar) .camada{letter-spacing:0}

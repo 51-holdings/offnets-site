@@ -6,6 +6,6 @@
   });
   try{
     var salvo=localStorage.getItem(chave);
-    if(atual==='pt' && salvo && salvo!=='pt' && /^(en|es|fr|zh)$/.test(salvo) && !location.hash){ location.replace(salvo+'/'); }
+    if(atual==='pt' && salvo && salvo!=='pt' && /^(en|es|fr|zh|hi|ar)$/.test(salvo) && !location.hash){ location.replace(salvo+'/'); }
   }catch(e){}
 })();
