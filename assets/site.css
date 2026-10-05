@@ -321,3 +321,10 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 :lang(ar) .hero h1,:lang(hi) .hero h1{line-height:1.2}
 .rodape .contato{flex-basis:100%;margin:0;font-size:12px;opacity:.85}
 .entrar .convite{margin:14px 0 0;font-size:14px;color:var(--muted);overflow-wrap:anywhere}
+/* contato.js: menu do link de e-mail (Gmail · Outlook · app · copiar) */
+.contato-menu{position:absolute;z-index:20;min-width:220px;max-width:calc(100vw - 16px);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:6px;box-shadow:0 8px 28px rgb(0 0 0 / .12);font-size:14px;display:flex;flex-direction:column}
+.contato-para{color:var(--faint);font-size:12px;padding:6px 10px 4px;overflow-wrap:anywhere}
+.contato-opcao{all:unset;box-sizing:border-box;display:block;padding:8px 10px;border-radius:6px;color:var(--ink);cursor:pointer;text-decoration:none}
+.contato-opcao:hover,.contato-opcao:focus-visible{background:var(--soft);outline:none}
+.contato-opcao:focus-visible{box-shadow:inset 0 0 0 1px var(--signal)}
+.contato-copia{margin:4px 6px;padding:6px 8px;font:inherit;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:6px}

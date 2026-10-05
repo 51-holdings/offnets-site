@@ -96,6 +96,7 @@ for cod, pasta, lang, _, _ in L:
 {corpo}
 <script src="{raiz}assets/constelacao.js"></script>
 <script src="{raiz}assets/idioma.js"></script>
+<script src="{raiz}assets/contato.js"></script>
 </body>
 </html>
 """
