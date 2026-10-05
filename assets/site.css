@@ -319,3 +319,5 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 :lang(hi) .k,:lang(hi) .tag,:lang(hi) .era .par,:lang(hi) .entender-estudar b{letter-spacing:.02em}
 :lang(zh) .k,:lang(zh) .tag,:lang(zh) .era .par,:lang(zh) .entender-estudar b{letter-spacing:.06em}
 :lang(ar) .hero h1,:lang(hi) .hero h1{line-height:1.2}
+.rodape .contato{flex-basis:100%;margin:0;font-size:12px;opacity:.85}
+.entrar .convite{margin:14px 0 0;font-size:14px;color:var(--muted);overflow-wrap:anywhere}
