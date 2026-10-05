@@ -4,6 +4,11 @@
   document.querySelectorAll('.idiomas a').forEach(function(a){
     a.addEventListener('click',function(){ try{ localStorage.setItem(chave,a.dataset.lingua); }catch(e){} });
   });
+  var d=document.querySelector('.idiomas .mais');
+  if(d){
+    document.addEventListener('click',function(e){ if(d.open && !d.contains(e.target)) d.open=false; });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape' && d.open){ d.open=false; d.querySelector('summary').focus(); } });
+  }
   try{
     var salvo=localStorage.getItem(chave), raiz=/^\/(index\.html)?$/.test(location.pathname);
     if(raiz && atual==='pt' && salvo && salvo!=='pt' && /^(en|es|fr|zh|hi|ar)$/.test(salvo) && !location.hash){ location.replace(salvo+'/'); }

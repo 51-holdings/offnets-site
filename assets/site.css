@@ -26,15 +26,22 @@ strong{font-weight:600}
 /* topo */
 .topo{max-width:var(--w);margin-inline:auto;padding:24px var(--gutter) 0;display:flex;justify-content:space-between;align-items:center;gap:14px 24px;flex-wrap:wrap}
 .marca{display:inline-flex;align-items:center;gap:10px;font:600 18px var(--f-sans);letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
-.topo-dir{display:flex;align-items:center;gap:10px 22px;flex-wrap:wrap}
+.topo-dir{display:flex;align-items:center;justify-content:flex-end;margin-inline-start:auto;gap:10px 22px;flex-wrap:wrap}
 .secoes{display:flex;gap:6px 20px;flex-wrap:wrap;font:500 13.5px var(--f-sans)}
 .secoes a{color:var(--muted);text-decoration:none}
 .secoes a:hover,.secoes a[aria-current="page"]{color:var(--ink)}
-.idiomas{display:flex;gap:2px;flex-wrap:wrap;font:500 12px var(--f-sans)}
-.idiomas a{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border:1px solid transparent;border-radius:999px;color:var(--muted);text-decoration:none}
-.idiomas a:hover{color:var(--ink);border-color:var(--line)}
-.idiomas a[aria-current="true"]{color:var(--ink);border-color:var(--line);background:var(--soft)}
-.idiomas .bandeira{font-size:13px;line-height:1}
+.idiomas{display:flex;align-items:center;gap:12px;flex-wrap:nowrap;font:500 12px var(--f-sans);position:relative}
+.idiomas a{color:var(--faint);text-decoration:none;line-height:1.6;white-space:nowrap}
+.idiomas a:hover{color:var(--ink)}
+.idiomas a[aria-current="true"]{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.idiomas .mais{position:relative}
+.idiomas summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;color:var(--faint);padding:2px;border-radius:4px}
+.idiomas summary::-webkit-details-marker{display:none}
+.idiomas summary:hover,.idiomas .mais[open] summary,.idiomas .mais[data-atual] summary{color:var(--ink)}
+.idiomas .menu{position:absolute;inset-inline-end:0;top:calc(100% + 8px);z-index:20;min-width:140px;max-width:calc(100vw - 2*var(--gutter));display:flex;flex-direction:column;gap:2px;padding:6px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.idiomas .menu a{padding:6px 10px;font-size:13px;color:var(--muted);border-radius:5px}
+.idiomas .menu a:hover{background:var(--soft);color:var(--ink)}
+.idiomas .menu a[aria-current="true"]{text-decoration:none;color:var(--ink);font-weight:600}
 
 /* rótulos de protocolo */
 .k{font:500 12px/1.4 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}

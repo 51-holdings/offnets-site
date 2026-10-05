@@ -15,12 +15,13 @@ ATUAL = ' aria-current="true"'
 L = [  # código, pasta, html lang, bandeira, rótulo
   ("pt", "",    "pt-BR",   "🇧🇷", "PT"),
   ("en", "en/", "en",      "🇺🇸", "EN"),
-  ("es", "es/", "es",      "🇪🇸", "ES"),
-  ("fr", "fr/", "fr",      "🇫🇷", "FR"),
+  ("es", "es/", "es",      "🇪🇸", "Español"),
+  ("fr", "fr/", "fr",      "🇫🇷", "Français"),
   ("zh", "zh/", "zh-Hans", "🇨🇳", "中文"),
   ("hi", "hi/", "hi",      "🇮🇳", "हिन्दी"),
   ("ar", "ar/", "ar",      "🇸🇦", "العربية"),
 ]
+MAIS = {"pt": "Mais idiomas", "en": "More languages", "es": "Más idiomas", "fr": "Plus de langues", "zh": "更多语言", "hi": "और भाषाएँ", "ar": "المزيد من اللغات"}
 PAGINAS = ["home", "manifesto", "constituicao"]
 def slug(cod, pag):
     if pag == "home": return ""
@@ -52,9 +53,16 @@ for cod, pasta, lang, _, _ in L:
         DIR = ' dir="rtl"' if cod == "ar" else ""
         extra = FONTE_EXTRA.get(cod)
         fonte_extra = f'\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={extra}&display=swap">' if extra else ""
-        seletor = '<nav class="idiomas" aria-label="Idioma / Language">' + "".join(
-            f'<a href="{rel(aqui, caminho(c, pag))}" hreflang="{lg}" lang="{lg}"{ATUAL if c == cod else ""} data-lingua="{c}">'
-            f'<span class="bandeira" aria-hidden="true">{b}</span>{r}</a>' for c, p, lg, b, r in L) + "</nav>"
+        def lk(c, lg, r):
+            return (f'<a href="{rel(aqui, caminho(c, pag))}" hreflang="{lg}" lang="{lg}"{ATUAL if c == cod else ""} data-lingua="{c}">{r}</a>')
+        info = {c: (lg, r) for c, p, lg, b, r in L}
+        fora = [c for c in ("es", "fr", "zh", "hi", "ar")]
+        globo = ('<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">'
+                 '<circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.7 3.9 5.9 3.9 9.5s-1.3 6.8-3.9 9.5c-2.6-2.7-3.9-5.9-3.9-9.5S9.4 5.2 12 2.5z"/></svg>')
+        seletor = ('<nav class="idiomas" aria-label="Idioma / Language">'
+            + lk("pt", *info["pt"]) + lk("en", *info["en"])
+            + f'<details class="mais"{" data-atual" if cod in fora else ""}><summary aria-label="{MAIS[cod]}" title="{MAIS[cod]}">{globo}</summary><div class="menu">'
+            + "".join(lk(c, *info[c]) for c in fora) + "</div></details></nav>")
         alternos = "\n".join(f'<link rel="alternate" hreflang="{lg}" href="{SITE}/{caminho(c, pag)}">' for c, p, lg, b, r in L)
         corpo = (corpo.replace("{{IDIOMAS}}", seletor)
                       .replace("{{HOME}}", rel(aqui, caminho(cod, "home")))
