@@ -328,3 +328,14 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 .contato-opcao:hover,.contato-opcao:focus-visible{background:var(--soft);outline:none}
 .contato-opcao:focus-visible{box-shadow:inset 0 0 0 1px var(--signal)}
 .contato-copia{margin:4px 6px;padding:6px 8px;font:inherit;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:6px}
+
+/* "Quero ser encontrado" (06/10/2026) */
+.encontrar-t{font-size:22px;margin:28px 0 6px}
+form.encontrar{display:grid;gap:12px;max-width:560px;margin:14px 0}
+form.encontrar label{display:grid;gap:4px;font-size:15px;color:var(--ink)}
+form.encontrar label.inline{display:flex;gap:8px;align-items:flex-start}
+form.encontrar input:not([type=radio]):not([type=checkbox]){font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+form.encontrar fieldset{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:8px}
+form.encontrar .opc{color:var(--faint);font-size:13px}
+form.encontrar .armadilha{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.encontrar-aviso{color:var(--signal);font-size:15px;min-height:1em}

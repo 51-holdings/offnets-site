@@ -263,7 +263,29 @@
     <div class="k">12 · Entrar na rede</div>
     <h2 id="t-entrar">Só por <em>convite.</em></h2>
     <p class="lead">Ninguém entra sozinho. Quem já está convida, assina a entrada e responde por ela. A rede cresce de confiança em confiança, como cresce o conhecimento de verdade.</p>
-    <p class="convite">Quer entrar? <a href="mailto:convite@offnets.org?subject=Convite%20Offnets">Peça um convite</a>: conte quem você é e por qual propósito. <a href="mailto:convite@offnets.org">convite@offnets.org</a></p>
+    <h3 class="encontrar-t">Não tem convite? Você pode ser encontrado.</h3>
+    <p>Conte quem você é e por onde você anda (suas comunidades, sua empresa, quem você conhece) e nós avisamos as pessoas do seu círculo de que você quer entrar. Se alguém te conhecer, essa pessoa te convida. <em>Deixar seus dados não garante convite, e não existe ordem de chegada.</em></p>
+    <form id="form-encontrar" class="encontrar" autocomplete="on">
+      <label>Seu nome <input name="nome" required maxlength="80" autocomplete="name"></label>
+      <label>Seu e-mail <input name="email" type="email" required maxlength="254" autocomplete="email"></label>
+      <label>Quem você conhece que já usa o Offnets? <span class="opc">(opcional)</span> <input name="conhece" maxlength="500"></label>
+      <label>De que comunidades ou empresas você participa? <span class="opc">(opcional, nas suas palavras)</span> <input name="comunidades" maxlength="500"></label>
+      <fieldset><legend>Um perfil, se quiser <span class="opc">(opcional, só um)</span></legend>
+        <label class="inline"><input type="radio" name="perfil_tipo" value="linkedin"> LinkedIn</label>
+        <label class="inline"><input type="radio" name="perfil_tipo" value="instagram"> Instagram</label>
+        <input name="perfil" maxlength="200" placeholder="link ou @usuário">
+      </fieldset>
+      <label>WhatsApp <span class="opc">(opcional, formato internacional, ex.: +55 51 99999-9999)</span> <input name="whatsapp" type="tel" maxlength="20" autocomplete="tel"></label>
+      <label>Por que você quer entrar? <span class="opc">(opcional, uma frase)</span> <input name="motivo" maxlength="300"></label>
+      <input name="site_url" tabindex="-1" autocomplete="off" class="armadilha" aria-hidden="true">
+      <label class="inline"><input type="checkbox" name="maior" required> Tenho 18 anos ou mais.</label>
+      <label class="inline"><input type="checkbox" name="consentimento" required> <span><strong>Guardem meu cadastro.</strong> Ele serve para me apresentar a quem me conhece no Offnets e para vocês entenderem quem procura o Offnets e melhorarem o produto. Sem compromisso: não é inscrição em nada, e posso pedir para ver ou apagar meus dados quando quiser, por ola@offnets.org.</span></label>
+      <button class="btn" type="submit">Quero ser encontrado <span class="seta" aria-hidden="true">→</span></button>
+      <p class="opc">Um cadastro leve: nada é vendido ou compartilhado, e você não vai receber propaganda. Só escrevemos se alguém te convidar. Responsável pelos dados: Andreas Blazoudakis (ola@offnets.org). Os dados ficam guardados em servidores da Cloudflare, que podem estar fora do Brasil.</p>
+    </form>
+    <p id="encontrar-aviso" class="encontrar-aviso" role="status" aria-live="polite"></p>
+    <p class="convite">Prefere escrever? <a href="mailto:convite@offnets.org?subject=Convite%20Offnets">convite@offnets.org</a></p>
+    <script src="/assets/encontrar.js" defer></script>
     <div class="status"><span class="tag hoje">versão 0.1 alfa</span><span class="tag">rede fechada</span><span class="tag">hoje, com o Claude</span></div>
     <div class="ctas">
       <a class="btn" href="manifesto/">Leia o Manifesto <span class="seta" aria-hidden="true">→</span></a>
