@@ -10,13 +10,14 @@
       perfil_tipo: d.get("perfil_tipo") || null, perfil: d.get("perfil"), whatsapp: d.get("whatsapp"), motivo: d.get("motivo"),
       maior_de_idade: d.get("maior") === "on", consentimento: d.get("consentimento") === "on", site_url: d.get("site_url"),
       idioma: (document.documentElement.lang || "pt").slice(0, 2) };
-    b.disabled = true; aviso.textContent = "Enviando…";
+    var rotulo = b.innerHTML; b.disabled = true; b.textContent = "Enviando…"; aviso.className = "encontrar-aviso"; aviso.textContent = "";
+    function mostrar(html, ok) { aviso.className = "encontrar-aviso " + (ok ? "ok" : "erro"); aviso.innerHTML = html; aviso.scrollIntoView({ behavior: "smooth", block: "center" }); }
     fetch("https://offnets.io/encontrar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(corpo) })
       .then(function (r) { return r.json().then(function (j) { return { st: r.status, j: j }; }); })
       .then(function (x) {
-        if (x.st === 201) { f.hidden = true; aviso.innerHTML = "<strong>Pronto, " + (corpo.nome || "").replace(/[<>&]/g, "") + ".</strong> Vamos avisar as pessoas do seu círculo que você quer entrar. Se alguém te conhecer, você recebe o convite pela mão dessa pessoa."; }
-        else { b.disabled = false; aviso.textContent = (x.j && x.j.faca) ? "Quase: " + x.j.faca + "." : "Não consegui enviar agora. Tente de novo em instantes."; }
+        if (x.st === 201) { f.hidden = true; mostrar("<span class=\"ic\">✓</span><strong>Recebemos, " + (corpo.nome || "").replace(/[<>&]/g, "") + ".</strong><br>Vamos avisar as pessoas do seu círculo de que você quer entrar. Se alguém te conhecer, o convite chega pela mão dessa pessoa.", true); }
+        else { b.disabled = false; b.innerHTML = rotulo; mostrar((x.j && x.j.faca) ? "Quase lá: " + x.j.faca + "." : "Não consegui enviar agora. Tente de novo em instantes.", false); }
       })
-      .catch(function () { b.disabled = false; aviso.textContent = "Não consegui enviar agora. Tente de novo em instantes."; });
+      .catch(function () { b.disabled = false; b.innerHTML = rotulo; mostrar("Não consegui enviar agora. Tente de novo em instantes.", false); });
   });
 })();

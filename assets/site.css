@@ -338,4 +338,8 @@ form.encontrar input:not([type=radio]):not([type=checkbox]){font:inherit;padding
 form.encontrar fieldset{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:8px}
 form.encontrar .opc{color:var(--faint);font-size:13px}
 form.encontrar .armadilha{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.encontrar-aviso{color:var(--signal);font-size:15px;min-height:1em}
+.encontrar-aviso{font-size:16px;line-height:1.5;max-width:560px}
+.encontrar-aviso.ok,.encontrar-aviso.erro{padding:18px 20px;border-radius:14px;margin:14px 0}
+.encontrar-aviso.ok{border:1.5px solid var(--signal);background:color-mix(in srgb,var(--signal) 9%,transparent)}
+.encontrar-aviso.erro{border:1.5px solid #b7791f;background:color-mix(in srgb,#b7791f 9%,transparent)}
+.encontrar-aviso .ic{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--signal);color:var(--paper);font-weight:700;margin-right:10px}
