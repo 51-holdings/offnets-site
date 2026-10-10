@@ -35,7 +35,7 @@
     offnets
   </a>
   <div class="topo-dir">
-    <nav class="secoes" aria-label="章节"><a href="./#mudanca">理解</a><a href="./#confianca">信任</a><a href="./#arquitetura">架构</a><a href="manifesto/">宣言</a><a href="constitution/">宪章</a></nav>
+    <nav class="secoes" aria-label="章节"><a href="./#mudanca">理解</a><a href="./#confianca">信任</a><a href="./#arquitetura">架构</a><a href="manifesto/">宣言</a><a href="constitution/">宪章</a><a href="where-it-comes-from/">从何而来</a></nav>
     <nav class="idiomas" aria-label="Idioma / Language"><a href="../" hreflang="pt-BR" lang="pt-BR" data-lingua="pt">PT</a><a href="../en/" hreflang="en" lang="en" data-lingua="en">EN</a><details class="mais" data-atual><summary aria-label="更多语言" title="更多语言"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.7 3.9 5.9 3.9 9.5s-1.3 6.8-3.9 9.5c-2.6-2.7-3.9-5.9-3.9-9.5S9.4 5.2 12 2.5z"/></svg></summary><div class="menu"><a href="../es/" hreflang="es" lang="es" data-lingua="es">Español</a><a href="../fr/" hreflang="fr" lang="fr" data-lingua="fr">Français</a><a href="./" hreflang="zh-Hans" lang="zh-Hans" aria-current="true" data-lingua="zh">中文</a><a href="../hi/" hreflang="hi" lang="hi" data-lingua="hi">हिन्दी</a><a href="../ar/" hreflang="ar" lang="ar" data-lingua="ar">العربية</a></div></details></nav>
   </div>
 </header>
@@ -45,7 +45,7 @@
 
 <!-- 01 · HERO -->
 <section class="wrap hero" aria-labelledby="t-hero">
-  <div class="k">Offnets · 协议 · <b>v0.1 测试版</b></div>
+  <div class="k">Offnets · 协议 v0.1 测试版 · <b>应用 0.2.12</b></div>
   <h1 id="t-hero">智慧不在互联网上。</h1>
   <p class="sub">它在人身上。</p>
   <p class="comp">人工智能已经从公开发表的内容中学习过了。真正重要的知识依然是私密的：在对话里，在决定里，在经历里，在彼此信任的关系里。</p>
@@ -127,17 +127,48 @@
       <div class="linhas">
         <div class="linha"><span class="a">内部</span><span>一切完整：档案、姓名、数字。主人可以不经过滤地访问自己的大脑。</span></div>
         <div class="linha"><span class="a">外部</span><span>只有主人放行的内容，每一条都带有来源和许可：<span class="licencas"><span class="tag">仅限你本人</span><span class="tag">回馈传授者</span><span class="tag">可自由传播</span></span></span></div>
-        <div class="linha"><span class="a">人工智能</span><span>为了提炼一段对话，它会在遮蔽之后，按照服务商的使用条款和数据保护条款，经过一个签约模型一次。为了回答问题，只发送能回答该问题的少数几条经验，绝不发送整个档案。今天，这个模型是 Claude。</span></div>
+        <div class="linha"><span class="a">人工智能</span><span>为了把一段对话提炼成笔记，它会在遮蔽之后，经过主人自己的 Claude 一次，使用主人自己的账户，并遵循服务商的使用条款和数据保护条款。为了回答问题，只发送能回答该问题的少数几条经验，绝不发送整个档案。今天，唯一接入的模型是 Claude。</span></div>
       </div>
       <p class="nota">发出去的，就已经发出去了。撤销可以把某人移出网络，但无法删除他已经收到的内容。因此每一次放行都是一个决定，而不是默认设置。</p>
     </div>
   </div>
 </section>
 
-<!-- 06 · CONFIANÇA -->
+<!-- 06 · O ENCONTRO -->
+<section class="sec" id="encontro" aria-labelledby="t-encontro">
+  <div class="wrap">
+    <div class="sec-cab rev"><div class="k">06 · 相聚</div><h2 id="t-encontro">一切始于一次相聚。<em>也回到那里。</em></h2></div>
+    <div class="corpo rev">
+      <p class="lead">真正有价值的东西，是在交谈中学到的。Offnets 从相聚出发，把说过的话留在主人身边，再把一本笔记交还给在场的人。</p>
+      <div class="camadas-c">
+        <div><div class="k">同步 · 录音</div><p class="raspado">当面开会、通话、讲座。Mac 上的应用读取“语音备忘录”的录音，并在 Mac 本机上完成全部转写。说过的话留在本地保险库里。</p></div>
+        <div><div class="k">异步 · WhatsApp</div><p class="raspado">跨越多日的对话。Mac 以复制的方式，只读取主人开启的对话。而 AI，一个 WhatsApp 联系人，住在它被开启的群里。</p></div>
+      </div>
+      <div class="linhas">
+        <div class="linha"><span class="a">笔记</span><span>借助主人自己的 Claude、用主人自己的账户，相聚变成笔记：谁坚持什么，分歧在哪里，什么经受住了检验。</span></div>
+        <div class="linha"><span class="a">线索</span><span>一条线索把一个话题在多日之间串起来，从一次相聚到下一次。</span></div>
+        <div class="linha"><span class="a">查询</span><span>主人的 Claude 查询说过的话，只看片段，绝不看整段对话。</span></div>
+      </div>
+      <div class="k" style="margin:clamp(48px,6vw,72px) 0 16px">群里的 AI</div>
+      <div class="principios">
+        <div class="principio"><span class="n">01</span><h3>开启</h3><p>当添加者是主人时，把 AI 加入群就等于开启它。它会自我介绍（“由……开启的 AI 转写”，后面是主人的名字），只有通知之后的内容才算数。</p></div>
+        <div class="principio"><span class="n">02</span><h3>AI on、AI off</h3><p>进入笔记的，是主人和写了 “AI on” 的人所说的话。“AI off” 即关闭。没有开启的人不进入笔记，转发的消息也不进入。</p></div>
+        <div class="principio"><span class="n">03</span><h3>受保护的对话</h3><p>开启了 WhatsApp 高级隐私的对话，永远不会被读取。</p></div>
+        <div class="principio"><span class="n">04</span><h3>笔记的声音</h3><p>在群里写 “AI” 会打开菜单。群成员投票决定笔记的声音：记者（默认）、网红、科学家、风趣、老师或哲学家。多数决定。</p></div>
+        <div class="principio"><span class="n">05</span><h3>笔记回到群里</h3><p>在有分量的相聚当天，一条简短消息。周六，一周汇编的 PDF；每月第一个周六，当月汇编。没有相关内容，就保持沉默。每个群每个周期一本笔记，由 AI 署名，发出前经主人批准。</p></div>
+        <div class="principio"><span class="n">06</span><h3>我的笔记</h3><p>只有你和 AI 的群会变成 “Minhas notas &amp; setup AI”（我的笔记与 AI 设置）：你的笔记，与你和自己的对话合在一起，还有设置。</p></div>
+      </div>
+      <p class="destaque">有过相聚？就有笔记。<em>整整一周？就有汇编。</em></p>
+      <p class="nota" style="margin-top:28px;max-width:62ch">在手机上，轻量客户端就是 AI 本身，一个 WhatsApp 联系人。蜡板，一个放到 iPhone 或 Android 主屏幕上的页面，正在试用：这是方向，还不是现成的功能。</p>
+      <a class="mais" href="where-it-comes-from/#ritmo">这个节奏从何而来 <span class="seta" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · CONFIANÇA -->
 <section class="sec" id="confianca" aria-labelledby="t-confianca">
   <div class="wrap">
-    <div class="sec-cab rev"><div class="k">06 · 信任</div><h2 id="t-confianca">信任<em>就是</em>协议。</h2></div>
+    <div class="sec-cab rev"><div class="k">07 · 信任</div><h2 id="t-confianca">信任<em>就是</em>协议。</h2></div>
     <div class="corpo rev">
       <p class="lead">信任不是网络的一条规则。信任就是网络本身的架构。</p>
       <div class="principios">
@@ -153,10 +184,10 @@
   </div>
 </section>
 
-<!-- 07 · A INTERNET AGÊNTICA -->
+<!-- 08 · A INTERNET AGÊNTICA -->
 <section class="sec" id="agentes" aria-labelledby="t-agentes">
   <div class="wrap">
-    <div class="sec-cab rev"><div class="k">07 · 智能体互联网</div><h2 id="t-agentes">人与人之间。<em>代理与代理之间。</em></h2></div>
+    <div class="sec-cab rev"><div class="k">08 · 智能体互联网</div><h2 id="t-agentes">人与人之间。<em>代理与代理之间。</em></h2></div>
     <div class="corpo rev">
       <ol class="trilha">
         <li><span class="par">人<span class="x">↔</span>人</span><span class="tag">一直</span><p class="d">信任谁，就讲给谁听。重要的知识一直是这样流传的。</p></li>
@@ -172,15 +203,15 @@
   </div>
 </section>
 
-<!-- 08 · ARQUITETURA -->
+<!-- 09 · ARQUITETURA -->
 <section class="sec" id="arquitetura" aria-labelledby="t-arq">
   <div class="wrap">
-    <div class="sec-cab rev"><div class="k">08 · 架构</div><h2 id="t-arq">留下的、流动的、<em>接触人工智能的。</em></h2></div>
+    <div class="sec-cab rev"><div class="k">09 · 架构</div><h2 id="t-arq">留下的、流动的、<em>接触人工智能的。</em></h2></div>
     <div class="corpo rev">
       <p class="lead">一个让个人、企业和社群与他人及人工智能代理分享智慧的协议，而无需交出自己知识的所有权。</p>
       <div class="dominios">
         <div class="dominio"><b>大脑</b><span class="papel">留在主人身边</span><p>在主人的电脑上，存放在本地保险库中。读取它的应用没有任何联网权限：阻止连接的是操作系统本身。</p></div>
-        <div class="dominio"><b>offnets.io</b><span class="papel">信使</span><p>在大脑之间传递签名的数据包，只传每位主人放行的内容。数据包以封闭状态传送。</p></div>
+        <div class="dominio"><b>offnets.io</b><span class="papel">信箱</span><p>通过 WhatsApp 用 PIN 码登录、邀请与席位、群里的 AI，以及回到群里的笔记。它不保存内容：只转交笔记，只保留加密代码、计数和日期。在大脑之间传递签名的数据包，仍是方向。</p></div>
         <div class="dominio"><b>offnets.ai</b><span class="papel">与人工智能的边界</span><p>对话的提炼和对模型的查询都经过这里。发往模型的内容会先遮蔽证件号码和联系方式，每一次外发都会报告哪些内容被隐去。</p></div>
         <div class="dominio"><b>offnets.org</b><span class="papel">机构</span><p>本站：网络的宣言与宪章，每个版本都注明日期。</p></div>
       </div>
@@ -200,10 +231,10 @@
   </div>
 </section>
 
-<!-- 09 · MANIFESTO -->
+<!-- 10 · MANIFESTO -->
 <section class="sec" id="manifesto" aria-labelledby="t-manif">
   <div class="wrap">
-    <div class="sec-cab rev"><div class="k">09 · 宣言</div><span></span></div>
+    <div class="sec-cab rev"><div class="k">10 · 宣言</div><span></span></div>
     <div class="corpo rev">
       <div class="manif">
         <h2 class="abre-m" id="t-manif">人的大脑一直是<em>离线的。</em></h2>
@@ -221,13 +252,14 @@
   </div>
 </section>
 
-<!-- 10 · CONSTITUIÇÃO -->
+<!-- 11 · CONSTITUIÇÃO -->
 <section class="sec" id="constituicao" aria-labelledby="t-const">
   <div class="wrap">
-    <div class="sec-cab rev"><div class="k">10 · 宪章与治理</div><h2 id="t-const">这里有一部<em>宪章。</em></h2></div>
+    <div class="sec-cab rev"><div class="k">11 · 宪章与治理</div><h2 id="t-const">这里有一部<em>宪章。</em></h2></div>
     <div class="corpo rev">
       <p class="lead">十五条条款，分为三层，先于一切便利生效。上层永远不会为了服务下层而被违反，任何效用上的收益都换不来对一项权利的例外。</p>
       <p class="nota">网络的规则适用于人类生活的一切领域：工作只是其中之一，而不是唯一（<a href="constitution/#art-12">第 12 条 · 领域</a>）。</p>
+      <p class="nota" style="margin-top:12px">这些想法从何而来：<a href="where-it-comes-from/">亚里士多德是根，迈克尔·桑德尔是桥</a>。</p>
       <div class="mapa-c">
         <div><div class="k">宗旨</div><ol><li><a href="constitution/#art-1"><span>1</span>产生智慧并尊重传授者</a></li></ol></div>
         <div><div class="k">权利</div><ol><li><a href="constitution/#art-2"><span>2</span>同意与退出</a></li><li><a href="constitution/#art-3"><span>3</span>被引述的第三方</a></li><li><a href="constitution/#art-4"><span>4</span>托付的秘密</a></li></ol></div>
@@ -243,10 +275,10 @@
   </div>
 </section>
 
-<!-- 11 · ECOSSISTEMA -->
+<!-- 12 · ECOSSISTEMA -->
 <section class="sec" id="ecossistema" aria-labelledby="t-eco">
   <div class="wrap">
-    <div class="sec-cab rev"><div class="k">11 · 生态</div><h2 id="t-eco">是网络，<em>不是仓库。</em></h2></div>
+    <div class="sec-cab rev"><div class="k">12 · 生态</div><h2 id="t-eco">是网络，<em>不是仓库。</em></h2></div>
     <div class="corpo rev">
       <div class="eco">
         <div><h3>没有中央云端</h3><p>不存在一个集中所有大脑的地方。每个大脑都留在自己家里，它们通过协议对话，并有回执。</p></div>
@@ -257,14 +289,15 @@
   </div>
 </section>
 
-<!-- 12 · ENTRAR NA REDE -->
+<!-- 13 · ENTRAR NA REDE -->
 <section class="sec entrar" id="entrar" aria-labelledby="t-entrar">
   <div class="wrap rev">
-    <div class="k">12 · 加入网络</div>
+    <div class="k">13 · 加入网络</div>
     <h2 id="t-entrar">仅限<em>邀请。</em></h2>
     <p class="lead">没有人能独自加入。已经在网络中的人发出邀请、签署准入并为之负责。网络在一份份信任之间成长，正如真正的知识那样成长。</p>
+    <p class="nota" style="max-width:62ch;margin:18px auto 0">受邀的人会收到 “Offnets 的一个席位”，并通过 WhatsApp 用 PIN 码登录。目前应用只支持 Mac；iPhone、Android 和 Windows 的席位已经预留，准备好时我们会通知。在群里写 “AI on” 但还没有应用的人，会私下收到群主送出的一个席位。</p>
     <p class="convite">想加入？<a href="mailto:convite@offnets.org?subject=Offnets%20%E9%82%80%E8%AF%B7">请申请邀请</a>：告诉我们你是谁，出于什么目的。 <a href="mailto:convite@offnets.org">convite@offnets.org</a></p>
-    <div class="status"><span class="tag hoje">0.1 测试版</span><span class="tag">封闭网络</span><span class="tag">今天，接入 Claude</span></div>
+    <div class="status"><span class="tag hoje">协议 v0.1 测试版</span><span class="tag hoje">应用 0.2.12 · Mac</span><span class="tag">封闭网络</span><span class="tag">今天，接入 Claude</span></div>
     <div class="ctas">
       <a class="btn" href="manifesto/">阅读宣言 <span class="seta" aria-hidden="true">→</span></a>
       <a class="btn alt" href="constitution/">阅读宪章</a>
@@ -274,8 +307,8 @@
 
 </main>
 <footer class="rodape">
-  <span>Offnets · 协议，0.1 测试版 · 2026 年 10 月 · Andreas Blazoudakis</span>
-  <nav aria-label="页脚"><a href="./">理解</a><a href="manifesto/">宣言</a><a href="constitution/">宪章</a><span>封闭网络，仅限邀请。</span></nav>
+  <span>Offnets · 协议 v0.1 测试版 · 应用 0.2.12 · 2026 年 10 月 · Andreas Blazoudakis</span>
+  <nav aria-label="页脚"><a href="./">理解</a><a href="manifesto/">宣言</a><a href="constitution/">宪章</a><a href="where-it-comes-from/">从何而来</a><span>封闭网络，仅限邀请。</span></nav>
   <p class="contato">联系我们 · <a href="mailto:ola@offnets.org">ola@offnets.org</a> · <a href="mailto:ola@offnets.org?subject=%E6%84%9F%E7%9F%A5">分享你的感知</a></p>
 </footer>
 
