@@ -1,9 +1,10 @@
 #!/bin/bash
-# Monta o site público offnets.org em 7 línguas e 3 páginas por língua (entender → estudar):
-#   home (a página de entender), manifesto/ (o manifesto inteiro e a origem) e constituicao/ (pt) ou constitution/ (demais).
-# Fonte por língua em src/<lingua>/: topo.html, rodape.html, home.html, manifesto.html, constituicao.html.
+# Monta o site público offnets.org em 7 línguas e 4 páginas por língua (entender → estudar):
+#   home (a página de entender), manifesto/ (o manifesto inteiro e a origem), constituicao/ (pt) ou constitution/ (demais)
+#   e de-onde-vem/ (pt; slug traduzido nas demais: Aristóteles e Sandel, os fundamentos).
+# Fonte por língua em src/<lingua>/: topo.html, rodape.html, home.html, manifesto.html, constituicao.html, de-onde-vem.html.
 #   Em cada página: linha 1 = <!-- titulo: ... -->, linha 2 = <!-- descricao: ... -->, resto = corpo.
-#   Marcadores: {{TOPO}} {{RODAPE}} {{IDIOMAS}} {{HOME}} {{MANIFESTO}} {{CONSTITUICAO}} (links relativos à página)
+#   Marcadores: {{TOPO}} {{RODAPE}} {{IDIOMAS}} {{HOME}} {{MANIFESTO}} {{CONSTITUICAO}} {{DE_ONDE_VEM}} (links relativos à página)
 #   e {{SVG:nome}} (inclui src/_svg/nome.svg, desenhos sem texto, iguais em todas as línguas).
 # Saída: index.html (pt), en/ es/ fr/ zh/ hi/ ar/, com hreflang entre as versões da MESMA página e x-default = inglês.
 set -euo pipefail
@@ -22,10 +23,13 @@ L = [  # código, pasta, html lang, bandeira, rótulo
   ("ar", "ar/", "ar",      "🇸🇦", "العربية"),
 ]
 MAIS = {"pt": "Mais idiomas", "en": "More languages", "es": "Más idiomas", "fr": "Plus de langues", "zh": "更多语言", "hi": "और भाषाएँ", "ar": "المزيد من اللغات"}
-PAGINAS = ["home", "manifesto", "constituicao"]
+PAGINAS = ["home", "manifesto", "constituicao", "de-onde-vem"]
+DE_ONDE_VEM = {"pt": "de-onde-vem/", "en": "where-it-comes-from/", "es": "de-donde-viene/", "fr": "d-ou-il-vient/",
+               "zh": "where-it-comes-from/", "hi": "where-it-comes-from/", "ar": "where-it-comes-from/"}
 def slug(cod, pag):
     if pag == "home": return ""
     if pag == "manifesto": return "manifesto/"
+    if pag == "de-onde-vem": return DE_ONDE_VEM[cod]
     return "constituicao/" if cod == "pt" else "constitution/"
 def caminho(cod, pag):  # pasta a partir da raiz do site, ex.: "en/constitution/"
     pasta = dict((c, p) for c, p, *_ in L)[cod]
@@ -67,7 +71,8 @@ for cod, pasta, lang, _, _ in L:
         corpo = (corpo.replace("{{IDIOMAS}}", seletor)
                       .replace("{{HOME}}", rel(aqui, caminho(cod, "home")))
                       .replace("{{MANIFESTO}}", rel(aqui, caminho(cod, "manifesto")))
-                      .replace("{{CONSTITUICAO}}", rel(aqui, caminho(cod, "constituicao"))))
+                      .replace("{{CONSTITUICAO}}", rel(aqui, caminho(cod, "constituicao")))
+                      .replace("{{DE_ONDE_VEM}}", rel(aqui, caminho(cod, "de-onde-vem"))))
         corpo = re.sub(r"\{\{SVG:(\w+)\}\}", lambda m: SVG[m.group(1)], corpo)
         pagina = f"""<!doctype html>
 <html lang="{lang}"{DIR}>

@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Termos de uso · Offnets</title>
-<meta name="description" content="Termos de Uso e Aviso de Privacidade do Offnets (edição Lite), versão 1.1: grupos de aprendizado só com o aceite de todos, nada sai do seu Mac.">
+<meta name="description" content="Termos de Uso e Aviso de Privacidade do Offnets, versão 1.2: a AI no grupo só com quem escreveu AI on, o caderno aprovado pelo dono, e o servidor sem o conteúdo.">
 <meta property="og:title" content="Termos de uso · Offnets">
-<meta property="og:description" content="Termos de Uso e Aviso de Privacidade do Offnets (edição Lite), versão 1.1: grupos de aprendizado só com o aceite de todos, nada sai do seu Mac.">
+<meta property="og:description" content="Termos de Uso e Aviso de Privacidade do Offnets, versão 1.2: a AI no grupo só com quem escreveu AI on, o caderno aprovado pelo dono, e o servidor sem o conteúdo.">
 <meta property="og:url" content="https://offnets.org/termos/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#f5f6f4" media="(prefers-color-scheme: light)">
@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<style>.termos p{white-space:pre-line}.termos .mudou{margin:28px 0;padding:18px 22px;background:var(--soft);border-inline-start:2px solid var(--signal)}.termos .mudou h2{margin:0 0 8px;padding:0;border:0;font:600 16px/1.35 var(--f-sans)}.termos .mudou ul{margin:0;padding-inline-start:20px}.termos .mudou li{margin:4px 0}</style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -27,7 +28,7 @@
     offnets
   </a>
   <div class="topo-dir">
-    <nav class="secoes" aria-label="Seções"><a href="../#mudanca">Entender</a><a href="../#confianca">Confiança</a><a href="../#arquitetura">Arquitetura</a><a href="../manifesto/">Manifesto</a><a href="./">Constituição</a></nav>
+    <nav class="secoes" aria-label="Seções"><a href="../#mudanca">Entender</a><a href="../#confianca">Confiança</a><a href="../#arquitetura">Arquitetura</a><a href="../manifesto/">Manifesto</a><a href="../constituicao/">Constituição</a><a href="../de-onde-vem/">De onde vem</a></nav>
     <nav class="idiomas" aria-label="Idioma / Language"><a href="./" hreflang="pt-BR" lang="pt-BR" aria-current="true" data-lingua="pt">PT</a><a href="../en/constitution/" hreflang="en" lang="en" data-lingua="en">EN</a><details class="mais"><summary aria-label="Mais idiomas" title="Mais idiomas"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.7 3.9 5.9 3.9 9.5s-1.3 6.8-3.9 9.5c-2.6-2.7-3.9-5.9-3.9-9.5S9.4 5.2 12 2.5z"/></svg></summary><div class="menu"><a href="../es/constitution/" hreflang="es" lang="es" data-lingua="es">Español</a><a href="../fr/constitution/" hreflang="fr" lang="fr" data-lingua="fr">Français</a><a href="../zh/constitution/" hreflang="zh-Hans" lang="zh-Hans" data-lingua="zh">中文</a><a href="../hi/constitution/" hreflang="hi" lang="hi" data-lingua="hi">हिन्दी</a><a href="../ar/constitution/" hreflang="ar" lang="ar" data-lingua="ar">العربية</a></div></details></nav>
   </div>
 </header>
@@ -35,33 +36,47 @@
 
 <main id="conteudo" class="estudo">
 <article class="termos">
-<h1>Offnets (edição Lite) · Termos de Uso e Aviso de Privacidade</h1>
-<p>Versão 1.1 para a versão 0.1.9 do app · 07 de outubro de 2026 (substitui a 1.0, de 05/10/2026)
+<h1>Offnets · Termos de Uso e Aviso de Privacidade</h1>
+<p>Versão 1.2 para a versão 0.2.12 do app · 10 de outubro de 2026 (substitui a 1.1, de 07/10/2026)
 Vigência: a partir da ativação do seu convite.</p>
+<aside class="mudou" aria-labelledby="mudou-t">
+<h2 id="mudou-t">O que mudou nesta versão</h2>
+<ul>
+<li><strong>Sai o pacto.</strong> O WhatsApp não depende mais de todos aceitarem com "Li e aceito". Agora vale o modelo <strong>AI on</strong>: só entra a fala do dono e de quem escreveu "AI on" no grupo, depois do aviso da AI (cláusula 8).</li>
+<li><strong>A AI, um contato no WhatsApp.</strong> Ela é ligada quando o dono a adiciona a um grupo, se apresenta, abre um menu quando alguém escreve "AI" e devolve o caderno ao grupo, sempre aprovado pelo dono antes de sair (cláusula 8).</li>
+<li><strong>A IA não lê conversas inteiras.</strong> Sai a frase que dizia que uma IA ligada ao Offnets podia ler conversas inteiras. O Claude do dono consulta só trechos, e a destilação é feita pelo Claude do próprio dono, na conta dele (cláusula 11).</li>
+<li><strong>O que o servidor guarda.</strong> O offnets.io repassa o caderno e não guarda conteúdo: só códigos cifrados, contagens e datas (item B.2).</li>
+<li><strong>Entrada pelo WhatsApp.</strong> O login é pelo WhatsApp, com PIN, e o convite chega como "Uma cadeira no Offnets" (cláusula 2).</li>
+</ul>
+</aside>
 <blockquote>
-<p><strong>Grave só conversas das quais você participa e respeite quem foi gravado. No WhatsApp, só grupos em que TODOS aceitaram.</strong></p>
+<p><strong>Grave só conversas das quais você participa e respeite quem foi gravado. No WhatsApp, só entra a fala de quem escreveu "AI on".</strong></p>
 </blockquote>
 <p>Texto elaborado a partir de um benchmark de mercado (ver TERMOS-BENCHMARK.md) e da LGPD (Lei 13.709/2018), sem revisão de advogado, por decisão do titular do produto. Itens marcados [DEFINIR] dependem do titular e estão listados no fim.</p>
 <p>Em resumo, em linguagem simples:
-- O Offnets transcreve suas conversas <strong>no seu Mac</strong>. O conteúdo <strong>não sai</strong> dele e <strong>não chega ao Offnets</strong>.
-- Para a licença continuar valendo, o app envia à rede <strong>só contagens</strong> (quantas conversas, quantas horas, versão do app). Nunca títulos, nomes, trechos, vozes ou contatos.
+- O Offnets transcreve suas conversas <strong>no seu Mac</strong>. O conteúdo fica nele.
+- No WhatsApp, a AI só entra num grupo se o dono a ligar, e só vale o que vem <strong>depois do aviso</strong>. Entra a fala do dono e de quem escreveu <strong>"AI on"</strong>. "AI off" desliga. Encaminhadas não entram.
+- Conversa protegida pelo WhatsApp (privacidade avançada) <strong>nunca</strong> é lida.
+- O caderno que volta ao grupo é aprovado pelo dono antes de sair. O servidor <strong>repassa</strong> o caderno e <strong>não guarda</strong> o conteúdo: só códigos cifrados, contagens e datas.
+- Para a licença continuar valendo, o app envia à rede <strong>só contagens</strong>. Nunca títulos, nomes, trechos, vozes ou contatos.
 - Você é responsável pelo que grava. Avise as pessoas, respeite quem pedir para parar e não use o app para vigiar ou expor ninguém.
-- No WhatsApp, o Offnets só lê <strong>grupos de aprendizado</strong>: todos os participantes aceitam por escrito antes de qualquer leitura. Quem não quiser mais, sai do grupo.
-- Conversa protegida pelo WhatsApp (privacidade avançada ou conversa restrita) <strong>nunca</strong> é lida.
 - Reconhecer vozes vem <strong>desligado</strong>: é biometria, e só se liga com o consentimento de quem foi gravado.
 - Você só entra com convite. A licença é um empréstimo, tem limites e pode ser pausada.</p>
 <hr />
 <h1>PARTE A · TERMOS DE USO</h1>
-<h2>1. Quem somos e o que é o Offnets (edição Lite)</h2>
-<p>1.1. O Offnets, na edição Lite ("Offnets", "app"; até a versão 0.1.6 chamado "Offnets Lite") é um programa para Mac que transcreve gravações (Gravador do Mac e do iPhone, quando sincronizado pelo iCloud) e, se você ligar, conversas de WhatsApp que você escolher. Também separa quem falou e reconhece a mesma voz entre gravações (ver cláusula 9).
-1.2. O Lite é fornecido por [DEFINIR: titular do Offnets, pessoa física ou jurídica, com CNPJ/CPF e endereço] ("Offnets", "nós").
+<h2>1. Quem somos e o que é o Offnets</h2>
+<p>1.1. O Offnets ("Offnets", "app"; até a versão 0.1.6 chamado "Offnets Lite") é um programa para Mac que transcreve gravações (Gravador do Mac e do iPhone, quando sincronizado pelo iCloud) e, se você ligar, conversas de WhatsApp que você escolher. Também separa quem falou e reconhece a mesma voz entre gravações (ver cláusula 9). Com o Claude do próprio dono, destila os encontros em cadernos e costura os assuntos em fios.
+1.1.1. A <strong>AI</strong> é um contato no WhatsApp ligado ao Offnets. Ela mora nos grupos em que o dono a ligou e devolve a eles o caderno (cláusula 8).
+1.2. O app é fornecido por [DEFINIR: titular do Offnets, pessoa física ou jurídica, com CNPJ/CPF e endereço] ("Offnets", "nós").
 1.3. Contato para qualquer assunto: ola@offnets.org.
-1.4. Ao ativar o convite e usar o Lite, você declara que leu e aceita estes Termos e o Aviso de Privacidade (Parte B).</p>
+1.4. Ao ativar o convite e usar o app, você declara que leu e aceita estes Termos e o Aviso de Privacidade (Parte B).</p>
 <h2>2. Quem pode usar</h2>
-<p>2.1. O Lite é <strong>só por convite</strong>. Sem convite válido, o app não transcreve.
-2.2. Você deve ter pelo menos [DEFINIR: idade mínima; padrão sugerido 18] anos. O Lite trata voz como dado biométrico e não é destinado a menores.
+<p>2.1. O app é <strong>só por convite</strong>. Sem convite válido, o app não transcreve. O convite chega como <strong>"Uma cadeira no Offnets"</strong>, e a entrada é pelo WhatsApp, com um <strong>PIN</strong> de uso único.
+2.1.1. Hoje o app é para Mac. iPhone, Android e Windows têm a cadeira reservada; avisamos quando houver. No celular, além da AI no WhatsApp, a tábua (uma página para a tela de início) está em prova e não é uma função pronta.
+2.1.2. Quem escreve "AI on" num grupo com a AI e ainda não tem o app recebe, no privado, uma cadeira do dono do grupo, se houver cadeira disponível. Aceitar é escolha da pessoa.
+2.2. Você deve ter pelo menos [DEFINIR: idade mínima; padrão sugerido 18] anos. O app trata voz como dado biométrico e não é destinado a menores.
 2.3. O convite é pessoal. Não o repasse. Cada convite vale para uma pessoa e é usado uma vez.
-2.4. Se usar o Lite em nome de uma empresa, você declara ter poderes para isso e a empresa responde como se fosse você.</p>
+2.4. Se usar o app em nome de uma empresa, você declara ter poderes para isso e a empresa responde como se fosse você.</p>
 <h2>3. A licença</h2>
 <p>3.1. Damos a você uma licença <strong>de uso por liberalidade</strong>: gratuita, pessoal, não exclusiva, <strong>intransferível</strong>, <strong>revogável</strong> e limitada no tempo. Não é venda, nem assinatura, nem cria direito a continuidade.
 3.2. Você <strong>não pode</strong>: copiar, vender, alugar ou ceder o app; desmontar ou alterar o código; burlar limites, pulso, convite ou segurança; fazer o app funcionar sem a licença; usar o app para treinar sistemas de terceiros com o que ele produz sem o direito de fazê-lo; usar para fim ilícito.
@@ -72,7 +87,7 @@ Vigência: a partir da ativação do seu convite.</p>
 4.3. Você pode pedir mais tempo ou mais capacidade por ola@offnets.org. Atender é decisão nossa.
 4.4. Os limites existem para evitar abuso, como gravação contínua 24 horas.</p>
 <h2>5. O pulso: condição da licença</h2>
-<p>5.1. O Lite envia ao Offnets, a cada <strong>60 minutos</strong> (valor variável) e ao abrir, um sinal chamado <strong>pulso</strong>. Ele é <strong>condição da licença</strong>, não é opcional. Serve para confirmar o convite, conferir limites, entregar configurações e mensagens, e cuidar da segurança e do bom funcionamento da rede de convidados.
+<p>5.1. O app envia ao Offnets, a cada <strong>60 minutos</strong> (valor variável) e ao abrir, um sinal chamado <strong>pulso</strong>. Ele é <strong>condição da licença</strong>, não é opcional. Serve para confirmar o convite, conferir limites, entregar configurações e mensagens, e cuidar da segurança e do bom funcionamento da rede de convidados.
 5.2. O pulso leva <strong>somente contagens e dados técnicos</strong>, detalhados no Aviso de Privacidade (item B.2). <strong>Nunca</strong> leva conteúdo: nada de falas, textos, títulos, etiquetas, nomes de pessoas gravadas, nomes de contatos ou grupos, vozes ou impressões de voz.
 5.3. Se o app ficar <strong>7 dias</strong> sem conseguir um pulso bem-sucedido (prazo variável), a transcrição <strong>pausa</strong> até o próximo pulso funcionar. Você continua acessando o que já foi transcrito.
 5.4. As configurações que recebemos no pulso são <strong>assinadas digitalmente</strong>; o app só aceita configuração assinada por nós. Mandamos configuração (limites, prazos, textos), nunca comandos para mexer nos seus arquivos.</p>
@@ -80,31 +95,35 @@ Vigência: a partir da ativação do seu convite.</p>
 <p>6.1. <strong>Grave só conversas das quais você participa e respeite quem foi gravado.</strong>
 6.2. Avise as pessoas de que a conversa está sendo gravada ou transcrita, antes de começar ou assim que possível, e obtenha o consentimento quando a lei ou a situação exigirem. Em reunião de trabalho ou conversa com terceiros, avisar é a regra.
 6.3. Respeite o pedido de quem não quiser ser gravado, a qualquer momento. Pare e apague, se a pessoa pedir.
-6.4. Não use o Lite para vigilância, perseguição, assédio, chantagem, constrangimento, discriminação, para captar conversa alheia sem participar dela, nem para qualquer fim ilícito.
+6.4. Não use o app para vigilância, perseguição, assédio, chantagem, constrangimento, discriminação, para captar conversa alheia sem participar dela, nem para qualquer fim ilícito.
 6.5. Não divulgue, publique ou compartilhe gravações e transcrições de terceiros sem base legal ou autorização. Gravar e divulgar são coisas diferentes (cláusula 7).
 6.6. <strong>Guarde seus dados:</strong> o conteúdo fica no seu Mac e a segurança dele depende de você. Use senha no Mac, ative o FileVault, faça cópias de segurança e não deixe outras pessoas usarem sua conta.
 6.7. Informe-nos se perder o aparelho ou suspeitar de acesso indevido ao app.
-6.8. Você responde pelo seu uso do Lite e pelos danos que causar a terceiros ou a nós por descumprir estes Termos.</p>
+6.8. Só ligue a AI em grupos de que você participa e respeite quem não escreveu "AI on": a fala dessa pessoa não entra no caderno, e você não deve contorná-la.
+6.9. Você responde pelo seu uso do app e pelos danos que causar a terceiros ou a nós por descumprir estes Termos.</p>
 <h2>7. Gravação de conversas e a lei</h2>
 <p>7.1. Esta cláusula é uma orientação de cautela, não um parecer jurídico, e não garante resultado em nenhum caso concreto.
 7.2. No Brasil, o entendimento majoritário é que gravar uma conversa <strong>da qual você participa</strong> não é, em regra, a interceptação proibida pela Lei 9.296/1996, que trata de captar conversa de <strong>terceiros</strong>. Mesmo assim, o contexto importa (local, expectativa de sigilo, profissão, sigilos legais) e o entendimento pode mudar ou ser diferente em outro país.
 7.3. <strong>Divulgar</strong> é outra coisa. Tornar pública, compartilhar ou usar uma gravação pode ferir a intimidade, a honra, a imagem e os dados pessoais de quem foi gravado (Constituição, art. 5º, X; Código Civil; LGPD) e gerar responsabilidade civil e até criminal.
 7.4. Se você estiver em outro país, ou gravar pessoas que estão em outro país, cumpra as leis locais. Algumas exigem o consentimento de todos.
 7.5. Em caso de dúvida, não grave, ou peça orientação de um advogado.</p>
-<h2>8. WhatsApp: grupos de aprendizado</h2>
-<p>8.1. A leitura do WhatsApp é <strong>opcional</strong>, começa <strong>desligada</strong> e funciona conversa por conversa. O Offnets só lê uma conversa que tenha passado pelo <strong>pacto</strong> abaixo.
-8.2. <strong>O pacto.</strong> (a) Você envia ao grupo o <strong>convite</strong> que o app prepara, com o link destes Termos. (b) <strong>Cada participante</strong> responde, da própria conta, a frase <strong>"Li e aceito"</strong>. (c) Quando <strong>todos</strong> os participantes ativos aceitaram, você envia a <strong>mensagem de início</strong>. A leitura começa <strong>nessa mensagem</strong>: nada do que foi escrito antes entra.
-8.3. <strong>Quem entra depois</strong> fica de fora até aceitar: as mensagens dele não são lidas, e o grupo segue para quem aceitou.
-8.4. <strong>Sair é sair do grupo.</strong> Quem não quiser mais participar sai do grupo, e o que escrever depois não existe para o Offnets. Se alguém escrever no grupo que não quer participar (por exemplo, "não quero participar"), as mensagens <strong>dessa pessoa</strong> deixam de ser lidas dali em diante, e o app avisa você.
-8.5. O que foi lido enquanto a pessoa participava continua no seu Mac. Se ela pedir que o que ensinou seja apagado, você deve apagar (LGPD, art. 18).
-8.6. <strong>Registro do consentimento.</strong> O app guarda, no seu Mac, quem aceitou, quando e em qual mensagem. Esse registro é a prova do consentimento (LGPD, art. 8º) e não entra no acervo.
-8.7. <strong>Conversas protegidas.</strong> Se a conversa tiver a privacidade avançada ou a conversa restrita do WhatsApp ligada, o Offnets <strong>não a lê</strong>, mesmo com o pacto, e não oferece a opção de ligar.
-8.8. Entram, nos grupos com pacto: mensagens de texto, áudios (transcritos), recados de vídeo e vídeos originais seus. <strong>Mensagens encaminhadas não entram.</strong> O Offnets não envia nada sozinho: quem envia é sempre você.
-8.9. A cada 90 dias o app sugere um lembrete do combinado. Se estes Termos mudarem, <strong>todos aceitam de novo</strong>.
-8.10. O Offnets lê o arquivo do WhatsApp que já está no seu Mac, só para leitura e por cópia. Ele não é afiliado, patrocinado ou endossado pelo WhatsApp ou pela Meta. Os Termos do WhatsApp continuam valendo para você, e o consentimento dos participantes não é uma autorização do WhatsApp. Se o WhatsApp mudar o formato dos arquivos, a leitura pode parar sem aviso, e, na dúvida, o Offnets não lê.</p>
+<h2>8. WhatsApp: a AI no grupo</h2>
+<p>8.1. A leitura do WhatsApp é <strong>opcional</strong>, começa <strong>desligada</strong> e funciona conversa por conversa. O Mac lê, por cópia, só as conversas que você ligou.
+8.2. <strong>Ligar a AI.</strong> Adicionar a AI a um grupo liga a AI naquele grupo, quando quem adiciona é o dono. A AI se apresenta com um aviso ("Transcrição com AI ligada por", seguido do nome do dono). <strong>Só vale o que vem depois do aviso</strong>: nada do que foi escrito antes entra.
+8.3. <strong>Quem entra.</strong> Entra a fala do dono e a de quem escreveu <strong>"AI on"</strong> no grupo, a partir dessa mensagem. Quem não escreveu "AI on" <strong>não entra no caderno</strong>.
+8.4. <strong>Sair é escrever "AI off".</strong> O que a pessoa escrever depois de "AI off" não entra. Sair do grupo tem o mesmo efeito.
+8.5. O que foi lido enquanto a pessoa participava continua no Mac do dono. Se ela pedir que o que ensinou seja apagado, o dono deve apagar (LGPD, art. 18).
+8.6. <strong>Registro.</strong> O próprio "AI on", escrito pela pessoa no grupo, com data e hora, é o registro da escolha dela (LGPD, art. 8º). Ele fica na conversa, no Mac do dono.
+8.7. <strong>Conversas protegidas.</strong> Se a conversa tiver a privacidade avançada do WhatsApp ligada, o Offnets <strong>não a lê, nunca</strong>, e não oferece a opção de ligar.
+8.8. Entram: mensagens de texto, áudios (transcritos), recados de vídeo e vídeos originais. <strong>Mensagens encaminhadas não entram.</strong>
+8.9. <strong>O menu e a voz do caderno.</strong> Escrever "AI" no grupo abre o menu da AI. Pelo menu, cada participante vota na voz do caderno: jornalista (a padrão), influencer, cientista, divertida, professor ou filósofo. O último voto de cada pessoa vale, e a maioria vence. Há também atalhos, como "AI placar".
+8.10. <strong>O caderno que volta ao grupo.</strong> O caderno é redigido no Mac do dono, com o Claude do dono (cláusula 11), e só sai depois que o dono o aprova. No dia de um encontro contundente, a AI manda uma mensagem curta; no sábado, a compilação da semana em PDF; no primeiro sábado do mês, a do mês. Sem conteúdo relevante, a AI fica em silêncio. Sai um caderno por grupo e por período, assinado pela AI.
+8.11. <strong>Minhas notas.</strong> Um grupo só seu com a AI vira "Minhas notas &amp; setup AI": as suas notas, que somam com a conversa consigo mesmo, e a configuração da AI.
+8.12. <strong>O que a AI recebe.</strong> Como qualquer participante, a AI recebe as mensagens do grupo pelo provedor de mensagens (item B.5). O servidor só reage aos comandos ("AI", "AI on", "AI off", votos): o comando é comparado e descartado, e o texto das mensagens não é guardado.
+8.13. O Offnets lê o arquivo do WhatsApp que já está no seu Mac, só para leitura e por cópia. Ele não é afiliado, patrocinado ou endossado pelo WhatsApp ou pela Meta. Os Termos do WhatsApp continuam valendo para você, e a escolha dos participantes não é uma autorização do WhatsApp. Se o WhatsApp mudar o formato dos arquivos, a leitura pode parar sem aviso, e, na dúvida, o Offnets não lê.</p>
 <h2>9. Identificação de vozes</h2>
 <p>9.0. O reconhecimento de vozes vem <strong>desligado</strong>. Você liga em Ajustes, e só deve ligar se as pessoas gravadas souberem e concordarem.
-9.1. O Lite separa quem falou em cada gravação e reconhece a mesma voz entre gravações e fontes. Isso é feito <strong>no seu Mac</strong>, por modelos que rodam no aparelho, sem enviar áudio para a nuvem.
+9.1. O app separa quem falou em cada gravação e reconhece a mesma voz entre gravações e fontes. Isso é feito <strong>no seu Mac</strong>, por modelos que rodam no aparelho, sem enviar áudio para a nuvem.
 9.2. A "impressão de voz" é um dado biométrico, portanto <strong>dado pessoal sensível</strong> (LGPD, art. 5º, II e art. 11). Ela fica <strong>só no seu Mac</strong>. Nunca é enviada ao Offnets, a IA de terceiros, exportada ou exibida a outro programa. O pulso leva apenas o <strong>número</strong> de pessoas reconhecidas.
 9.3. O nome de uma pessoa <strong>só é associado à voz se você confirmar</strong>. As sugestões do app são apenas sugestões e podem errar.
 9.4. <strong>Apagar a pessoa</strong> na tela "Pessoas" apaga a impressão de voz dela.
@@ -114,23 +133,23 @@ Vigência: a partir da ativação do seu convite.</p>
 <p>10.1. As transcrições, gravações, nomes e impressões de voz ficam <strong>no seu Mac</strong>, em arquivos comuns, na pasta que você escolher. Você pode <strong>exportar</strong> o texto e <strong>apagar</strong> o que quiser a qualquer momento.
 10.2. Desinstalar o app não apaga as gravações originais do Gravador nem os arquivos do WhatsApp. Para remover tudo do app, apague a pasta de dados dele.
 10.3. Não temos como recuperar o que você apagar nem o que se perder com o seu aparelho, pois não temos cópia.
-10.4. Não usamos suas conversas para treinar nada, porque não as recebemos.</p>
-<h2>11. IA de terceiros (opcional)</h2>
-<p>11.1. Você pode ligar uma IA de terceiros (como ChatGPT ou Claude). Vem <strong>desligado</strong>.
-11.2. Se ligar, os trechos que você escolher, ou que respondem à sua pergunta, <strong>vão ao fornecedor daquela IA</strong>, que os trata <strong>conforme os termos e a política de privacidade dele</strong>, não os nossos. O Offnets não vê esses trechos e não controla o fornecedor. Esse envio pode ser uma transferência internacional.
-11.3. As <strong>impressões de voz nunca vão</strong> a essas IAs.
-11.4. Uma IA ligada ao Offnets pode ler conversas inteiras, inclusive de grupos com pacto. O convite dos grupos menciona o apoio de IA, mas o envio ao fornecedor é escolha sua.
+10.4. Não usamos suas conversas para treinar nada, e não as guardamos.</p>
+<h2>11. IA de terceiros e a destilação</h2>
+<p>11.1. A destilação dos encontros em cadernos e a consulta ao que foi falado usam o <strong>Claude do próprio dono</strong>, na conta dele. Hoje, é o único modelo ligado ao Offnets. Outras IAs de terceiros (como ChatGPT) vêm <strong>desligadas</strong>.
+11.2. Para destilar, a conversa passa pelo fornecedor daquela IA, que a trata <strong>conforme os termos e a política de privacidade dele</strong>, não os nossos. O Offnets não vê esse envio e não controla o fornecedor. Esse envio pode ser uma transferência internacional.
+11.3. Para consultar, o Claude do dono recebe <strong>só trechos</strong> do que foi falado, os que respondem à pergunta. Não há como ler uma conversa inteira por essa consulta.
+11.4. As <strong>impressões de voz nunca vão</strong> a essas IAs.
 11.5. Antes de enviar trechos com conversa de outras pessoas, lembre que você é quem decide compartilhar. Você pode desligar a qualquer momento; o que já foi enviado fica sob as regras do fornecedor.</p>
 <h2>12. Sem garantia de exatidão</h2>
-<p>12.1. A transcrição, a separação de falantes, a sugestão de nomes e as respostas de IA são automáticas e <strong>podem errar</strong>. Confira o áudio original antes de usar para decisão importante, prova, contrato ou qualquer assunto jurídico, médico, financeiro ou profissional. O Lite não é aconselhamento de nenhuma espécie.
+<p>12.1. A transcrição, a separação de falantes, a sugestão de nomes e as respostas de IA são automáticas e <strong>podem errar</strong>. Confira o áudio original antes de usar para decisão importante, prova, contrato ou qualquer assunto jurídico, médico, financeiro ou profissional. O app não é aconselhamento de nenhuma espécie.
 12.2. O app é oferecido <strong>"no estado em que está"</strong>, como cortesia, sem garantia de disponibilidade, de que funcione sem erros ou de que continue disponível. Pode haver instabilidade, pausas e mudanças.</p>
 <h2>13. Limitação de responsabilidade</h2>
 <p>13.1. Na máxima extensão permitida em lei, o Offnets <strong>não responde</strong> por: perda ou vazamento de dados que estejam no seu aparelho; uso do app por você ou por outra pessoa em desacordo com estes Termos; gravações feitas sem aviso ou consentimento; divulgação de gravações por você; erros de transcrição ou de reconhecimento; ações de fornecedores de IA, do WhatsApp, da Apple ou da Cloudflare; lucros cessantes e danos indiretos.
-13.2. Como o Lite é gratuito, a responsabilidade total do Offnets por qualquer reclamação fica limitada a [DEFINIR: valor simbólico, por exemplo R$ 100,00].
+13.2. Como o app é gratuito, a responsabilidade total do Offnets por qualquer reclamação fica limitada a [DEFINIR: valor simbólico, por exemplo R$ 100,00].
 13.3. Nada aqui afasta responsabilidade que a lei não permita afastar (por exemplo, dolo, culpa grave ou direitos do consumidor, quando aplicáveis).
 13.4. Você se compromete a nos manter indenes de reclamações de terceiros decorrentes do seu uso do app em desacordo com estes Termos, na medida permitida em lei.</p>
 <h2>14. Encerramento</h2>
-<p>14.1. Você pode parar de usar o Lite quando quiser, desinstalando-o. Para encerrar também o seu cadastro na rede e pedir a eliminação dos dados do pulso, escreva para ola@offnets.org.
+<p>14.1. Você pode parar de usar o app quando quiser, desinstalando-o. Para encerrar também o seu cadastro na rede e pedir a eliminação dos dados do pulso, escreva para ola@offnets.org.
 14.2. Podemos <strong>suspender ou revogar</strong> a licença, a qualquer tempo, por descumprimento destes Termos, risco de segurança, exigência legal, fim do programa de convites ou conveniência nossa. Quando possível, avisaremos pelo app ou pelo contato que você nos deu.
 14.3. Encerrada a licença, a transcrição para. Você continua com seus arquivos locais. Seguem valendo as cláusulas que, pela natureza, devem continuar (6, 7, 13 e 17).</p>
 <h2>15. Alterações</h2>
@@ -141,7 +160,7 @@ Vigência: a partir da ativação do seu convite.</p>
 <p>16.1. Se uma cláusula for inválida, as demais continuam valendo.
 16.2. Não transferimos nem você pode transferir esta licença sem autorização escrita. Podemos transferir nossa posição a sucessor do produto, com aviso.
 16.3. O silêncio ou a demora em exigir um direito não é renúncia.
-16.4. Estes Termos, o Aviso de Privacidade e eventuais mensagens do app são o acordo completo sobre o Lite.</p>
+16.4. Estes Termos, o Aviso de Privacidade e eventuais mensagens do app são o acordo completo sobre o app.</p>
 <h2>17. Lei e foro</h2>
 <p>17.1. Estes Termos são regidos pelas <strong>leis brasileiras</strong>.
 17.2. Fica eleito o foro de [DEFINIR: comarca/cidade], com exclusão de qualquer outro, ressalvado, quando você for consumidor, o seu direito de demandar no foro do seu domicílio.</p>
@@ -151,12 +170,13 @@ Vigência: a partir da ativação do seu convite.</p>
 <h2>B.1. Duas coisas diferentes: o que é do Offnets e o que é seu</h2>
 <ul>
 <li><strong>Dados da licença e do pulso</strong> (item B.2): <strong>nós</strong> os recebemos e decidimos o que fazer com eles. Somos o <strong>controlador</strong> (LGPD, art. 5º, VI).</li>
-<li><strong>Conteúdo das suas conversas</strong> (gravações, transcrições, mensagens de WhatsApp, vozes, impressões de voz, nomes de pessoas): fica <strong>no seu Mac</strong>. O Offnets <strong>não</strong> o recebe, não o acessa e não o trata. Sobre esse conteúdo, quem decide o que fazer é você; a LGPD pode ou não se aplicar a você conforme o uso:</li>
+<li><strong>Conteúdo das suas conversas</strong> (gravações, transcrições, mensagens de WhatsApp, vozes, impressões de voz, nomes de pessoas): fica <strong>no seu Mac</strong>. O Offnets <strong>não</strong> o guarda, não o acessa e não o trata; a única exceção é o caderno aprovado pelo dono, que só passa em trânsito (abaixo). Sobre esse conteúdo, quem decide o que fazer é você; a LGPD pode ou não se aplicar a você conforme o uso:</li>
 <li>uso <strong>exclusivamente particular e não econômico</strong>: a LGPD não se aplica a esse tratamento (art. 4º, I);</li>
 <li>uso <strong>profissional ou econômico</strong>: você passa a ser controlador do conteúdo e tem as obrigações da LGPD perante as pessoas gravadas (base legal, transparência, atendimento de direitos, segurança).</li>
+<li><strong>O caderno que volta ao grupo</strong> passa pelo nosso servidor (offnets.io) <strong>só em trânsito</strong>, depois de aprovado pelo dono: o servidor o repassa ao grupo e não guarda o texto nem o PDF.</li>
 <li>O Offnets é apenas o fornecedor do programa. Não somos operador (art. 5º, VII) do seu conteúdo, pois não o tratamos em nome de ninguém. Os serviços que usamos para entregar o pulso (item B.5) são <strong>nossos operadores</strong>.</li>
 </ul>
-<h2>B.2. O que coletamos (só no pulso e na ativação)</h2>
+<h2>B.2. O que coletamos (no pulso, na ativação, na entrada e pela AI)</h2>
 <table>
 <thead>
 <tr>
@@ -186,8 +206,20 @@ Vigência: a partir da ativação do seu convite.</p>
 <td>Aplicar a licença</td>
 </tr>
 <tr>
-<td>WhatsApp: número de conversas ligadas (individuais e coletivas), de pactos pendentes, de aceites e de pedidos para ficar de fora registrados; número de conversas protegidas pelo WhatsApp (que não são lidas)</td>
+<td>WhatsApp no app: número de conversas ligadas (individuais e coletivas), de "AI on" e de "AI off" registrados; número de conversas protegidas pelo WhatsApp (que não são lidas)</td>
 <td>Operar o WhatsApp com segurança e provar que as protegidas são respeitadas</td>
+</tr>
+<tr>
+<td>Entrada pelo WhatsApp: o número usado para entrar, guardado só como <strong>código cifrado</strong> (HMAC), e o PIN de uso único, que vence</td>
+<td>Confirmar que é você ao entrar</td>
+</tr>
+<tr>
+<td>AI nos grupos: códigos cifrados (HMAC) do grupo e de quem escreveu "AI on", votou ou abriu o menu, nunca o número nem o nome; os votos na voz do caderno; quem é o dono do grupo; as cadeiras oferecidas pela AI; contagens de mensagens enviadas pela AI e datas</td>
+<td>Operar a AI: saber quem ligou, aplicar a voz votada, oferecer cadeiras e não mandar dois cadernos no mesmo período</td>
+</tr>
+<tr>
+<td>Cadernos devolvidos: o período, a voz, se foi com PDF, quando foi enviado e qual nó o redigiu (nunca o texto nem o PDF)</td>
+<td>Garantir um caderno por grupo e por período, e medir o uso</td>
 </tr>
 <tr>
 <td>Número de pessoas reconhecidas por voz (apenas um número)</td>
@@ -203,7 +235,7 @@ Vigência: a partir da ativação do seu convite.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Nunca coletamos:</strong> áudio, transcrição, texto de mensagens, títulos, etiquetas, nomes ou contatos de quem foi gravado, nomes de grupos, impressões de voz, arquivos do seu Mac.</p>
+<p><strong>Nunca guardamos:</strong> áudio, transcrição, texto de mensagens, o texto ou o PDF dos cadernos, títulos, etiquetas, nomes ou contatos de quem foi gravado, nomes de grupos, números de telefone em claro, impressões de voz, arquivos do seu Mac. O caderno passa pelo servidor só em trânsito.</p>
 <p>Você pode ver o que o app envia antes do envio, [DEFINIR: confirmar se a tela de pré-visualização do pulso existe na 0.1.7].</p>
 <h2>B.3. Por que usamos esses dados e em que base legal (LGPD, art. 7º)</h2>
 <table>
@@ -234,27 +266,28 @@ Vigência: a partir da ativação do seu convite.</p>
 </table>
 <p><strong>Teste de legítimo interesse (art. 10).</strong>
 - <em>Finalidade legítima:</em> proteger a rede de convidados e o produto contra abuso, e saber se o app funciona.
-- <em>Necessidade:</em> usamos apenas contagens e dados técnicos; é o mínimo para os fins (art. 6º, III). Não precisamos de conteúdo e não o recebemos.
+- <em>Necessidade:</em> usamos apenas contagens, códigos cifrados, datas e dados técnicos; é o mínimo para os fins (art. 6º, III). Não guardamos conteúdo: o caderno só passa pelo servidor, em trânsito.
 - <em>Expectativa do titular:</em> o pulso é informado neste aviso e nos Termos, como condição da licença; você vê o que é enviado.
 - <em>Impacto e salvaguardas:</em> risco baixo, pois não há conteúdo nem dado sensível no pulso. O identificador é aleatório, o pulso é autenticado, a configuração é assinada e você pode se opor (item B.9) deixando de usar o app.</p>
 <p><strong>Dado sensível (art. 11).</strong> O Offnets <strong>não recebe</strong> dado sensível. A impressão de voz é dado biométrico sensível e fica só no seu Mac. A base legal para reconhecer a voz de outras pessoas, quando a LGPD se aplicar ao seu uso, é sua (por exemplo, consentimento específico da pessoa, art. 11, I). Se você apagar a pessoa, a impressão é apagada.</p>
 <h2>B.4. Gravações, WhatsApp e terceiros</h2>
 <ul>
 <li>Quem aparece nas suas gravações e conversas não é "usuário" do Offnets. Os dados dessas pessoas ficam no seu aparelho, sob a sua responsabilidade e a base legal que você tem para tratá-los.</li>
-<li>Por isso, no WhatsApp, o Lite só lê grupos em que <strong>todos aceitaram</strong> (cláusula 8), deixa de fora quem não aceitou, respeita a proteção do WhatsApp e ignora mensagens encaminhadas.</li>
+<li>Por isso, no WhatsApp, só entra a fala do dono e de quem escreveu <strong>"AI on"</strong>, depois do aviso da AI (cláusula 8); fica de fora quem não ligou, a proteção do WhatsApp é respeitada e as mensagens encaminhadas são ignoradas.</li>
 <li>Se você é uma pessoa que foi gravada e quer exercer seus direitos, o caminho é pedir ao usuário que te gravou. Se quiser nossa ajuda para identificar a quem pedir, escreva para ola@offnets.org; como não temos o conteúdo nem os nomes, nossa ajuda é limitada.</li>
 <li>Gravar conversa da qual se participa é, em regra, lícito no Brasil (ver cláusula 7 dos Termos), mas divulgar é outra coisa. Sem promessa de resultado em caso concreto.</li>
 </ul>
 <h2>B.5. Com quem compartilhamos e onde os dados ficam</h2>
 <ul>
-<li><strong>Cloudflare, Inc.</strong> (hospedagem do endereço offnets.io e da caixa de entrada dos pulsos): operadora nossa. A infraestrutura é global, e os dados podem ser tratados fora do Brasil. Os pulsos ficam na caixa <strong>apenas em trânsito</strong> e são apagados depois que os trazemos para o nosso sistema.</li>
+<li><strong>Provedor de mensagens do WhatsApp</strong> (o canal pelo qual a AI recebe os comandos, manda o PIN de entrada, as cadeiras e os cadernos): operador nosso. As mensagens passam por ele em trânsito.</li>
+<li><strong>Cloudflare, Inc.</strong> (hospedagem do endereço offnets.io, da caixa de entrada dos pulsos e dos códigos da AI): operadora nossa. A infraestrutura é global, e os dados podem ser tratados fora do Brasil. Os pulsos ficam na caixa <strong>apenas em trânsito</strong> e são apagados depois que os trazemos para o nosso sistema.</li>
 <li><strong>Nosso sistema interno</strong> (banco de dados mantido pelo titular do Offnets, em equipamento controlado por ele): guarda a árvore de convites, o histórico dos pulsos e os limites.</li>
 <li><strong>Quem te convidou</strong> vê o seu nome declarado, o estado de atividade (ativo, parado) e números agregados de uso da sua conta, conforme a configuração do programa. Nunca vê conteúdo. [DEFINIR: confirmar o que cada convidante enxerga sobre os convidados.]</li>
-<li><strong>Fornecedores de IA</strong> (ChatGPT, Claude ou outro): só se <strong>você</strong> ligar e só com os trechos que você mandar. Não passa por nós (Termos, cláusula 11).</li>
+<li><strong>Fornecedores de IA</strong> (hoje, o Claude do próprio dono, na conta dele): a destilação e a consulta vão do Mac do dono ao fornecedor, nos termos dele. Não passam por nós (Termos, cláusula 11).</li>
 <li>Não vendemos dados. Não os usamos para publicidade.</li>
 <li>Podemos compartilhar dados com autoridades se houver ordem legal ou para defender direitos.</li>
 </ul>
-<p><strong>Transferência internacional (art. 33).</strong> O uso de infraestrutura da Cloudflare pode envolver tratamento fora do Brasil. Fazemos essa transferência com base no art. 33, IX (necessária para a execução do contrato de que você é parte) e, quando aplicável, com cláusulas contratuais do fornecedor (art. 33, II, "b"). Dados de conteúdo não são transferidos por nós, pois não os recebemos.</p>
+<p><strong>Transferência internacional (art. 33).</strong> O uso de infraestrutura da Cloudflare pode envolver tratamento fora do Brasil. Fazemos essa transferência com base no art. 33, IX (necessária para a execução do contrato de que você é parte) e, quando aplicável, com cláusulas contratuais do fornecedor (art. 33, II, "b"). Dados de conteúdo não são transferidos por nós, salvo o caderno aprovado pelo dono, que passa em trânsito para chegar ao grupo.</p>
 <h2>B.6. Por quanto tempo guardamos</h2>
 <table>
 <thead>
@@ -267,6 +300,18 @@ Vigência: a partir da ativação do seu convite.</p>
 <tr>
 <td>Pulsos na caixa da Cloudflare</td>
 <td>Em trânsito: apagados após serem puxados para o nosso sistema</td>
+</tr>
+<tr>
+<td>Cadernos e mensagens que a AI envia ou recebe</td>
+<td>Em trânsito: não são guardados</td>
+</tr>
+<tr>
+<td>PIN de entrada e menu aberto da AI</td>
+<td>Vencem em pouco tempo (o menu, em 10 minutos) e deixam de valer</td>
+</tr>
+<tr>
+<td>Códigos cifrados, votos e contagens da AI</td>
+<td>Enquanto a AI estiver no grupo e pelo prazo da linha seguinte</td>
 </tr>
 <tr>
 <td>Histórico de pulsos e dados da licença no nosso sistema</td>
@@ -295,7 +340,8 @@ Vigência: a partir da ativação do seu convite.</p>
 <li>O pulso é autenticado por assinatura do corpo com um segredo do seu aparelho, guardado no Chaveiro do macOS.</li>
 <li>A configuração que o app recebe é assinada digitalmente por nós e verificada no app; invadir a hospedagem não basta para alterar limites ou regras.</li>
 <li>Ações administrativas na caixa exigem assinatura com chave guardada em equipamento do titular.</li>
-<li>O conteúdo não trafega por nós, o que reduz muito o risco.</li>
+<li>Números de telefone e grupos são guardados só como códigos cifrados (HMAC), que não se desfazem sem a chave.</li>
+<li>O conteúdo não fica conosco: o caderno só passa em trânsito, o que reduz muito o risco.</li>
 <li>Nenhum sistema é totalmente seguro. A proteção do conteúdo no seu Mac depende de você (senha, FileVault, cópias de segurança).</li>
 </ul>
 <h2>B.8. Incidentes (art. 48)</h2>
@@ -305,7 +351,7 @@ Vigência: a partir da ativação do seu convite.</p>
 <p><strong>Como pedir:</strong> escreva para <strong>ola@offnets.org</strong>. Podemos pedir informações para confirmar quem você é. Respondemos de forma simplificada imediatamente ou de forma completa em até <strong>15 dias</strong> (art. 19). Você também pode reclamar à ANPD.</p>
 <p><strong>Encarregado (art. 41):</strong> [DEFINIR: nome do encarregado de dados; até lá, o canal é ola@offnets.org].</p>
 <h2>B.10. Menores</h2>
-<p>O Lite não é destinado a menores de [DEFINIR: idade mínima; padrão 18] anos, e não coletamos dado de menores de propósito. Se soubermos que um menor ativou o app, revogaremos a licença e eliminaremos os dados dele. Se o Lite for usado para gravar menores, o tratamento exige o melhor interesse da criança e o consentimento específico de um dos pais ou responsável (art. 14), responsabilidade do usuário.</p>
+<p>O app não é destinado a menores de [DEFINIR: idade mínima; padrão 18] anos, e não coletamos dado de menores de propósito. Se soubermos que um menor ativou o app, revogaremos a licença e eliminaremos os dados dele. Se o app for usado para gravar menores, o tratamento exige o melhor interesse da criança e o consentimento específico de um dos pais ou responsável (art. 14), responsabilidade do usuário.</p>
 <h2>B.11. Cookies e site</h2>
 <p>O site offnets.io serve para convite e download. [DEFINIR: confirmar se o site usa cookies ou ferramentas de métrica; se sim, acrescentar aviso.]</p>
 <h2>B.12. Alterações</h2>
@@ -314,8 +360,8 @@ Vigência: a partir da ativação do seu convite.</p>
 </article>
 </main>
 <footer class="rodape">
-  <span>Offnets · protocolo, versão 0.1 alfa · outubro de 2026 · Andreas Blazoudakis</span>
-  <nav aria-label="Rodapé"><a href="../">Entender</a><a href="../manifesto/">Manifesto</a><a href="./">Constituição</a><span>Rede fechada, só por convite.</span></nav>
+  <span>Offnets · protocolo v0.1 alfa · app 0.2.12 · outubro de 2026 · Andreas Blazoudakis</span>
+  <nav aria-label="Rodapé"><a href="../">Entender</a><a href="../manifesto/">Manifesto</a><a href="../constituicao/">Constituição</a><a href="../de-onde-vem/">De onde vem</a><span>Rede fechada, só por convite.</span></nav>
   <p class="contato">Fale com a gente · <a href="mailto:ola@offnets.org">ola@offnets.org</a> · <a href="mailto:ola@offnets.org?subject=Percep%C3%A7%C3%A3o">Mande sua percepção</a></p>
 </footer>
 
