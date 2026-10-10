@@ -102,7 +102,7 @@ for cod, pasta, lang, _, _ in L:
 <script src="{raiz}assets/constelacao.js"></script>
 <script src="{raiz}assets/idioma.js"></script>
 <script src="{raiz}assets/contato.js"></script>
-<!-- Cloudflare Web Analytics: sem cookie, conta visitas (conta servidor@51.holdings, site offnets.org) -->
+<!-- Cloudflare Web Analytics: sem cookie, conta visitas -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "d42555c75a4944d083716ef46e62e0e8"}}'></script>
 </body>
 </html>
