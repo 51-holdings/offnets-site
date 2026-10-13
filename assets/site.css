@@ -1,20 +1,25 @@
-/* offnets.org v2 — infraestrutura de nova geração, não startup nem documentação antiga.
-   Uma grotesca contemporânea (Geist) em tudo, tipo grande e confiante, linhas finas, paleta funda e calma, um único acento.
-   Propriedades lógicas em todo lugar: o árabe espelha pelo dir="rtl". */
+/* offnets.org · Manual de Marca v0.1 (13/10/2026), aplicação delicada.
+   Os dois modos da marca: Alumínio (claro) e Titânio (escuro), pelo prefers-color-scheme ou pelo alternador do topo (data-theme).
+   Roxo calmo é o único acento (a metade off-net do símbolo); o roxo LED não aparece no site: é só do "turbinando" e da propaganda.
+   Manrope (SIL OFL 1.1) embutida em assets/fontes/, sem CDN. Propriedades lógicas em todo lugar: o árabe espelha pelo dir="rtl". */
+@font-face{font-family:"Manrope";src:url(fontes/manrope.woff2) format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
 :root{
-  --paper:#f5f6f4; --ink:#0b100f; --muted:#56615e; --faint:#7b8683; --line:#dde2df; --soft:#eaeeeb; --signal:#0a7563;
-  --f-serif:"Geist", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-sans:"Geist", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-mono:"Geist", "Inter", system-ui, sans-serif; --f-code:"Geist Mono", ui-monospace, Menlo, monospace;
+  /* Alumínio */
+  --paper:#e7e8eb; --ink:#1c1d20; --muted:#55585f; --faint:#767982; --line:#d2d4d9; --soft:#f7f7f9; --signal:#5a3fc0;
+  --brain-on:#8b8e96; --roxo:#5a3fc0;
+  --f-serif:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"Manrope", system-ui, -apple-system, sans-serif; --f-code:ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --w:1120px; --w-text:660px; --gutter:clamp(16px,4vw,40px);
   color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#080c0c;--ink:#e9eeec;--muted:#93a19c;--faint:#6b7874;--line:#1d2725;--soft:#121a19;--signal:#5fd4b8;color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#080c0c;--ink:#e9eeec;--muted:#93a19c;--faint:#6b7874;--line:#1d2725;--soft:#121a19;--signal:#5fd4b8;color-scheme:dark}
+/* Titânio */
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#131315;--ink:#ebebee;--muted:#a3a5ac;--faint:#7d8088;--line:#2e2f34;--soft:#1c1d20;--signal:#a99bf2;--roxo:#a99bf2;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#131315;--ink:#ebebee;--muted:#a3a5ac;--faint:#7d8088;--line:#2e2f34;--soft:#1c1d20;--signal:#a99bf2;--roxo:#a99bf2;color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 var(--f-sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-feature-settings:"ss01","cv11"}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 var(--f-sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 a{color:var(--signal)}
 :focus-visible{outline:2px solid var(--signal);outline-offset:3px}
 p{margin:0 0 16px}
@@ -25,16 +30,19 @@ strong{font-weight:600}
 
 /* topo */
 .topo{max-width:var(--w);margin-inline:auto;padding:24px var(--gutter) 0;display:flex;justify-content:space-between;align-items:center;gap:14px 24px;flex-wrap:wrap}
-.marca{display:inline-flex;align-items:center;gap:10px;font:600 18px var(--f-sans);letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+.marca{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink)}
+.marca .simbolo{display:block;flex:none}
+/* o nome em Manrope 650 (proposta W1 do Manual; o logotipo escrito ainda está a decidir) */
+.marca .nome{font:650 20px/1 "Manrope",system-ui,sans-serif;letter-spacing:-.035em}
 .topo-dir{display:flex;align-items:center;justify-content:flex-end;margin-inline-start:auto;gap:10px 22px;flex-wrap:wrap}
 .secoes{display:flex;gap:6px 20px;flex-wrap:wrap;font:500 13.5px var(--f-sans)}
 .secoes a{color:var(--muted);text-decoration:none}
 .secoes a:hover,.secoes a[aria-current="page"]{color:var(--ink)}
 .idiomas{display:flex;align-items:center;gap:12px;flex-wrap:nowrap;font:500 12px var(--f-sans);position:relative}
-.idiomas a{color:var(--faint);text-decoration:none;line-height:1.6;white-space:nowrap}
+.idiomas a{color:var(--muted);text-decoration:none;line-height:1.6;white-space:nowrap}
 .idiomas a:hover{color:var(--ink)}
 .idiomas a[aria-current="true"]{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
-.idiomas .mais{position:relative}
+.idiomas .mais{position:relative;display:block;margin:0;padding:0;border:0}
 .idiomas summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;color:var(--faint);padding:2px;border-radius:4px}
 .idiomas summary::-webkit-details-marker{display:none}
 .idiomas summary:hover,.idiomas .mais[open] summary,.idiomas .mais[data-atual] summary{color:var(--ink)}
@@ -44,8 +52,8 @@ strong{font-weight:600}
 .idiomas .menu a[aria-current="true"]{text-decoration:none;color:var(--ink);font-weight:600}
 
 /* rótulos de protocolo */
-.k{font:500 12px/1.4 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.k b{color:var(--signal);font-weight:500}
+.k{font:600 11.5px/1.4 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.k b{color:var(--signal);font-weight:600}
 .tag{display:inline-block;font:500 11.5px/1 var(--f-mono);letter-spacing:.02em;padding:6px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted);vertical-align:middle;white-space:nowrap}
 .tag.futuro{border-style:dashed}
 .tag.hoje{color:var(--signal);border-color:currentColor}
@@ -53,8 +61,8 @@ strong{font-weight:600}
 /* hero */
 .hero{min-height:min(92vh,920px);display:flex;flex-direction:column;justify-content:center;padding-block:56px 72px}
 .hero .k{margin-bottom:34px}
-.hero h1{font:500 clamp(42px,7.2vw,100px)/.98 var(--f-serif);letter-spacing:-.045em;margin:0;max-width:13ch;text-wrap:balance}
-.hero .sub{font:500 clamp(30px,4.6vw,58px)/1.05 var(--f-serif);letter-spacing:-.035em;color:var(--signal);margin:14px 0 40px}
+.hero h1{font:700 clamp(42px,7.2vw,100px)/1 var(--f-serif);letter-spacing:-.04em;margin:0;max-width:13ch;text-wrap:balance}
+.hero .sub{font:600 clamp(30px,4.6vw,58px)/1.08 var(--f-serif);letter-spacing:-.035em;color:var(--signal);margin:14px 0 40px}
 .hero .comp{font:clamp(17px,1.6vw,20px)/1.6 var(--f-serif);color:var(--muted);max-width:40ch;margin:0 0 22px}
 .hero .proto{font:500 15px/1.6 var(--f-sans);max-width:52ch;margin:0 0 40px;padding-inline-start:14px;border-inline-start:2px solid var(--signal)}
 .ctas{display:flex;gap:12px 22px;flex-wrap:wrap;align-items:center}
@@ -81,13 +89,13 @@ a:hover .seta{transform:translateX(3px)}
 .sec{border-top:1px solid var(--line);padding-block:clamp(72px,11vw,140px)}
 .sec-cab{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px 40px;margin-bottom:clamp(36px,5vw,64px)}
 .sec-cab .k{padding-top:14px}
-.sec h2{font:500 clamp(32px,4.6vw,58px)/1.06 var(--f-serif);letter-spacing:-.035em;margin:0;text-wrap:balance;max-width:20ch}
+.sec h2{font:650 clamp(32px,4.6vw,58px)/1.08 var(--f-serif);letter-spacing:-.035em;margin:0;text-wrap:balance;max-width:20ch}
 .sec h2 em{font-style:normal;color:var(--signal)}
 .corpo{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px 40px}
 .corpo>*{grid-column:2;min-width:0}
 .lead{font:clamp(20px,2vw,24px)/1.5 var(--f-serif);max-width:36ch;margin-bottom:28px}
 .nota{font:14px/1.6 var(--f-sans);color:var(--muted)}
-.destaque{font:500 clamp(30px,4.4vw,54px)/1.12 var(--f-serif);letter-spacing:-.035em;margin:clamp(48px,7vw,88px) 0 0;max-width:22ch;text-wrap:balance}
+.destaque{font:600 clamp(30px,4.4vw,54px)/1.14 var(--f-serif);letter-spacing:-.035em;margin:clamp(48px,7vw,88px) 0 0;max-width:22ch;text-wrap:balance}
 .destaque em{font-style:normal;color:var(--signal)}
 
 /* 02 · a grande mudança */
@@ -99,7 +107,7 @@ a:hover .seta{transform:translateX(3px)}
 .era .n{font:500 12px var(--f-mono);color:var(--muted);padding-top:10px;text-align:center}
 .era .par{display:flex;align-items:center;gap:12px;font:500 12.5px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);flex-wrap:wrap;padding-top:8px}
 .era .par i{flex:0 1 64px;min-width:24px;height:0;border-top:1px solid var(--muted)}
-.era h3{grid-column:2;font:500 clamp(24px,3vw,36px)/1.15 var(--f-serif);letter-spacing:-.035em;margin:8px 0 0}
+.era h3{grid-column:2;font:600 clamp(24px,3vw,36px)/1.18 var(--f-serif);letter-spacing:-.035em;margin:8px 0 0}
 .era .par .tag{margin-inline-start:6px}
 .era.agora h3{color:var(--signal)}
 .era.agora .par i{border-color:var(--signal)}
@@ -131,7 +139,7 @@ a:hover .seta{transform:translateX(3px)}
 .modelo.hoje small{color:var(--signal);font:500 10px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;margin-inline-start:6px}
 .pilha .rot{text-align:center;font:500 11px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
 .faixa{border-block:1px solid var(--ink);padding:18px 12px;text-align:center}
-.faixa b{display:block;font:600 22px var(--f-sans);letter-spacing:.24em;text-transform:uppercase}
+.faixa b{display:block;font:650 22px var(--f-sans);letter-spacing:.24em;text-transform:uppercase}
 .faixa span{font:13px var(--f-sans);color:var(--muted)}
 .tres{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));text-align:center;font:500 14px var(--f-sans)}
 .tres span{padding:10px 6px}
@@ -148,7 +156,7 @@ a:hover .seta{transform:translateX(3px)}
 svg .no{fill:var(--ink)}
 svg .no.s{fill:var(--signal)}
 svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
-.cerebro h3{font:400 26px/1.15 var(--f-serif);margin:0 0 8px}
+.cerebro h3{font:600 26px/1.18 var(--f-serif);letter-spacing:-.02em;margin:0 0 8px}
 .cerebro p{font:15px/1.6 var(--f-sans);color:var(--muted);margin:0}
 .linhas{margin-top:clamp(48px,6vw,72px);border-top:1px solid var(--line)}
 .linha{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font:16px/1.6 var(--f-sans)}
@@ -161,7 +169,7 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 .principio{padding-block:22px 28px;padding-inline:0 24px;border-bottom:1px solid var(--line);min-width:0}
 .principio:not(:nth-child(3n+1)){padding-inline-start:24px;border-inline-start:1px solid var(--line)}
 .principio .n{font:500 12px var(--f-mono);color:var(--muted)}
-.principio h3{font:400 26px/1.15 var(--f-serif);margin:10px 0}
+.principio h3{font:600 26px/1.18 var(--f-serif);letter-spacing:-.02em;margin:10px 0}
 .principio p{font:15px/1.6 var(--f-sans);color:var(--muted);margin:0 0 12px}
 .art-ref{font:500 11.5px var(--f-mono);letter-spacing:.08em;color:var(--signal);text-decoration:none}
 .art-ref:hover{text-decoration:underline}
@@ -169,7 +177,7 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 /* 07 · internet agêntica */
 .trilha{list-style:none;margin:0 0 clamp(40px,6vw,64px);padding:0;border-top:1px solid var(--ink);max-width:860px}
 .trilha li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
-.trilha .par{font:400 clamp(22px,2.6vw,30px)/1.2 var(--f-serif)}
+.trilha .par{font:500 clamp(22px,2.6vw,30px)/1.22 var(--f-serif)}
 .trilha .par .x{color:var(--faint);margin-inline:10px;font-family:var(--f-sans)}
 .trilha .d{grid-column:1/-1;font:15px/1.6 var(--f-sans);color:var(--muted);margin:0}
 .trilha li.futuro .par{color:var(--muted)}
@@ -182,7 +190,7 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 .agentes-leg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:860px;font:14px/1.5 var(--f-sans);color:var(--muted);margin-top:14px}
 .agentes-leg span:nth-child(2){text-align:center;color:var(--signal)}
 .agentes-leg span:nth-child(3){text-align:end}
-.tagline{font:500 clamp(26px,3.6vw,44px)/1.15 var(--f-serif);letter-spacing:-.035em;margin:clamp(48px,7vw,80px) 0 0;max-width:24ch}
+.tagline{font:600 clamp(26px,3.6vw,44px)/1.18 var(--f-serif);letter-spacing:-.035em;margin:clamp(48px,7vw,80px) 0 0;max-width:24ch}
 .tagline em{font-style:normal;color:var(--signal)}
 
 /* 08 · arquitetura */
@@ -202,13 +210,13 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 
 /* 09 · manifesto (editorial) */
 .manif{max-width:880px}
-.manif .abre-m{font:500 clamp(34px,5.4vw,68px)/1.06 var(--f-serif);letter-spacing:-.035em;margin:0 0 36px;text-wrap:balance}
+.manif .abre-m{font:650 clamp(34px,5.4vw,68px)/1.08 var(--f-serif);letter-spacing:-.035em;margin:0 0 36px;text-wrap:balance}
 .manif .abre-m em{font-style:normal;color:var(--signal)}
 .manif p{font-size:clamp(18px,1.7vw,21px);line-height:1.65;max-width:38em}
 .linhagem{list-style:none;margin:clamp(48px,6vw,72px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink)}
 .linhagem li{padding:18px 0 0;padding-inline-end:18px;min-width:0}
 .linhagem li+li{padding-inline-start:18px;border-inline-start:1px solid var(--line)}
-.linhagem b{display:block;font:500 28px var(--f-serif);margin-bottom:6px}
+.linhagem b{display:block;font:600 28px var(--f-serif);letter-spacing:-.02em;margin-bottom:6px}
 .linhagem li:last-child b{color:var(--signal)}
 .linhagem span{font:14px/1.55 var(--f-sans);color:var(--muted)}
 .mais{display:inline-flex;align-items:center;gap:10px;margin-top:40px;font:500 15px var(--f-sans);color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}
@@ -232,7 +240,7 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 .eco{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
 .eco>div{padding:22px 0 0;padding-inline-end:24px;min-width:0}
 .eco>div+div{padding-inline-start:24px;border-inline-start:1px solid var(--line)}
-.eco h3{font:400 24px/1.2 var(--f-serif);margin:0 0 10px}
+.eco h3{font:600 24px/1.2 var(--f-serif);letter-spacing:-.02em;margin:0 0 10px}
 .eco p{font:15px/1.6 var(--f-sans);color:var(--muted);margin:0}
 
 /* 12 · entrar */
@@ -246,12 +254,12 @@ svg .borda{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4}
 /* páginas de estudo (manifesto inteiro, Constituição) */
 .estudo{max-width:var(--w-text);margin-inline:auto;padding:clamp(56px,9vw,112px) var(--gutter) clamp(72px,10vw,120px)}
 .estudo .k{margin-bottom:22px}
-.estudo h1{font:500 clamp(36px,5vw,58px)/1.06 var(--f-serif);letter-spacing:-.035em;margin:0 0 26px;text-wrap:balance}
+.estudo h1{font:700 clamp(36px,5vw,58px)/1.08 var(--f-serif);letter-spacing:-.035em;margin:0 0 26px;text-wrap:balance}
 .estudo h1 em{font-style:normal;color:var(--signal)}
 .estudo .lede{font-size:clamp(19px,1.9vw,22px);line-height:1.6;margin-bottom:12px}
-.estudo h2{font:500 clamp(26px,3.4vw,36px)/1.15 var(--f-serif);letter-spacing:-.035em;margin:64px 0 18px;padding-top:28px;border-top:1px solid var(--line)}
+.estudo h2{font:650 clamp(26px,3.4vw,36px)/1.18 var(--f-serif);letter-spacing:-.035em;margin:64px 0 18px;padding-top:28px;border-top:1px solid var(--line)}
 .estudo h3{font:600 16px/1.35 var(--f-sans);margin:34px 0 8px}
-.estudo blockquote{margin:44px 0;padding-inline-start:22px;border-inline-start:2px solid var(--signal);font:400 clamp(24px,2.8vw,32px)/1.3 var(--f-serif)}
+.estudo blockquote{margin:44px 0;padding-inline-start:22px;border-inline-start:2px solid var(--signal);font:500 clamp(24px,2.8vw,32px)/1.32 var(--f-serif);letter-spacing:-.015em}
 .estudo .camada{font:500 11.5px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin:48px 0 4px;padding-top:18px;border-top:1px solid var(--ink)}
 .art{padding:18px 0;border-bottom:1px solid var(--line);scroll-margin-top:24px}
 .art .n{font:500 12px var(--f-mono);color:var(--muted);letter-spacing:.08em}
@@ -343,3 +351,24 @@ form.encontrar .armadilha{position:absolute;left:-9999px;width:1px;height:1px;op
 .encontrar-aviso.ok{border:1.5px solid var(--signal);background:color-mix(in srgb,var(--signal) 9%,transparent)}
 .encontrar-aviso.erro{border:1.5px solid #b7791f;background:color-mix(in srgb,#b7791f 9%,transparent)}
 .encontrar-aviso .ic{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--signal);color:var(--paper);font-weight:700;margin-right:10px}
+
+/* ===== Marca v0.1: o símbolo R4-2, o alternador de modo ===== */
+/* o símbolo no hero: parado, com o brilho lento do ícone do app (6 s, só no lado off-net). Nada de LED nem de grãos em repouso. */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:clamp(32px,5vw,72px);align-content:center}
+.hero>*{grid-column:1}
+.hero .hero-simbolo{grid-column:2;grid-row:1 / span 6;align-self:center;width:clamp(170px,22vw,280px)}
+.hero .hero-vis{grid-column:1 / -1}
+.hero-simbolo svg{display:block;width:100%;height:auto}
+.hero-simbolo .brilho{stroke-dasharray:5 95;stroke-dashoffset:-56;opacity:0;animation:brilho 6s cubic-bezier(.45,0,.3,1) -2.6s infinite}
+@keyframes brilho{0%{stroke-dashoffset:-56;opacity:0}12%{opacity:.85}62%{opacity:.85}72%{stroke-dashoffset:-97;opacity:0}100%{stroke-dashoffset:-97;opacity:0}}
+@media (prefers-reduced-motion: reduce){.hero-simbolo .brilho{display:none}}
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero .hero-simbolo{grid-column:1;grid-row:auto;width:84px;margin-bottom:28px}
+}
+/* alternador Alumínio / Titânio: discreto, ao lado dos idiomas */
+.tema{all:unset;box-sizing:border-box;cursor:pointer;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:999px;color:var(--muted);border:1px solid var(--line)}
+.tema:hover{color:var(--ink);border-color:var(--muted)}
+.tema:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+.tema svg{display:block}
+[dir="rtl"] .tema svg{transform:scaleX(-1)}

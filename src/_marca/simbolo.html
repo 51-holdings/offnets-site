@@ -1,0 +1,17 @@
+<!doctype html>
+<!-- Gerador do símbolo R4-2 (Manual de Marca v0.1, 13/10/2026). A geometria e o tracejado progressivo vêm de
+     offnets-icones-animados.html. Rodar: ./src/_marca/gerar.sh (Chrome headless, --dump-dom) grava os SVG estáticos em src/_svg/
+     e assets/marca/. Só o estado "parado"; o brilho lento é o do ícone do app (6 s, só no lado off-net). -->
+<html><head><meta charset="utf-8"></head><body>
+<script src="simbolo.js"></script>
+<script>
+const out={
+  topo:`<svg class="simbolo" width="28" height="28" viewBox="-4 -4 108 108" aria-hidden="true" focusable="false">${brain("ponte-topo")}</svg>`,
+  hero:`<svg class="simbolo" viewBox="-4 -4 108 108" aria-hidden="true" focusable="false">${brain("ponte-hero",{shimmer:true})}</svg>`,
+  // favicon: a versão de 16 px do manual (monocromática, traço 9, um giro por lado), em roxo calmo; troca de tom com o tema do sistema
+  favicon:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 -1 96 96"><style>.c{color:#5a3fc0}@media (prefers-color-scheme: dark){.c{color:#a99bf2}}</style><g class="c">${glyph()}</g></svg>`,
+  al:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 108 108">${brain("p",{on:"#8b8e96",of:"#5a3fc0"})}</svg>`,
+  ti:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 108 108">${brain("p",{on:"#8b8e96",of:"#a99bf2"})}</svg>`,
+};
+for(const k in out){const t=document.createElement("textarea");t.id=k;t.textContent=out[k];document.body.appendChild(t)}
+</script></body></html>

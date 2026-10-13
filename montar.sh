@@ -23,6 +23,20 @@ L = [  # código, pasta, html lang, bandeira, rótulo
   ("ar", "ar/", "ar",      "🇸🇦", "العربية"),
 ]
 MAIS = {"pt": "Mais idiomas", "en": "More languages", "es": "Más idiomas", "fr": "Plus de langues", "zh": "更多语言", "hi": "और भाषाएँ", "ar": "المزيد من اللغات"}
+TEMA = {  # alternador discreto dos dois modos da marca (Manual v0.1): Alumínio = claro, Titânio = escuro
+  "pt": "Alternar entre Alumínio (claro) e Titânio (escuro)", "en": "Switch between Aluminum (light) and Titanium (dark)",
+  "es": "Alternar entre Aluminio (claro) y Titanio (oscuro)", "fr": "Basculer entre Aluminium (clair) et Titane (sombre)",
+  "zh": "切换铝（浅色）与钛（深色）", "hi": "एल्यूमिनियम (हल्का) और टाइटेनियम (गहरा) के बीच बदलें",
+  "ar": "التبديل بين الألومنيوم (فاتح) والتيتانيوم (داكن)"}
+TEMA_SVG = ('<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="1.5"/>'
+            '<path d="M12 3.4a8.6 8.6 0 0 1 0 17.2z" fill="currentColor"/></svg>')
+OG_ALT = {"pt": "O símbolo do Offnets, um cérebro de frente num traço só, e o nome Offnets",
+  "en": "The Offnets symbol, a brain seen from the front in a single line, and the name Offnets",
+  "es": "El símbolo de Offnets, un cerebro de frente en un solo trazo, y el nombre Offnets",
+  "fr": "Le symbole d'Offnets, un cerveau vu de face d'un seul trait, et le nom Offnets",
+  "zh": "Offnets 标志：一笔画成的正面大脑，以及名称 Offnets", "hi": "Offnets का प्रतीक, एक ही रेखा में बना सामने से दिखता मस्तिष्क, और नाम Offnets",
+  "ar": "رمز Offnets، دماغ من الأمام بخط واحد، واسم Offnets"}
+OG_LOCALE = {"pt": "pt_BR", "en": "en_US", "es": "es_ES", "fr": "fr_FR", "zh": "zh_CN", "hi": "hi_IN", "ar": "ar_AR"}
 PAGINAS = ["home", "manifesto", "constituicao", "de-onde-vem"]
 DE_ONDE_VEM = {"pt": "de-onde-vem/", "en": "where-it-comes-from/", "es": "de-donde-viene/", "fr": "d-ou-il-vient/",
                "zh": "where-it-comes-from/", "hi": "where-it-comes-from/", "ar": "where-it-comes-from/"}
@@ -68,7 +82,8 @@ for cod, pasta, lang, _, _ in L:
             + f'<details class="mais"{" data-atual" if cod in fora else ""}><summary aria-label="{MAIS[cod]}" title="{MAIS[cod]}">{globo}</summary><div class="menu">'
             + "".join(lk(c, *info[c]) for c in fora) + "</div></details></nav>")
         alternos = "\n".join(f'<link rel="alternate" hreflang="{lg}" href="{SITE}/{caminho(c, pag)}">' for c, p, lg, b, r in L)
-        corpo = (corpo.replace("{{IDIOMAS}}", seletor)
+        tema = f'<button class="tema" type="button" aria-label="{TEMA[cod]}" title="{TEMA[cod]}">{TEMA_SVG}</button>'
+        corpo = (corpo.replace("{{IDIOMAS}}", seletor).replace("{{TEMA}}", tema)
                       .replace("{{HOME}}", rel(aqui, caminho(cod, "home")))
                       .replace("{{MANIFESTO}}", rel(aqui, caminho(cod, "manifesto")))
                       .replace("{{CONSTITUICAO}}", rel(aqui, caminho(cod, "constituicao")))
@@ -85,22 +100,30 @@ for cod, pasta, lang, _, _ in L:
 <meta property="og:description" content="{descr}">
 <meta property="og:url" content="{SITE}/{aqui}">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#f5f6f4" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#080c0c" media="(prefers-color-scheme: dark)">
+<meta property="og:site_name" content="Offnets">
+<meta property="og:locale" content="{OG_LOCALE[cod]}">
+<meta property="og:image" content="{SITE}/assets/marca/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{OG_ALT[cod]}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#e7e8eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131315" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="{SITE}/{aqui}">
 {alternos}
 <link rel="alternate" hreflang="x-default" href="{SITE}/{caminho("en", pag)}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cg fill='%230b7a66'%3E%3Ccircle cx='4' cy='15' r='2.6'/%3E%3Ccircle cx='11' cy='5' r='2.6'/%3E%3Ccircle cx='18' cy='13' r='2.6'/%3E%3C/g%3E%3Cpath d='M4 15 11 5 18 13' fill='none' stroke='%230b7a66' stroke-width='1.3'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="icon" href="{raiz}assets/marca/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{raiz}assets/marca/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{raiz}assets/marca/icone-180.png">
+<link rel="preload" href="{raiz}assets/fontes/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{raiz}assets/site.css">{fonte_extra}
-<script>document.documentElement.classList.add('js')</script>
+<script>(function(d){{d.classList.add('js');try{{var t=localStorage.getItem('offnets-tema');if(t==='light'||t==='dark')d.dataset.theme=t}}catch(e){{}}}})(document.documentElement)</script>
 </head>
 <body>
 {corpo}
 <script src="{raiz}assets/constelacao.js"></script>
 <script src="{raiz}assets/idioma.js"></script>
+<script src="{raiz}assets/tema.js"></script>
 <script src="{raiz}assets/contato.js"></script>
 <!-- Cloudflare Web Analytics: sem cookie, conta visitas -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "d42555c75a4944d083716ef46e62e0e8"}}'></script>
