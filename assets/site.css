@@ -32,8 +32,10 @@ strong{font-weight:600}
 .topo{max-width:var(--w);margin-inline:auto;padding:24px var(--gutter) 0;display:flex;justify-content:space-between;align-items:center;gap:14px 24px;flex-wrap:wrap}
 .marca{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink)}
 .marca .simbolo{display:block;flex:none}
-/* o nome em Manrope 650 (proposta W1 do Manual; o logotipo escrito ainda está a decidir) */
-.marca .nome{font:650 20px/1 "Manrope",system-ui,sans-serif;letter-spacing:-.035em}
+/* o nome escrito: W1 do Manual (Manrope 650, caixa alta e baixa, espaço −3,5%), escolhido pelo GM em 13/10/2026 */
+.marca .nome,.rodape .nome{font-family:"Manrope",system-ui,sans-serif;font-weight:650;letter-spacing:-.035em}
+.marca .nome{font-size:20px;line-height:1}
+.rodape .nome{font-size:14px;color:var(--ink)}
 .topo-dir{display:flex;align-items:center;justify-content:flex-end;margin-inline-start:auto;gap:10px 22px;flex-wrap:wrap}
 .secoes{display:flex;gap:6px 20px;flex-wrap:wrap;font:500 13.5px var(--f-sans)}
 .secoes a{color:var(--muted);text-decoration:none}
