@@ -14,7 +14,7 @@ Fonte:
 - `src/<lingua>/`: `topo.html`, `rodape.html`, `home.html`, `manifesto.html`, `constituicao.html`, `de-onde-vem.html` (o português é a fonte; as outras línguas são traduções dela).
 - `src/_svg/`: desenhos sem texto, iguais em todas as línguas, incluídos pelo marcador `{{SVG:nome}}`.
 - `assets/`: estilo, constelação (com revelar-ao-rolar, que respeita movimento reduzido) e o script que lembra o idioma escolhido.
-- Marca (Manual de Marca v0.1, 13/10/2026): os modos Alumínio (claro) e Titânio (escuro) pelo `prefers-color-scheme`, com alternador no topo (`assets/tema.js`); a Manrope (SIL OFL 1.1) embutida em `assets/fontes/`; o símbolo R4-2, o favicon, os ícones e a imagem de compartilhamento em `assets/marca/`. Tudo isso sai de `src/_marca/` (`./src/_marca/gerar.sh`, com o Chrome), que só se roda quando a marca muda. O nome escrito usa a Manrope (proposta W1); o logotipo ainda está a decidir.
+- Marca (Manual de Marca v0.1, 13/10/2026): os modos Alumínio (claro) e Titânio (escuro) pelo `prefers-color-scheme`, com alternador no topo (`assets/tema.js`); a Manrope (SIL OFL 1.1) embutida em `assets/fontes/`; o símbolo R4-2, o favicon, os ícones e a imagem de compartilhamento em `assets/marca/`. Tudo isso sai de `src/_marca/` (`./src/_marca/gerar.sh`, com o Chrome), que só se roda quando a marca muda. O nome escrito é o W1 do Manual (Manrope 650, caixa alta e baixa, espaço −3,5%), no topo, no rodapé e na imagem de compartilhamento.
 - `./montar.sh` gera tudo, com hreflang entre as versões da mesma página e x-default em inglês, o `CNAME` e o `.nojekyll`. Falha se sobrar algum marcador `{{...}}`.
 - Publicado pelo GitHub Pages a partir da branch `main`.
 
