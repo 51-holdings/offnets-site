@@ -374,3 +374,7 @@ form.encontrar .armadilha{position:absolute;left:-9999px;width:1px;height:1px;op
 .tema:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
 .tema svg{display:block}
 [dir="rtl"] .tema svg{transform:scaleX(-1)}
+.art .preceitos{list-style:none;margin:14px 0 0;padding:0}
+.art .preceitos li{padding:10px 0;border-top:1px solid var(--line)}
+.art .preceitos li:first-child{border-top:0;padding-top:4px}
+.art .assina{color:var(--muted);font-size:.94em;margin-top:14px}

@@ -5,7 +5,7 @@ Site público do Offnets em sete línguas: português (raiz), inglês, espanhol,
 Quatro páginas por língua, separando ENTENDER de ESTUDAR:
 - a home (13 seções: da tese à entrada por convite, com O encontro na 06);
 - `manifesto/`: o manifesto inteiro e a origem;
-- `constituicao/` (pt) ou `constitution/` (demais): a Constituição completa, artigo por artigo (âncoras `#art-1` … `#art-15`);
+- `constituicao/` (pt) ou `constitution/` (demais): a Constituição completa, artigo por artigo (âncoras `#preceitos` e `#art-0` … `#art-20`);
 - `de-onde-vem/` (pt), `where-it-comes-from/` (en, zh, hi, ar), `de-donde-viene/` (es), `d-ou-il-vient/` (fr): os fundamentos, Aristóteles e Sandel.
 
 Fora do `montar.sh`: `termos/` (Termos de Uso e Aviso de Privacidade, só em português), página estática editada à mão.
