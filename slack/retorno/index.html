@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Offnets · voltando ao app</title>
+<style>
+:root{--bg:#e7e8eb;--tx:#1c1d20;--mu:#55585f}
+@media (prefers-color-scheme:dark){:root{--bg:#131315;--tx:#ebebee;--mu:#a3a5ac}}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,sans-serif;padding:16px}
+main{max-width:420px}p{color:var(--mu)}
+</style>
+</head>
+<body>
+<main>
+<h1 style="font-size:20px;margin:0 0 8px">Voltando ao Offnets…</h1>
+<p>O Slack autorizou. Esta página só devolve a autorização ao Offnets no seu Mac: nada é guardado aqui.</p>
+<p id="manual" hidden>Se o Offnets não abriu sozinho, volte a ele: a conexão termina lá.</p>
+</main>
+<script>
+// O retorno HTTPS que o Slack exige para apps distribuídos. O código só vale com a chave PKCE que fica no Mac (o app troca o código pelo token).
+(function () {
+  var q = window.location.search || "";
+  window.location.replace("http://localhost:47821/slack/retorno" + q);
+  setTimeout(function () { document.getElementById("manual").hidden = false; }, 4000);
+})();
+</script>
+</body>
+</html>
